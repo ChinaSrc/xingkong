@@ -1,0 +1,45 @@
+<?
+$con_game_arr=array(
+  '0'=>array('ckey'=>'5FC','fullname'=>'五分彩','skey'=>'ssc'),
+  '1'=>array('ckey'=>'2FC','fullname'=>'二分彩','skey'=>'ssc'),
+  '2'=>array('ckey'=>'1FC','fullname'=>'分分彩','skey'=>'ssc'),
+  '3'=>array('ckey'=>'JSK3','fullname'=>'江苏快三','skey'=>'k3'),
+  '4'=>array('ckey'=>'GXK3','fullname'=>'广西快三','skey'=>'k3'),
+  '5'=>array('ckey'=>'AHK3','fullname'=>'安徽快三','skey'=>'k3'),
+  '6'=>array('ckey'=>'NMGK3','fullname'=>'蒙古快三','skey'=>'k3'),
+  '7'=>array('ckey'=>'PL3','fullname'=>'排列三','skey'=>'dp'),
+  '8'=>array('ckey'=>'AMK3','fullname'=>'澳门快三','skey'=>'k3'),
+  '9'=>array('ckey'=>'HUBK3','fullname'=>'湖北快三','skey'=>'k3'),
+  '10'=>array('ckey'=>'AM11-5','fullname'=>'澳门11选5','skey'=>'11x5'),
+  '11'=>array('ckey'=>'CQSSC','fullname'=>'重庆时时彩','skey'=>'ssc'),
+  '12'=>array('ckey'=>'TJSSC','fullname'=>'天津时时彩','skey'=>'ssc'),
+  '13'=>array('ckey'=>'XJSSC','fullname'=>'新疆时时彩','skey'=>'ssc'),
+  '14'=>array('ckey'=>'GD11-5','fullname'=>'广东11选5','skey'=>'11x5'),
+  '15'=>array('ckey'=>'SD11-5','fullname'=>'山东11选5','skey'=>'11x5'),
+  '16'=>array('ckey'=>'JX11-5','fullname'=>'江西11选5','skey'=>'11x5'),
+  '17'=>array('ckey'=>'BJKL8','fullname'=>'北京快乐8','skey'=>'kl8'),
+  '18'=>array('ckey'=>'3D','fullname'=>'福彩3D','skey'=>'dp')
+);
+
+$con_game_list=array(
+  '5FC'=>'五分彩',
+  '2FC'=>'二分彩',
+  '1FC'=>'分分彩',
+  'JSK3'=>'江苏快三',
+  'GXK3'=>'广西快三',
+  'AHK3'=>'安徽快三',
+  'NMGK3'=>'蒙古快三',
+  'PL3'=>'排列三',
+  'AMK3'=>'澳门快三',
+  'HUBK3'=>'湖北快三',
+  'AM11-5'=>'澳门11选5',
+  'CQSSC'=>'重庆时时彩',
+  'TJSSC'=>'天津时时彩',
+  'XJSSC'=>'新疆时时彩',
+  'GD11-5'=>'广东11选5',
+  'SD11-5'=>'山东11选5',
+  'JX11-5'=>'江西11选5',
+  'BJKL8'=>'北京快乐8',
+  '3D'=>'福彩3D'
+);
+?>

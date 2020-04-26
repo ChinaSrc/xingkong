@@ -1,0 +1,192 @@
+<html lang="zh-CN" xml:lang="zh-CN"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit" title="360浏览器强制开启急速模式-webkit内核">
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="shortcut icon" href="/data/uploads/system/15380169224298.png" type="image/x-icon">
+    <meta name="description" content="乐彩彩票">
+    <meta name="keywords" content="最专业的彩票平台">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+
+
+
+    <link href="/template/mobile/style/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/static/js/func.js"></script>
+
+    <script type="text/javascript" src="/static/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="/template/mobile/2017/Css/xcConfirm.css?v=2018">
+
+    <script src="/static/js/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+    <link href="/template/mobile/style/mobile.css?v=123" type="text/css" rel="stylesheet">
+
+</head>
+
+<body id="bg-base">
+<style>
+    #BgDiv{background-color:#000000; position:fixed; z-index:7777; left:0; top:0; bottom:0px;display:none; width:100%; height:100%;opacity:0.4;filter: alpha(opacity=40);-moz-opacity: 0.4;}
+</style>
+
+
+
+<div id="BgDiv"></div>
+
+
+<div class="sub_head_top wap_title">
+
+
+
+    <div class="title">用户登录
+
+    </div>
+
+
+    <div class="signIn" style="display:none;width:30px;text-align: right; position: absolute;right: 10px;top:5px;">
+
+        <a href="http://kefu.ziyun.com.cn/vclient/chat/?websiteid=140271">
+            <i class="icon-menu-4" style="color: #fff;font-size: 22px;"></i>
+
+        </a>
+
+    </div>
+
+
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="/template/mobile/style/daili_login.css">
+
+
+
+<script language="javascript">
+
+    function LoginNow()
+    {
+        var loginuser =document.getElementById("username").value;
+        var typepw = document.getElementById("loginpass_source").value;
+
+        if (loginuser == ''){
+            window.wxc.xcConfirm('请输入账号',window.wxc.xcConfirm.typeEnum.warning);
+            return false;
+        }
+        if  (typepw == '') {
+            window.wxc.xcConfirm('请输入密码',window.wxc.xcConfirm.typeEnum.warning);
+            return false;
+        }
+
+        document.forms['login'].submit();
+    }
+
+    function getKey111(){
+
+        document.getElementById("vPic").src='/source/plugin/this.aspx?rand='+Math.random()*10;
+
+
+
+    }
+
+</script>
+<style>
+    .headImg{
+        width: 96px;
+        height: 96px;
+        margin: 10px auto;
+    }
+    .headImg img{
+        border-radius:50%;
+
+        border:3px solid #e2e0e0;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
+<div class="content" id="content">
+    <div class="headImg">
+        <img src="template/mobile/images/defaultHead.png" width="100%" height="100%">
+    </div>
+
+    <div class="content-center">
+
+        <div class="main-cont">
+            <form action="index_login.html?mobile=1" method="post">
+
+                <input type="hidden" name="isproxy" value="0">
+
+                <ul>
+                    <li>
+                        <span class="title">账号</span>
+                        <input type="text" placeholder="请输入账号" name="username" id="username">
+                    </li>
+                    <li>
+                        <span class="title">密码</span>
+                        <input type="password" placeholder="请输密码" name="loginpass_source" id="loginpass_source">
+                    </li>
+                </ul>
+                <div class="info">
+
+                    <a href="index_forgetpwd.html">找回密码</a>
+                </div>
+
+                <button class="login-vip" onclick="return LoginNow();">登录</button>
+
+                &nbsp;<a onclick="window.location.href='/reg.html';" class="reg_btn">没有账号，去注册</a>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<style>
+    .footer_other{
+        position: fixed;bottom: 25px;left: 0px; width: 100%;
+        text-align: center;
+        height:30px;line-height: 30px;
+    }
+    .footer_other a{
+        margin: 0px 3px;
+        font-size:15px;
+        font-weight:700;
+        display: inline-block;
+        border-radius: 3px;
+        padding:2px 8px;
+        font-weight:300;
+        background-color: #455467;
+        color: #fff;
+        height: 20px;
+        line-height: 20px;
+
+    }
+
+</style>
+
+
+
+
+
+
+
+
+</body></html>

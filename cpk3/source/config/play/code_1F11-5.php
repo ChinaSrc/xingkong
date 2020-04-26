@@ -1,0 +1,149 @@
+<?php
+$con_play_arr=array('code'=>array('3M1','2M1','BDW11','DWD','QWX','RXFS','RXDS','RXDT'),'firstcode'=>'DWD','lot_date'=>'','lot_num'=>'');
+$con_title_arr=array(
+  'BDW11'=>array('fullname'=>'不定位','mode'=>'default'),
+  'DWD'=>array('fullname'=>'定位胆','mode'=>'default'),
+  'QWX'=>array('fullname'=>'趣味','mode'=>'default'),
+  'RXFS'=>array('fullname'=>'任选复式','mode'=>'default'),
+  'RXDS'=>array('fullname'=>'任选单式','mode'=>'default'),
+  '3M1'=>array('fullname'=>'三码','mode'=>''),
+  '2M1'=>array('fullname'=>'二码','mode'=>''),
+  'RXDT'=>array('fullname'=>'任选胆拖','mode'=>'')
+);
+
+$con_code_arr=array(
+  '2M1'=>array(
+      '2M_zhxfs'=>array('ListKey'=>'2M_zhxfs','CodeTile'=>'直选','ShowTile'=>'前二直选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '2M_zhxds'=>array('ListKey'=>'2M_zhxds','CodeTile'=>'直选','ShowTile'=>'前二直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2M_zxfs'=>array('ListKey'=>'2M_zxfs','CodeTile'=>'组选','ShowTile'=>'前二组选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '2M_zxds'=>array('ListKey'=>'2M_zxds','CodeTile'=>'组选','ShowTile'=>'前二组选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2M_zxdt'=>array('ListKey'=>'2M_zxdt','CodeTile'=>'组选','ShowTile'=>'前二组选胆拖','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3M1'=>array(
+      '3M_zhxfs'=>array('ListKey'=>'3M_zhxfs','CodeTile'=>'直选','ShowTile'=>'前三直选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '3M_zhxds'=>array('ListKey'=>'3M_zhxds','CodeTile'=>'直选','ShowTile'=>'前三直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '3M_zxds'=>array('ListKey'=>'3M_zxds','CodeTile'=>'组选','ShowTile'=>'前三组选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '3M_zxfs'=>array('ListKey'=>'3M_zxfs','CodeTile'=>'组选','ShowTile'=>'前三组选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '3M_zxdt'=>array('ListKey'=>'3M_zxdt','CodeTile'=>'组选','ShowTile'=>'前三组选胆拖','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'BDW11'=>array(
+      'BDW11_qsym'=>array('ListKey'=>'BDW11_qsym','CodeTile'=>'前三','ShowTile'=>'一码不定位','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'DWD'=>array(
+      'DWD_dwd'=>array('ListKey'=>'DWD_dwd','CodeTile'=>'定位胆','ShowTile'=>'定位胆','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QWX'=>array(
+      'QWX_dds'=>array('ListKey'=>'QWX_dds','CodeTile'=>'趣味','ShowTile'=>'定单双','Rebates'=>'Normal','MaxNote'=>''),
+      'QWX_czw'=>array('ListKey'=>'QWX_czw','CodeTile'=>'趣味','ShowTile'=>'猜中位','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'RXDS'=>array(
+      'RXDS_1z1'=>array('ListKey'=>'RXDS_1z1','CodeTile'=>'任选单式','ShowTile'=>'任选一中一','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDS_2z2'=>array('ListKey'=>'RXDS_2z2','CodeTile'=>'任选单式','ShowTile'=>'任选二中二','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDS_3z3'=>array('ListKey'=>'RXDS_3z3','CodeTile'=>'任选单式','ShowTile'=>'任选三中三','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDS_4z4'=>array('ListKey'=>'RXDS_4z4','CodeTile'=>'任选单式','ShowTile'=>'任选四中四','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDS_5z5'=>array('ListKey'=>'RXDS_5z5','CodeTile'=>'任选单式','ShowTile'=>'任选五中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDS_6z5'=>array('ListKey'=>'RXDS_6z5','CodeTile'=>'任选单式','ShowTile'=>'任选六中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDS_7z5'=>array('ListKey'=>'RXDS_7z5','CodeTile'=>'任选单式','ShowTile'=>'任选七中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDS_8z5'=>array('ListKey'=>'RXDS_8z5','CodeTile'=>'任选单式','ShowTile'=>'任选八中五','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'RXDT'=>array(
+      'RXDT_2z2'=>array('ListKey'=>'RXDT_2z2','CodeTile'=>'任选胆拖','ShowTile'=>'任选二中二','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDT_3z3'=>array('ListKey'=>'RXDT_3z3','CodeTile'=>'任选胆拖','ShowTile'=>'任选三中三','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDT_4z4'=>array('ListKey'=>'RXDT_4z4','CodeTile'=>'任选胆拖','ShowTile'=>'任选四中四','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDT_5z5'=>array('ListKey'=>'RXDT_5z5','CodeTile'=>'任选胆拖','ShowTile'=>'任选五中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDT_6z5'=>array('ListKey'=>'RXDT_6z5','CodeTile'=>'任选胆拖','ShowTile'=>'任选六中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDT_7z5'=>array('ListKey'=>'RXDT_7z5','CodeTile'=>'任选胆拖','ShowTile'=>'任选七中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXDT_8z5'=>array('ListKey'=>'RXDT_8z5','CodeTile'=>'任选胆拖','ShowTile'=>'任选八中五','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'RXFS'=>array(
+      'RXFS_fs1z1'=>array('ListKey'=>'RXFS_fs1z1','CodeTile'=>'任选复式','ShowTile'=>'任选一中一','Rebates'=>'Normal','MaxNote'=>''),
+      'RXFS_fs2z2'=>array('ListKey'=>'RXFS_fs2z2','CodeTile'=>'任选复式','ShowTile'=>'任选二中二','Rebates'=>'Normal','MaxNote'=>''),
+      'RXFS_fs3z3'=>array('ListKey'=>'RXFS_fs3z3','CodeTile'=>'任选复式','ShowTile'=>'任选三中三','Rebates'=>'Normal','MaxNote'=>''),
+      'RXFS_fs4z4'=>array('ListKey'=>'RXFS_fs4z4','CodeTile'=>'任选复式','ShowTile'=>'任选四中四','Rebates'=>'Normal','MaxNote'=>''),
+      'RXFS_fs5z5'=>array('ListKey'=>'RXFS_fs5z5','CodeTile'=>'任选复式','ShowTile'=>'任选五中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXFS_fs6z5'=>array('ListKey'=>'RXFS_fs6z5','CodeTile'=>'任选复式','ShowTile'=>'任选六中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXFS_fs7z5'=>array('ListKey'=>'RXFS_fs7z5','CodeTile'=>'任选复式','ShowTile'=>'任选七中五','Rebates'=>'Normal','MaxNote'=>''),
+      'RXFS_fs8z5'=>array('ListKey'=>'RXFS_fs8z5','CodeTile'=>'任选复式','ShowTile'=>'任选八中五','Rebates'=>'Normal','MaxNote'=>'')
+  )
+);
+$con_play_pri=array(
+  '3M_zhxfs'=>array('','','','1970'),
+  '3M_zhxds'=>array('','','','1970'),
+  '3M_zxfs'=>array('','','','329'),
+  '3M_zxdt'=>array('','','','329'),
+  '3M_zxds'=>array('','','','329'),
+  '2M_zhxfs'=>array('','','','219'),
+  '2M_zhxds'=>array('','','','219'),
+  '2M_zxfs'=>array('','','','109.5'),
+  '2M_zxdt'=>array('','','','109.5'),
+  '2M_zxds'=>array('','','','109.5'),
+  'BDW11_qsym'=>array('','','','7.061'),
+  'DWD_dwd'=>array('','','','20'),
+  'QWX_czw'=>array('','','','3.86'),
+  'QWX_dds'=>array('','','','3.86'),
+  'RXFS_fs8z5'=>array('','','','16.4'),
+  'RXFS_fs7z5'=>array('','','','43.6'),
+  'RXFS_fs6z5'=>array('','','','153'),
+  'RXFS_fs5z5'=>array('','','','891.66'),
+  'RXFS_fs4z4'=>array('','','','131.6'),
+  'RXFS_fs3z3'=>array('','','','32.8'),
+  'RXFS_fs2z2'=>array('','','','11.05'),
+  'RXFS_fs1z1'=>array('','','','4.41'),
+  'RXDS_1z1'=>array('','','','4.41'),
+  'RXDS_2z2'=>array('','','','11.05'),
+  'RXDS_3z3'=>array('','','','32.8'),
+  'RXDS_4z4'=>array('','','','131.6'),
+  'RXDS_5z5'=>array('','','','891.66'),
+  'RXDS_6z5'=>array('','','','153'),
+  'RXDS_7z5'=>array('','','','43.6'),
+  'RXDS_8z5'=>array('','','','16.4'),
+  'RXDT_2z2'=>array('','','','110'),
+  'RXDT_3z3'=>array('','','','330'),
+  'RXDT_4z4'=>array('','','','600'),
+  'RXDT_5z5'=>array('','','','924'),
+  'RXDT_6z5'=>array('','','','924'),
+  'RXDT_7z5'=>array('','','','600'),
+  'RXDT_8z5'=>array('','','','330')
+);
+
+$con_play_time=array(
+  '3M_zhxfs'=>array('','',''),
+  '3M_zhxds'=>array('','',''),
+  '3M_zxfs'=>array('','',''),
+  '3M_zxdt'=>array('','',''),
+  '3M_zxds'=>array('','',''),
+  '2M_zhxfs'=>array('','',''),
+  '2M_zhxds'=>array('','',''),
+  '2M_zxfs'=>array('','',''),
+  '2M_zxdt'=>array('','',''),
+  '2M_zxds'=>array('','',''),
+  'BDW11_qsym'=>array('','',''),
+  'DWD_dwd'=>array('','',''),
+  'QWX_czw'=>array('','',''),
+  'QWX_dds'=>array('','',''),
+  'RXFS_fs8z5'=>array('','',''),
+  'RXFS_fs7z5'=>array('','',''),
+  'RXFS_fs6z5'=>array('','',''),
+  'RXFS_fs5z5'=>array('','',''),
+  'RXFS_fs4z4'=>array('','',''),
+  'RXFS_fs3z3'=>array('','',''),
+  'RXFS_fs2z2'=>array('','',''),
+  'RXFS_fs1z1'=>array('','',''),
+  'RXDS_1z1'=>array('','',''),
+  'RXDS_2z2'=>array('','',''),
+  'RXDS_3z3'=>array('','',''),
+  'RXDS_4z4'=>array('','',''),
+  'RXDS_5z5'=>array('','',''),
+  'RXDS_6z5'=>array('','',''),
+  'RXDS_7z5'=>array('','',''),
+  'RXDS_8z5'=>array('','',''),
+  'RXDT_2z2'=>array('','',''),
+  'RXDT_3z3'=>array('','',''),
+  'RXDT_4z4'=>array('','',''),
+  'RXDT_5z5'=>array('','',''),
+  'RXDT_6z5'=>array('','',''),
+  'RXDT_7z5'=>array('','',''),
+  'RXDT_8z5'=>array('','','')
+);
+
+?>

@@ -1,0 +1,85 @@
+<?
+$con_play_arr=array('code'=>array('3X4','BDW3','1X1','2X3'),'firstcode'=>'3X4','lot_date'=>'','lot_num'=>'');
+$con_title_arr=array(
+  '3X4'=>array('fullname'=>'三星','mode'=>'default'),
+  'BDW3'=>array('fullname'=>'不定位','mode'=>'fix'),
+  '1X1'=>array('fullname'=>'一星','mode'=>'default'),
+  '2X3'=>array('fullname'=>'二星','mode'=>'default')
+);
+
+$con_code_arr=array(
+  '1X1'=>array(
+      '1X1_dwd'=>array('ListKey'=>'1X1_dwd','CodeTile'=>'定位胆','ShowTile'=>'定位胆','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2X3'=>array(
+      '2X3_2_zhxfs'=>array('ListKey'=>'2X3_2_zhxfs','CodeTile'=>'二星','ShowTile'=>'后二直选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_2_zhxds'=>array('ListKey'=>'2X3_2_zhxds','CodeTile'=>'二星','ShowTile'=>'后二直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_2_2xzxfs'=>array('ListKey'=>'2X3_2_2xzxfs','CodeTile'=>'二星','ShowTile'=>'后二组选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_2_zxds'=>array('ListKey'=>'2X3_2_zxds','CodeTile'=>'二星','ShowTile'=>'后二组选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zhxfs'=>array('ListKey'=>'2X3_1_zhxfs','CodeTile'=>'二星','ShowTile'=>'前二直选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zhxds'=>array('ListKey'=>'2X3_1_zhxds','CodeTile'=>'二星','ShowTile'=>'前二直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_2xzxfs'=>array('ListKey'=>'2X3_1_2xzxfs','CodeTile'=>'二星','ShowTile'=>'前二组选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zxds'=>array('ListKey'=>'2X3_1_zxds','CodeTile'=>'二星','ShowTile'=>'前二组选单式','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3X4'=>array(
+      '3X4_fs'=>array('ListKey'=>'3X4_fs','CodeTile'=>'直选','ShowTile'=>'直选复式（鼠标录入）','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_ds'=>array('ListKey'=>'3X4_ds','CodeTile'=>'直选','ShowTile'=>'直选单式（键盘录入）','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_zhxhz'=>array('ListKey'=>'3X4_zhxhz','CodeTile'=>'直选','ShowTile'=>'直选和值','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z3'=>array('ListKey'=>'3X4_z3','CodeTile'=>'组选','ShowTile'=>'组三','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z6'=>array('ListKey'=>'3X4_z6','CodeTile'=>'组选','ShowTile'=>'组六','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_hhzx'=>array('ListKey'=>'3X4_hhzx','CodeTile'=>'组选','ShowTile'=>'混合组选','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_zxhz'=>array('ListKey'=>'3X4_zxhz','CodeTile'=>'组选','ShowTile'=>'组选合值','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z3ds'=>array('ListKey'=>'3X4_z3ds','CodeTile'=>'组选','ShowTile'=>'组三单式','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z6ds'=>array('ListKey'=>'3X4_z6ds','CodeTile'=>'组选','ShowTile'=>'组六单式','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'BDW3'=>array(
+      'BDW3_hsym'=>array('ListKey'=>'BDW3_hsym','CodeTile'=>'不定位','ShowTile'=>'一码不定位','Rebates'=>'Normal','MaxNote'=>'')
+  )
+);
+$con_play_pri=array(
+  '3X4_fs'=>array('1700','1800','1900'),
+  '3X4_ds'=>array('1700','1800','1900'),
+  '3X4_zhxhz'=>array('1700','1800','1900'),
+  '3X4_z3'=>array('565','600','610'),
+  '3X4_z6'=>array('280','300','310'),
+  '3X4_hhzx'=>array('565','600','610'),
+  '3X4_zxhz'=>array('565','600','610'),
+  '3X4_z3ds'=>array('565','600','610'),
+  '3X4_z6ds'=>array('280','300','310'),
+  'BDW3_hsym'=>array('6.6','6.7','6.8'),
+  '1X1_dwd'=>array('17','18','19'),
+  '2X3_2_zhxfs'=>array('170','180','190'),
+  '2X3_2_zhxds'=>array('170','180','190'),
+  '2X3_2_2xzxfs'=>array('85','90','95'),
+  '2X3_2_zxds'=>array('85','90','95'),
+  '2X3_1_zhxfs'=>array('170','180','190'),
+  '2X3_1_zhxds'=>array('170','180','190'),
+  '2X3_1_2xzxfs'=>array('85','90','95'),
+  '2X3_1_zxds'=>array('85','90','95'),
+  ''=>array('1700','1800','1900')
+);
+
+$con_play_time=array(
+  '3X4_fs'=>array('','',''),
+  '3X4_ds'=>array('','',''),
+  '3X4_zhxhz'=>array('','',''),
+  '3X4_z3'=>array('','',''),
+  '3X4_z6'=>array('','',''),
+  '3X4_hhzx'=>array('','',''),
+  '3X4_zxhz'=>array('','',''),
+  '3X4_z3ds'=>array('','',''),
+  '3X4_z6ds'=>array('','',''),
+  'BDW3_hsym'=>array('','',''),
+  '1X1_dwd'=>array('','',''),
+  '2X3_2_zhxfs'=>array('','',''),
+  '2X3_2_zhxds'=>array('','',''),
+  '2X3_2_2xzxfs'=>array('','',''),
+  '2X3_2_zxds'=>array('','',''),
+  '2X3_1_zhxfs'=>array('','',''),
+  '2X3_1_zhxds'=>array('','',''),
+  '2X3_1_2xzxfs'=>array('','',''),
+  '2X3_1_zxds'=>array('','',''),
+  ''=>array('','','')
+);
+
+?>

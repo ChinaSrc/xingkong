@@ -1,0 +1,88 @@
+<?
+$con_play_arr=array('code'=>array('3X4','2X3','3D_DWD','DXDS3'),'firstcode'=>'DXDS3','lot_date'=>'','lot_num'=>'');
+$con_title_arr=array(
+  '3X4'=>array('fullname'=>'三星','mode'=>'default'),
+  '2X3'=>array('fullname'=>'前二','mode'=>'default'),
+  '3D_DWD'=>array('fullname'=>'一星','mode'=>'default'),
+  'DXDS3'=>array('fullname'=>'大小单双','mode'=>'fix')
+);
+
+$con_code_arr=array(
+  '2X3'=>array(
+      '2X3_1_zhxfs'=>array('ListKey'=>'2X3_1_zhxfs','CodeTile'=>'直选','ShowTile'=>'直选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zhxds'=>array('ListKey'=>'2X3_1_zhxds','CodeTile'=>'直选','ShowTile'=>'直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_2xzxfs'=>array('ListKey'=>'2X3_1_2xzxfs','CodeTile'=>'组选','ShowTile'=>'组选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zxds'=>array('ListKey'=>'2X3_1_zxds','CodeTile'=>'组选','ShowTile'=>'组选单式','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3D_DWD'=>array(
+      '1X1_dwd'=>array('ListKey'=>'1X1_dwd','CodeTile'=>'定位胆','ShowTile'=>'定位胆','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3X4'=>array(
+      '3X4_fs'=>array('ListKey'=>'3X4_fs','CodeTile'=>'直选','ShowTile'=>'直选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_ds'=>array('ListKey'=>'3X4_ds','CodeTile'=>'直选','ShowTile'=>'直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_zhxhz'=>array('ListKey'=>'3X4_zhxhz','CodeTile'=>'直选','ShowTile'=>'直选和值','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z3'=>array('ListKey'=>'3X4_z3','CodeTile'=>'组选','ShowTile'=>'组三复式','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z3ds'=>array('ListKey'=>'3X4_z3ds','CodeTile'=>'组选','ShowTile'=>'组三单式','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z6'=>array('ListKey'=>'3X4_z6','CodeTile'=>'组选','ShowTile'=>'组六复式','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_z6ds'=>array('ListKey'=>'3X4_z6ds','CodeTile'=>'组选','ShowTile'=>'组六单式','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_hhzx'=>array('ListKey'=>'3X4_hhzx','CodeTile'=>'组选','ShowTile'=>'混合组选','Rebates'=>'Normal','MaxNote'=>''),
+      '3X4_zxhz'=>array('ListKey'=>'3X4_zxhz','CodeTile'=>'组选','ShowTile'=>'组选合值','Rebates'=>'Normal','MaxNote'=>''),
+      'BDW_qsym'=>array('ListKey'=>'BDW_qsym','CodeTile'=>'不定位','ShowTile'=>'一码不定位','Rebates'=>'Normal','MaxNote'=>''),
+      'BDW_qsem'=>array('ListKey'=>'BDW_qsem','CodeTile'=>'不定位','ShowTile'=>'二码不定位','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'DXDS3'=>array(
+      'DXDS3_qedx'=>array('ListKey'=>'DXDS3_qedx','CodeTile'=>'大小单双','ShowTile'=>'前二大小单双','Rebates'=>'Normal','MaxNote'=>''),
+      'DXDS3_hedx'=>array('ListKey'=>'DXDS3_hedx','CodeTile'=>'大小单双','ShowTile'=>'后二大小单双','Rebates'=>'Normal','MaxNote'=>'')
+  )
+);
+$con_play_pri=array(
+  '3X4_hhzx'=>array('','','','665.4173'),
+  '3X4_ds'=>array('','','','2000'),
+  '3X4_z3ds'=>array('','','','665.4173'),
+  '3X4_z6ds'=>array('','','','332.7086'),
+  '3X4_zxhz'=>array('','','','665.4173'),
+  '3X4_fs'=>array('','','','2000'),
+  '3X4_zhxhz'=>array('','','','2000'),
+  '3X4_z3'=>array('','','','665.4173'),
+  '3X4_z6'=>array('','','','332.7086'),
+  '2X3_2_zhxfs'=>array('','','','200'),
+  '2X3_2_zhxds'=>array('','','','200'),
+  '2X3_2_2xzxfs'=>array('','','','100'),
+  '2X3_2_zxds'=>array('','','','100'),
+  '2X3_1_zhxfs'=>array('','','','200'),
+  '2X3_1_zhxds'=>array('','','','200'),
+  '2X3_1_2xzxfs'=>array('','','','100'),
+  '2X3_1_zxds'=>array('','','','100'),
+  '1X1_dwd'=>array('','','','20'),
+  'BDW_qsym'=>array('','','','7.22'),
+  'BDW_qsem'=>array('','','','36.50'),
+  'DXDS3_hedx'=>array('','','','8.02156'),
+  'DXDS3_qedx'=>array('','','','8.02156')
+);
+
+$con_play_time=array(
+  '3X4_hhzx'=>array('','',''),
+  '3X4_ds'=>array('','',''),
+  '3X4_z3ds'=>array('','',''),
+  '3X4_z6ds'=>array('','',''),
+  '3X4_zxhz'=>array('','',''),
+  '3X4_fs'=>array('','',''),
+  '3X4_zhxhz'=>array('','',''),
+  '3X4_z3'=>array('','',''),
+  '3X4_z6'=>array('','',''),
+  '2X3_2_zhxfs'=>array('','',''),
+  '2X3_2_zhxds'=>array('','',''),
+  '2X3_2_2xzxfs'=>array('','',''),
+  '2X3_2_zxds'=>array('','',''),
+  '2X3_1_zhxfs'=>array('','',''),
+  '2X3_1_zhxds'=>array('','',''),
+  '2X3_1_2xzxfs'=>array('','',''),
+  '2X3_1_zxds'=>array('','',''),
+  '1X1_dwd'=>array('','',''),
+  'BDW_qsym'=>array('','',''),
+  'BDW_qsem'=>array('','',''),
+  'DXDS3_hedx'=>array('','',''),
+  'DXDS3_qedx'=>array('','','')
+);
+
+?>

@@ -1,0 +1,1951 @@
+
+body, button, input, select, textarea {
+    font: 12px/1.5 Microsoft YaHei,Arial,\5b8b\4f53,sans-serif;
+    color: #333;
+}
+blockquote, body, button, caption, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, html, input, legend, li, menu, ol, p, pre, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.el-dialog__body {
+    font-size: 12px;
+}
+
+.el-dialog__body {
+    padding: 30px 20px;
+    color: #48576a;
+}
+
+.lottery-container {
+    position: relative
+}
+
+.lottery-countdown,.lottery-header,.lottery-hl,.lottery-hm,.lottery-hr,.lottery-result {
+    height: 90px
+}
+
+.lottery-content,.lottery-header {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,.25)
+}
+
+.betting-countdown,.lottery-countdown,.lottery-hl,.lottery-hm,.lottery-hr,.lottery-issue,.lottery-result,.lottery-show {
+    float: left;
+    overflow: hidden
+}
+
+.lottery-hl {
+    width: 100px;
+    border-radius: 8px 0 0 8px;
+    background-color: #edf0f4
+}
+
+.lottery-hm {
+    width: 795px
+}
+
+.lottery-hr {
+    float: right;
+    width: 85px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.lottery-logo,.lottery-name {
+    overflow: hidden;
+    text-align: center
+}
+
+.lottery-logo {
+    height: 50px;
+    margin-top: 10px
+}
+
+.lottery-name {
+    height: 18px;
+    margin-top: 5px;
+    font-weight: 400
+}
+
+.lottery-countdown {
+    width: 370px
+}
+
+.lottery-issue {
+    width: 160px;
+    height: 36px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center
+}
+
+.lottery-issue .issue {
+    margin: 0 5px;
+    color: #bb3838
+}
+
+.betting-countdown {
+    width: 208px;
+    margin-top: 23px
+}
+
+.betting-countdown .flip-clock-divider,.betting-countdown.flip-clock-wrapper,.betting-countdown.flip-clock-wrapper ul {
+    height: 44px
+}
+
+.betting-countdown.flip-clock-wrapper ul {
+    width: 27px;
+    margin: 0 2px
+}
+
+.betting-countdown.flip-clock-wrapper a,.betting-countdown.flip-clock-wrapper ul li a div div.inn {
+    color: #fff
+}
+
+.betting-countdown.flip-clock-wrapper ul li {
+    line-height: 44px
+}
+
+.betting-countdown.flip-clock-wrapper ul li a div div.inn {
+    font-size: 30px;
+    background: url(img/flip_clock.png) no-repeat
+}
+
+.betting-countdown .flip-clock-divider,.betting-countdown .flip-clock-dot {
+    width: 5px
+}
+
+.betting-countdown .flip-clock-divider {
+    margin: 0 3px
+}
+
+.betting-countdown .flip-clock-dot {
+    height: 5px;
+    border-radius: 50%;
+    background-color: #242e38
+}
+
+.betting-countdown .flip-clock-dot.top {
+    top: 14px
+}
+
+.betting-countdown .flip-clock-dot.bottom {
+    bottom: 14px
+}
+
+.lottery-result {
+    width: 425px
+}
+
+.lottery-numbers,.lottery-show {
+    height: 46px;
+    overflow: hidden
+}
+
+.lottery-show {
+    width: 250px;
+    margin-top: 24px
+}
+
+.lottery-numbers {
+    font-size: 0;
+    text-align: center
+}
+
+.lottery-numbers .inner,.lottery-numbers .number,.lottery-numbers li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden
+}
+
+.lottery-numbers li {
+    display: inline-block;
+    padding: 1px 3px 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: url(img/lottery_number_ball.png) no-repeat
+}
+
+.lottery-numbers .inner {
+    position: relative
+}
+
+.lottery-numbers .number {
+    font-size: 24px;
+    font-style: italic;
+    font-family: Arial,sans-serif;
+    color: #454753
+}
+
+.lottery-klc .lottery-numbers,.lottery-klc .lottery-show {
+    height: 58px
+}
+
+.lottery-klc .lottery-show {
+    margin-top: 18px
+}
+
+.lottery-klc .lottery-numbers .inner,.lottery-klc .lottery-numbers .number,.lottery-klc .lottery-numbers li {
+    width: 55px;
+    height: 58px
+}
+
+.lottery-klc .lottery-numbers li {
+    padding: 0;
+    margin: 0 2px;
+    background: none
+}
+
+.lottery-klc .lottery-numbers .number {
+    background-repeat: no-repeat
+}
+
+.lottery-klc .lottery-numbers .n1 {
+    background-image: url(img/lottery_dice_1.png)
+}
+
+.lottery-klc .lottery-numbers .n2 {
+    background-image: url(img/lottery_dice_2.png)
+}
+
+.lottery-klc .lottery-numbers .n3 {
+    background-image: url(img/lottery_dice_3.png)
+}
+
+.lottery-klc .lottery-numbers .n4 {
+    background-image: url(img/lottery_dice_4.png)
+}
+
+.lottery-klc .lottery-numbers .n5 {
+    background-image: url(img/lottery_dice_5.png)
+}
+
+.lottery-klc .lottery-numbers .n6 {
+    background-image: url(img/lottery_dice_6.png)
+}
+
+.lottery-links {
+    margin-top: 15px
+}
+
+.lottery-links a {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+.lottery-links a i {
+    float: left;
+    width: 14px;
+    height: 12px;
+    margin: 6px
+}
+
+.lottery-links a .icon-trend {
+    background-image: url(img/icon_lot_trend.png)
+}
+
+.lottery-links a .icon-history {
+    background-image: url(img/icon_lot_history.png)
+}
+
+.lottery-links a:hover {
+    border-color: #f90;
+    color: #f90
+}
+
+.lottery-content {
+    position: relative;
+    margin-top: 10px
+}
+
+.lottery-area {
+    overflow: hidden
+}
+
+.lottery-playgroup,.lottery-playgroup li {
+    height: 30px;
+    overflow: hidden
+}
+
+.lottery-playgroup {
+    padding: 5px 10px;
+    border-bottom: 1px solid #dee3eb;
+    text-align: center
+}
+
+.lottery-playgroup li {
+    transition: all .3s ease;
+    float: left;
+    width: 65px;
+    line-height: 30px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.lottery-playgroup .selected {
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    background-color: #00c77a
+}
+
+.lottery-klc .lottery-playgroup li,.lottery-pk10 .lottery-playgroup li {
+    width: 90px
+}
+
+.lottery-play {
+    padding: 10px 30px 0
+}
+
+.lottery-play dl {
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+.lottery-play dd,.lottery-play dt {
+    float: left;
+    overflow: hidden
+}
+
+.lottery-play dt {
+    min-width: 40px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 15px;
+    font-weight: 700
+}
+
+.lottery-play dd {
+    transition: all .3s ease;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    cursor: pointer
+}
+
+.lottery-choose .oper a:hover,.lottery-play .selected {
+    border-color: #525e6a;
+    color: #fff;
+    background: #525e6a
+}
+
+.lottery-subpanel {
+    position: relative
+}
+
+.lottery-playinfo {
+    position: relative;
+    height: 36px;
+    padding: 10px 260px 10px 52px
+}
+
+.lottery-example,.lottery-example .icon-i {
+    width: 16px;
+    height: 16px
+}
+
+.lottery-example {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    overflow: hidden
+}
+
+.lottery-example .icon-i {
+    background-image: url(img/icon_lot_i.png)
+}
+
+.lottery-example .play-example {
+    position: absolute;
+    left: -10px;
+    top: 24px;
+    width: 360px;
+    padding: 9px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #525e6a
+}
+
+.lottery-example .play-example .triangle {
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #525e6a
+}
+
+.lottery-example:hover {
+    overflow: visible
+}
+
+.lottery-bonus {
+    position: absolute;
+    z-index: 9;
+    top: 10px;
+    right: 30px
+}
+
+.lottery-bonus .icon-cny {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 1px 7px 0 0;
+    background-image: url(img/icon_lot_cny.png)
+}
+
+.lottery-bonus .money {
+    margin-right: 5px;
+    color: #cc2727
+}
+
+.lottery-choose {
+    padding: 0 20px
+}
+
+.lottery-choose li {
+    overflow: hidden;
+    padding-top: 1px
+}
+
+.lottery-choose .oper,.lottery-choose .pos {
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: center
+}
+
+.lottery-choose .oper {
+    float: right
+}
+
+.ball,.lottery-choose .oper a {
+    border: 1px solid #c2c2c2;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2)
+}
+
+.lottery-choose .oper a {
+    transition: all .3s ease;
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top,#fff,#ddd);
+    background-image: -moz-linear-gradient(top,#fff,#ddd);
+    background-image: -o-linear-gradient(top,#fff,#ddd);
+    background-image: linear-gradient(180deg,#fff,#ddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dddddd",GradientType=0)
+}
+
+.lottery-choose .pos {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 30px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #a5b6c8
+}
+
+.lottery-choose .pos:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin-top: -4px;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-color: transparent transparent transparent #a5b6c8
+}
+
+.lottery-balls {
+    float: left;
+    width: 550px;
+    overflow: hidden
+}
+
+.lottery-11x5 .lottery-balls {
+    width: 550px
+}
+
+.ball {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial,sans-serif;
+    color: #454652;
+    background-image: -webkit-linear-gradient(top,#fff,#d8d8d8);
+    background-image: -moz-linear-gradient(top,#fff,#d8d8d8);
+    background-image: -o-linear-gradient(top,#fff,#d8d8d8);
+    background-image: linear-gradient(180deg,#fff,#d8d8d8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#d8d8d8",GradientType=0)
+}
+
+.ball.selected {
+    color: #fff
+}
+
+.big-ball {
+    width: 80px;
+    font-size: 16px
+}
+
+.lottery-balls .ball {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+.lottery-pos .lottery-balls .ball:first-child {
+    margin-left: 0
+}
+
+.lottery-fc3d .ball.selected {
+    border-color: #091fd6;
+    background-image: -webkit-linear-gradient(top,#0c27fa,#3283e9);
+    background-image: -moz-linear-gradient(top,#0c27fa,#3283e9);
+    background-image: -o-linear-gradient(top,#0c27fa,#3283e9);
+    background-image: linear-gradient(180deg,#0c27fa,#3283e9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c27fa",endColorstr="#3283e9",GradientType=0)
+}
+
+.lottery-tcp3 .ball.selected {
+    border-color: #18c687;
+    background-image: -webkit-linear-gradient(top,#1de89d,#3eda6e);
+    background-image: -moz-linear-gradient(top,#1de89d,#3eda6e);
+    background-image: -o-linear-gradient(top,#1de89d,#3eda6e);
+    background-image: linear-gradient(180deg,#1de89d,#3eda6e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1de89d",endColorstr="#3eda6e",GradientType=0)
+}
+
+.lottery-ssc .ball.selected {
+    border-color: #d67f0a;
+    background-image: -webkit-linear-gradient(top,#f7920d,#e65c31);
+    background-image: -moz-linear-gradient(top,#f7920d,#e65c31);
+    background-image: -o-linear-gradient(top,#f7920d,#e65c31);
+    background-image: linear-gradient(180deg,#f7920d,#e65c31);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7920d",endColorstr="#e65c31",GradientType=0)
+}
+
+.lottery-qtc .ball.selected {
+    border-color: #62c619;
+    background-image: -webkit-linear-gradient(top,#73e41e,#b7dc3f);
+    background-image: -moz-linear-gradient(top,#73e41e,#b7dc3f);
+    background-image: -o-linear-gradient(top,#73e41e,#b7dc3f);
+    background-image: linear-gradient(180deg,#73e41e,#b7dc3f);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#73e41e",endColorstr="#b7dc3f",GradientType=0)
+}
+
+.lottery-ssl .ball.selected {
+    border-color: #d6082e;
+    background-image: -webkit-linear-gradient(top,#fa0b39,#e8308e);
+    background-image: -moz-linear-gradient(top,#fa0b39,#e8308e);
+    background-image: -o-linear-gradient(top,#fa0b39,#e8308e);
+    background-image: linear-gradient(180deg,#fa0b39,#e8308e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa0b39",endColorstr="#e8308e",GradientType=0)
+}
+
+.lottery-11x5 .ball.selected {
+    border-color: #0980d6;
+    background-image: -webkit-linear-gradient(top,#0c98fa,#30d7e5);
+    background-image: -moz-linear-gradient(top,#0c98fa,#30d7e5);
+    background-image: -o-linear-gradient(top,#0c98fa,#30d7e5);
+    background-image: linear-gradient(180deg,#0c98fa,#30d7e5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c98fa",endColorstr="#30d7e5",GradientType=0)
+}
+
+.lottery-klc .ball.selected {
+    border-color: #9708d6;
+    background-image: -webkit-linear-gradient(top,#ae0cf5,#702fe0);
+    background-image: -moz-linear-gradient(top,#ae0cf5,#702fe0);
+    background-image: -o-linear-gradient(top,#ae0cf5,#702fe0);
+    background-image: linear-gradient(180deg,#ae0cf5,#702fe0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ae0cf5",endColorstr="#702fe0",GradientType=0)
+}
+
+.lottery-pk10 .ball.selected {
+    border-color: #c618a7;
+    background-image: -webkit-linear-gradient(top,#e81dc6,#c13eda);
+    background-image: -moz-linear-gradient(top,#e81dc6,#c13eda);
+    background-image: -o-linear-gradient(top,#e81dc6,#c13eda);
+    background-image: linear-gradient(180deg,#e81dc6,#c13eda);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e81dc6",endColorstr="#c13eda",GradientType=0)
+}
+
+.ball.selected {
+    animation: ball .32s ease-out 0s forwards
+}
+
+@keyframes ball {
+    0% {
+        transform: scale(.5);
+        opacity: .5
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.lottery-input {
+    padding: 0 30px
+}
+
+.lottery-input textarea {
+    width: 928px;
+    height: 168px;
+    padding: 5px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6
+}
+
+.lottery-position {
+    height: 18px;
+    overflow: hidden;
+    margin-top: 10px
+}
+
+.lottery-position label {
+    float: left;
+    height: 18px;
+    overflow: hidden;
+    margin-right: 25px
+}
+
+.lottery-position label input {
+    float: left;
+    margin: 2px 10px 0 0
+}
+
+.betting-area,.betting-settings {
+    overflow: hidden;
+    padding: 20px
+}
+
+.betting-settings {
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #edf0f4
+}
+
+.betting-adjust .lab,.betting-adjust .ratio,.betting-bonus,.betting-mode .lab,.betting-multi .lab,.betting-number,.betting-settings,.betting-subtotal {
+    height: 24px
+}
+
+.betting-adjust .lab,.betting-adjust .ratio,.betting-bonus,.betting-mode .lab,.betting-multi .lab,.betting-number,.betting-subtotal {
+    width: 190px;
+    text-align: center;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.betting-bonus .money,.betting-number .amount,.betting-subtotal .money,.betting-total em {
+    margin: 0 5px;
+    color: #cc2727
+}
+
+.drag {
+    border-radius: 5px
+}
+
+.betting-adjust .lab,.betting-bonus,.betting-mode .lab,.betting-multi .lab,.betting-number {
+    float: left;
+    width: auto
+}
+
+.betting-subtotal {
+    margin-left: 15px
+}
+
+.betting-subtotal .money {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top
+}
+
+.betting-bonus,.betting-mode,.betting-multi,.betting-number {
+    float: left;
+    margin-left: 44px
+}
+
+.betting-multi {
+    margin-left: 0
+}
+
+.betting-adjust .lab,.betting-mode .lab,.betting-multi .lab {
+    margin-right: 10px
+}
+
+.betting-amount,.betting-amount .minus,.betting-amount .number,.betting-amount .plus {
+    float: left
+}
+
+.betting-amount .minus,.betting-amount .plus {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    border-radius: 3px;
+    background-color: #a5b6c8;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.betting-amount .minus {
+    margin-right: 5px;
+    background-image: url(img/icon_lot_minus.png)
+}
+
+.betting-amount .plus {
+    margin-left: 5px;
+    background-image: url(img/icon_lot_plus.png)
+}
+
+.betting-amount .minus.disable,.betting-amount .plus.disable {
+    background-color: #c4c7ca;
+    cursor: not-allowed
+}
+
+.betting-amount .number,.betting-mode li {
+    border: 1px solid #d5d8db;
+    text-align: center;
+    background-color: #fff
+}
+
+.betting-amount .number {
+    width: 38px;
+    height: 22px;
+    line-height: 22px\9
+}
+
+.betting-mode li,.betting-mode ul {
+    float: left
+}
+
+.betting-mode li {
+    transition: all .3s ease;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.betting-mode li:first-child {
+    margin-left: 0
+}
+
+.betting-mode .selected {
+    border-color: #a5b6c8;
+    color: #fff;
+    background-color: #a5b6c8
+}
+
+.betting-slider,.betting-slider .cover {
+    float: left;
+    border-radius: 3px
+}
+
+.betting-slider {
+    position: relative;
+    width: 190px;
+    height: 8px;
+    margin: 8px 5px;
+    background-color: #a5b6c8
+}
+
+.betting-slider .cover {
+    height: 100%;
+    overflow: hidden;
+    background-color: #1fdf63
+}
+
+.betting-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 9;
+    width: 18px;
+    height: 20px;
+    margin: -6px 0 0 -9px;
+    background: url(img/slider_handle.png) no-repeat
+}
+
+.betting-actions a,.betting-add,.betting-confirm {
+    transition: all .3s ease;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #00c77a
+}
+
+.betting-actions a:hover,.betting-add:hover,.betting-confirm:hover {
+    background-color: #f90
+}
+
+.betting-add {
+    float: right;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -3px;
+    border-radius: 5px;
+    font-size: 14px
+}
+
+.betting-add .icon-add {
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url(img/icon_lot_mouse_8.png)
+}
+
+.betting-all {
+    float: right;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -3px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: #e65c31;
+    color: #fff
+}
+
+.betting-bottom,.lottery-basket {
+    overflow: hidden
+}
+
+.lottery-basket {
+    height: 84px;
+    margin-top: 20px
+}
+
+.betting-actions {
+    float: right;
+    width: 200px
+}
+
+.betting-actions a {
+    display: inline-block;
+    width: 94px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 12px
+}
+
+.betting-actions a:first-child {
+    margin-right: 8px
+}
+
+.betting-actions .betting-confirm {
+    width: 60px;
+    height: 33px;
+    line-height: 16px;
+    margin-bottom: 0;
+    background: #00a968
+}
+
+.betting-lottery {
+    width: 744px;
+    height: 78px;
+    overflow: auto;
+    padding: 2px;
+    border: 1px solid #d5d8db
+}
+
+.betting-list {
+    color: #666
+}
+
+.betting-list li,.betting-list span {
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden
+}
+
+.betting-list li:nth-child(odd) {
+    background-color: #edf0f4
+}
+
+.betting-list span {
+    float: left;
+    width: 94px;
+    text-align: center
+}
+
+.betting-list .number {
+    width: 299px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 6px;
+    box-sizing: border-box
+}
+
+.betting-list .oper {
+    width: 55px
+}
+
+.betting-list .del,.betting-list .del .icon-del {
+    display: block;
+    width: 11px;
+    height: 13px
+}
+
+.betting-list .del {
+    margin: 7px auto 0
+}
+
+.betting-list .del .icon-del {
+    background-image: url(img/icon_lot_del.png)
+}
+
+.betting-bottom {
+    margin-top: 15px
+}
+
+.betting-total {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden
+}
+
+.betting-confirm {
+    position: relative;
+    float: right;
+    width: 60px;
+    height: 32px;
+    overflow: hidden;
+    line-height: 16px;
+    padding: 4px 0 4px 140px;
+    text-align: left;
+    background-color: #00a968
+}
+
+.betting-confirm .text {
+    transition: all .3s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    background-color: #00c77a
+}
+
+.betting-confirm:hover .text {
+    background-color: #f80
+}
+
+.betting-confirm .icon-clock {
+    position: absolute;
+    left: 110px;
+    top: 9px;
+    width: 20px;
+    height: 23px;
+    background-image: url(img/icon_lot_clock.png)
+}
+
+.confirm-countdown {
+    display: block
+}
+
+.lottery-tabs {
+    position: relative;
+    height: 138px;
+    margin-top: 20px;
+    border: 1px solid #d5d8db
+}
+
+.lottery-tabs .tabs-nav,.lottery-tabs .tabs-nav li {
+    height: 28px;
+    line-height: 28px
+}
+
+.lottery-tabs .tabs-nav {
+    border-bottom: 1px solid #d5d8db;
+    text-align: center;
+    background-color: #edf0f4
+}
+
+.lottery-tabs .tabs-nav li {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    border-left: 1px solid #d5d8db
+}
+
+.lottery-tabs .tabs-nav a {
+    transition: color .3s ease,border-color .3s ease;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.lottery-tabs .tabs-nav .ui-state-active {
+    z-index: 9;
+    height: 27px;
+    line-height: 26px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    border-right: 1px solid #d5d8db;
+    border-bottom: 1px solid #fff;
+    border-top: 2px solid #00c77a;
+    background-color: #fff
+}
+
+.lottery-tabs .tabs-nav .ui-state-active a {
+    padding-right: 14px
+}
+
+.lottery-tabs .tabs-nav .ui-state-active a,.query-more:hover {
+    color: #00c77a
+}
+
+.lottery-tabs .tabs-panel {
+    padding: 3px
+}
+
+.query-more {
+    position: absolute;
+    z-index: 9;
+    top: 6px;
+    right: 10px
+}
+
+.query-more .triangle {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent #1e1e1e
+}
+
+.query-more:hover .triangle {
+    border-left-color: #00c77a
+}
+
+.betting-table {
+    text-align: center
+}
+
+.betting-table span {
+    float: left
+}
+
+.betting-table .no {
+    width: 144px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.betting-table .issue {
+    width: 100px
+}
+
+.betting-table .state {
+    width: 36px
+}
+
+.betting-table .state2 {
+    width: 50px
+}
+
+.betting-table .time {
+    width: 140px
+}
+
+.betting-table .table-head {
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    background-color: #dce0e3
+}
+
+.betting-table .table-body {
+    height: 78px;
+    overflow: auto
+}
+
+.betting-table .betting-list li {
+    background-color: transparent
+}
+
+.betting-table .betting-list li:nth-child(2n) {
+    background-color: #edf0f4
+}
+
+.lottery-pk10 .lottery-hm {
+    width: 855px
+}
+
+.lottery-pk10 .lottery-countdown {
+    width: 290px
+}
+
+.lottery-pk10 .lottery-issue {
+    width: 140px
+}
+
+.lottery-pk10 .betting-countdown {
+    width: 148px;
+    margin-top: 29px
+}
+
+.lottery-pk10 .betting-countdown .flip-clock-divider,.lottery-pk10 .betting-countdown.flip-clock-wrapper,.lottery-pk10 .betting-countdown.flip-clock-wrapper ul {
+    height: 33px
+}
+
+.lottery-pk10 .betting-countdown.flip-clock-wrapper ul {
+    width: 20px;
+    margin: 0 1px
+}
+
+.lottery-pk10 .betting-countdown.flip-clock-wrapper ul li {
+    line-height: 33px
+}
+
+.lottery-pk10 .betting-countdown.flip-clock-wrapper ul li a div div.inn {
+    font-size: 20px;
+    background: url(img/flip_clock_sm.png) no-repeat
+}
+
+.lottery-pk10 .betting-countdown .flip-clock-divider,.lottery-pk10 .betting-countdown .flip-clock-dot {
+    width: 4px
+}
+
+.lottery-pk10 .betting-countdown .flip-clock-divider {
+    margin: 0 2px
+}
+
+.lottery-pk10 .betting-countdown .flip-clock-dot {
+    height: 4px
+}
+
+.lottery-pk10 .betting-countdown .flip-clock-dot.top {
+    top: 11px
+}
+
+.lottery-pk10 .betting-countdown .flip-clock-dot.bottom {
+    bottom: 11px
+}
+
+.lottery-pk10 .lottery-result {
+    width: 565px
+}
+
+.lottery-pk10 .lottery-show {
+    width: 425px
+}
+
+.lottery-pk10 .lottery-numbers li {
+    margin-left: -2px;
+    margin-right: -2px
+}
+
+.lottery-pk10 .lottery-hr {
+    width: 24px
+}
+
+.lottery-pk10 .lottery-links a {
+    transition: all .3s ease;
+    border-color: transparent
+}
+
+.lottery-pk10 .lottery-links a i {
+    margin: 6px 5px
+}
+
+.lottery-links a {
+    transition: all .3s ease
+}
+
+.myappend {
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 5px
+}
+
+.append-stop {
+    position: absolute;
+    left: 140px;
+    top: -34px;
+    height: 18px
+}
+
+.append-stop input {
+    float: left;
+    margin: 2px 10px 0 0
+}
+
+.append-form {
+    position: relative;
+    padding: 5px 35px;
+    margin-top: 20px;
+    background-color: #f5f5f5
+}
+
+.append-form .input-group {
+    height: 24px;
+    margin: 15px 0
+}
+
+.append-form .input-wrap,.append-form .ipt,.append-form .kv,.append-form .kv .k,.append-form .kv .v,.append-form .lab,.append-form .unit,.append-form dd,.append-form dt,.append-form select {
+    float: left
+}
+
+.append-form .input-wrap,.append-form .kv {
+    margin-right: 32px
+}
+
+.append-form .kv .k,.append-form .kv .v,.append-form .lab,.append-form .unit,.append-form dt {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.append-form .kv .k,.append-form .lab,.append-form dt {
+    margin-right: 8px
+}
+
+.append-form .ipt,.append-form select {
+    border: 1px solid #e9e8f0
+}
+
+.append-form select {
+    width: 110px;
+    height: 24px;
+    padding-left: 6px;
+    background-color: #fff
+}
+
+.append-form .ipt {
+    width: 36px;
+    height: 22px;
+    line-height: 22px\9;
+    padding: 0 11px
+}
+
+.append-form .unit {
+    margin-left: 8px
+}
+
+.append-form .btn-append {
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+    border-color: #ffaf30;
+    background-color: #ffaf30
+}
+
+.append-table .table-head {
+    height: 40px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #00c87c
+}
+
+.append-table .table-body {
+    height: 240px;
+    overflow: auto
+}
+
+.append-table span {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 8px 0;
+    text-align: center
+}
+
+.append-table .chk {
+    width: 70px
+}
+
+.append-table .issue {
+    width: 190px
+}
+
+.append-table .money,.append-table .multi {
+    width: 140px
+}
+
+.append-table .date {
+    width: 240px
+}
+
+.append-table .chk input {
+    margin-top: 5px
+}
+
+.append-table .multi input {
+    width: 26px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 11px;
+    margin-right: 7px;
+    border: 1px solid #e9eced
+}
+
+.append-list li {
+    height: 40px;
+    overflow: hidden
+}
+
+.append-list li:nth-child(2n) {
+    background-color: #f5f5f5
+}
+
+.append-list .money {
+    color: #f75653
+}
+
+.append-actions {
+    margin-top: 20px;
+    padding: 0 40px;
+    text-align: right
+}
+
+.betting-details {
+    padding: 15px 0px
+}
+
+.betting-details p {
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: -30px
+}
+
+.betting-details p .k,.betting-details p .v {
+    float: left;
+    overflow: hidden
+}
+
+.betting-details p .k {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    color: #666
+}
+
+.betting-details .number,.betting-details p .v {
+    border: 1px solid #e1e1e1
+}
+
+.betting-details p .v {
+    width: 258px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.betting-details .number {
+    height: 120px;
+    line-height: 24px;
+    overflow: auto;
+    padding: 5px 15px;
+    margin-bottom: 30px
+}
+
+.betting-details .btn-group {
+    height: 30px;
+    text-align: center
+}
+
+.lottery-history {
+    position: absolute;
+    z-index: 199;
+    top: 85px;
+    right: 10px;
+    width: 348px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #edf0f4
+}
+
+.lottery-history .history-heading {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc
+}
+
+.lottery-history .issue,.lottery-history .number {
+    float: left;
+    width: 150px;
+    text-align: center
+}
+
+.lottery-history .number {
+    margin-left: 30px
+}
+
+.lottery-history .history-content {
+    height: 330px;
+    overflow: auto
+}
+
+.lottery-pk10 .lottery-history .issue {
+    width: 116px
+}
+
+.lottery-pk10 .lottery-history .number {
+    width: 220px;
+    margin-left: 2px
+}
+
+.history-list li {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.history-list li .n {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f75653
+}
+
+.zhbet {
+    width: 800px!important;
+    border-radius: 8px
+}
+
+.oftenoff {
+    left: -50px
+}
+
+.historyoff,.oftenoff {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.25)
+}
+
+.historyoff {
+    right: -50px
+}
+
+.historyoff div:first-child,.oftenoff div:first-child {
+    padding: 18px 12px;
+    background: #00c77a;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    line-height: 14px
+}
+
+.historyoff div:last-child,.oftenoff div:last-child {
+    border-radius: 0 0 8px 8px;
+    background: #edf0f4;
+    padding: 5px 0
+}
+
+.historyoff div:last-child a,.oftenoff div:last-child a {
+    display: inline-block;
+    background: #fff;
+    padding: 4px 5px;
+    border-radius: 10px;
+    color: #bbb
+}
+
+.oftenon {
+    left: -110px;
+    width: 100px
+}
+
+.historyon,.oftenon {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.25)
+}
+
+.historyon {
+    right: -220px;
+    width: 260px
+}
+
+.pkhistoryon {
+    right: -250px!important;
+    width: 240px!important
+}
+
+.historyon .title,.oftenon .title {
+    background: #00c77a;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    height: 40px;
+    line-height: 44px;
+    font-size: 14px
+}
+
+.historyon .srcoll {
+    background: #fff;
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 2px
+}
+
+.historyon table th {
+    background: #edf0f4;
+    height: 32px
+}
+
+.historyon table tr td {
+    border-bottom: 1px solid #dee3eb;
+    height: 38px
+}
+
+.historyon table tr td span {
+    margin: 0 1px;
+    color: #00c77a
+}
+
+.historyon table tr td span.redball {
+    color: #ea2000
+}
+
+.oftenon ul li {
+    background: #fff;
+    text-align: left;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #666;
+    border-bottom: 1px solid #dee3eb;
+    transition: all .3s ease
+}
+
+.oftenon ul li:hover {
+    background: #edf0f4
+}
+
+.oftenon ul li:last-child {
+    border-bottom: none
+}
+
+.oftenon ul li:last-child input {
+    border: none;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background: #00c77a;
+    color: #fff;
+    border-radius: 10px
+}
+
+.historyon .off,.oftenon .off {
+    background: #edf0f4;
+    padding: 6px 0
+}
+
+.historyon .off {
+    border-radius: 0 0 8px 8px
+}
+
+.historyon .off a,.oftenon .off a {
+    display: inline-block;
+    width: 94px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background: #fff;
+    border-radius: 14px;
+    color: #bbb
+}
+
+.gametype {
+    float: left;
+    width: 20%;
+    margin-bottom: 20px
+}
+
+.gametype dt {
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    background: #00c77a;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.gametype dd {
+    padding: 0 12px;
+    height: 30px;
+    line-height: 28px
+}
+
+.offtengame {
+    width: 720px
+}
+
+.lottery-option {
+    padding: 10px 30px 0;
+    font-weight: 700
+}
+
+.lottery-option input {
+    position: relative;
+    top: 3px
+}
+
+@media screen and (max-width:1080px) {
+    .hc-layout {
+        width: 900px
+    }
+
+    .hc-layout .lottery-hl {
+        width: 80px
+    }
+
+    .hc-layout .lottery-pk10 .lottery-hm {
+        width: 820px
+    }
+
+    .hc-layout .lottery-hr {
+        display: none
+    }
+
+    .hc-layout .lottery-pk10 .lottery-countdown {
+        width: 270px
+    }
+
+    .hc-layout .lottery-pk10 .lottery-issue {
+        width: 116px
+    }
+
+    .hc-layout .betting-lottery {
+        width: 640px
+    }
+
+    .hc-layout .lottery-area {
+        width: 100%
+    }
+
+    .betting-table .issue {
+        width: 90px
+    }
+
+    .betting-table .no {
+        width: 132px
+    }
+
+    .lottery-pk10 .lottery-result {
+        width: 550px
+    }
+
+    .lottery-balls {
+        width: 500px
+    }
+
+    .lottery-choose .pos {
+        margin-right: 10px
+    }
+
+    .lottery-playgroup li {
+        width: 60px
+    }
+}
+
+.el-switch{
+    float: right;
+}
+.el-switch,.el-switch__label,.el-switch__label * {
+    font-size: 14px;
+    display: inline-block
+}
+
+.el-switch {
+    position: relative;
+    line-height: 22px;
+    height: 22px;
+    vertical-align: middle
+}
+
+.el-switch .label-fade-enter,.el-switch .label-fade-leave-active {
+    opacity: 0
+}
+
+.el-switch.is-disabled .el-switch__core {
+    border-color: #e4e8f1!important;
+    background: #e4e8f1!important
+}
+
+.el-switch.is-disabled .el-switch__core span {
+    background-color: #fbfdff!important
+}
+
+.el-switch.is-disabled .el-switch__core~.el-switch__label * {
+    color: #fbfdff!important
+}
+
+.el-switch.is-checked .el-switch__core {
+    border-color: #20a0ff;
+    background-color: #20a0ff
+}
+
+.el-switch.is-disabled .el-switch__core,.el-switch.is-disabled .el-switch__label {
+    cursor: not-allowed
+}
+
+.el-switch__core,.el-switch__label {
+    width: 46px;
+    height: 22px;
+    cursor: pointer
+}
+
+.el-switch__label {
+    transition: .2s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2
+}
+
+.el-switch__label * {
+    line-height: 1;
+    top: 4px;
+    position: absolute;
+    color: #fff
+}
+
+.el-switch__label--left i {
+    left: 6px
+}
+
+.el-switch__label--right i {
+    right: 6px
+}
+
+.el-switch__input {
+    display: none
+}
+
+.el-switch__input.allow-focus {
+    z-index: 0;
+    display: inline;
+    display: initial;
+    position: absolute;
+    left: 0;
+    top: 0;
+    outline: 0;
+    opacity: 0
+}
+
+.el-switch__input.allow-focus:focus+.el-switch__core {
+    box-shadow: 0 0 2px #20a0ff
+}
+
+.el-switch__core {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #bfcbd9;
+    outline: 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background: #bfcbd9;
+    transition: border-color .3s,background-color .3s;
+    z-index: 1
+}
+
+.el-switch__core .el-switch__button {
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 100%;
+    transition: transform .3s;
+    width: 16px;
+    height: 16px;
+    background-color: #fff
+}
+
+.el-switch--wide .el-switch__label.el-switch__label--left span {
+    left: 10px
+}
+
+.el-switch--wide .el-switch__label.el-switch__label--right span {
+    right: 10px
+}
+
+.el-tooltip__popper {
+    position: absolute;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 2000;
+    font-size: 12px;
+    line-height: 1.2
+}
+
+.el-tooltip__popper .popper__arrow,.el-tooltip__popper .popper__arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid
+}
+
+.el-tooltip__popper .popper__arrow {
+    border-width: 6px
+}
+
+.el-tooltip__popper .popper__arrow:after {
+    content: " ";
+    border-width: 5px
+}
+
+.el-tooltip__popper[x-placement^=top] {
+    margin-bottom: 12px
+}
+
+.el-tooltip__popper[x-placement^=top] .popper__arrow {
+    bottom: -6px;
+    border-top-color: #1f2d3d;
+    border-bottom-width: 0
+}
+
+.el-tooltip__popper[x-placement^=top] .popper__arrow:after {
+    bottom: 1px;
+    margin-left: -5px;
+    border-top-color: #1f2d3d;
+    border-bottom-width: 0
+}
+
+.el-tooltip__popper[x-placement^=bottom] {
+    margin-top: 12px
+}
+
+.el-tooltip__popper[x-placement^=bottom] .popper__arrow {
+    top: -6px;
+    border-top-width: 0;
+    border-bottom-color: #1f2d3d
+}
+
+.el-tooltip__popper[x-placement^=bottom] .popper__arrow:after {
+    top: 1px;
+    margin-left: -5px;
+    border-top-width: 0;
+    border-bottom-color: #1f2d3d
+}
+
+.el-tooltip__popper[x-placement^=right] {
+    margin-left: 12px
+}
+
+.el-tooltip__popper[x-placement^=right] .popper__arrow {
+    left: -6px;
+    border-right-color: #1f2d3d;
+    border-left-width: 0
+}
+
+.el-tooltip__popper[x-placement^=right] .popper__arrow:after {
+    bottom: -5px;
+    left: 1px;
+    border-right-color: #1f2d3d;
+    border-left-width: 0
+}
+
+.el-tooltip__popper[x-placement^=left] {
+    margin-right: 12px
+}
+
+.el-tooltip__popper[x-placement^=left] .popper__arrow {
+    right: -6px;
+    border-right-width: 0;
+    border-left-color: #1f2d3d
+}
+
+.el-tooltip__popper[x-placement^=left] .popper__arrow:after {
+    right: 1px;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right-width: 0;
+    border-left-color: #1f2d3d
+}
+
+.el-tooltip__popper.is-light {
+    background: #fff;
+    border: 1px solid #1f2d3d
+}
+
+.el-tooltip__popper.is-light[x-placement^=top] .popper__arrow {
+    border-top-color: #1f2d3d
+}
+
+.el-tooltip__popper.is-light[x-placement^=top] .popper__arrow:after {
+    border-top-color: #fff
+}
+
+.el-tooltip__popper.is-light[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: #1f2d3d
+}
+
+.el-tooltip__popper.is-light[x-placement^=bottom] .popper__arrow:after {
+    border-bottom-color: #fff
+}
+
+.el-tooltip__popper.is-light[x-placement^=left] .popper__arrow {
+    border-left-color: #1f2d3d
+}
+
+.el-tooltip__popper.is-light[x-placement^=left] .popper__arrow:after {
+    border-left-color: #fff
+}
+
+.el-tooltip__popper.is-light[x-placement^=right] .popper__arrow {
+    border-right-color: #1f2d3d
+}
+
+.el-tooltip__popper.is-light[x-placement^=right] .popper__arrow:after {
+    border-right-color: #fff
+}
+
+.el-tooltip__popper.is-dark {
+    background: #1f2d3d;
+    color: #fff
+}

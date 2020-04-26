@@ -1,0 +1,14 @@
+.index-lots{width: 100%;height: auto;overflow: hidden;background-color: #fff;}
+.index-lots li{    width: calc(33.3% - 15px);display: inline-block;font-size: 16px;color:#555;
+
+    background-color: #fff;
+    padding: 5px;
+    height:100px;line-height: 30px;
+    text-align: center;
+
+}
+.index-lots li img{height:50px;border-radius: 50%;margin-top:5px;vertical-align: top;display: inline-block;}
+.index-lots li p{line-height:30px;display:block; width:100%; vertical-align: middle;clear: both}
+.index-lots li p .title{font-size: 14px;font-weight: 600;display: block;line-height:25px;}
+.index-lots li p .desc{font-size: 12px;display: block;line-height: 20px;height: 20px;overflow: hidden;
+    text-overflow:ellipsis;word-break: break-all; word-wrap: break-word;color: #989898;  }

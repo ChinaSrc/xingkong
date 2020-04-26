@@ -1,0 +1,1057 @@
+body{
+  background: #d8d8d8;
+}
+
+.btn-y{
+  color: #333;
+  background: #f8aa33;
+}
+
+  .btn-y:hover{
+    color: #000;
+    background: #CC933D;
+  }
+
+.w66{
+  width: 66px!important;
+}
+
+.btn-w{
+  color: #666;
+  background: #fff;
+}
+
+  .btn-w:hover{
+    color: #fff;
+    background: #D2D1D1;
+  }
+
+.btn-g{
+  color: #fff;
+  background: #7e7e7e;
+}
+
+.btn-r{
+  color: #fff;
+  background: #e74c3c;
+}
+
+  .btn-r:hover{
+    color: #fff;
+    background: #AB3427;
+  }
+
+header{
+  width: 100%;
+  background: #2a2a2a;
+}
+
+.layout{
+  width: 1345px;
+  margin: 0 auto;
+}
+
+  .layout .logo{
+    float: left;
+    width: 105px;
+    height: 48px;
+    overflow: hidden;
+    background: url(../images/bg.png) no-repeat -16px -2px;
+  }
+
+  .game-nav{
+
+  }
+
+    .current-game,
+    .all-game{
+      float: left;
+      height: 25px;
+      margin: 13px 0 0 0;
+      padding: 0 10px;
+      line-height: 25px;
+      cursor: pointer;
+    }
+
+    .current-game{
+      margin: 13px 0 0 15px;
+      background: #7e7e7e;
+    }
+
+    .all-game{
+      background: #f8aa33;
+    }
+
+      .all-game .all-game-list{
+        display: none;
+      }
+
+
+  .info-area{
+    line-height: 48px;
+    color: #fff;
+  }
+
+    .fn-button-area{
+      float: right;
+    }
+
+      .fn-button-area li{
+        float: left;
+      }
+
+        .fn-button-area li a{
+          height: 25px;
+          padding: 0 15px;
+          line-height: 25px;
+        }
+
+.main{
+  padding-top: 20px;
+}
+
+  .main .staic{
+    float: left;
+    color: #888;
+  }
+
+  .staic .staic-area{
+    width: 211px;
+    padding: 10px 10px 0 10px;
+    background: #fff;
+  }
+
+  .staic h4{
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color: #b59c21;
+  }
+
+    .staic h4 em{
+      color: #348efd;
+    }
+
+      .staic dl{
+        padding-bottom: 15px;
+      }
+
+      .staic dt{
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 40px;
+        border-top: 1px solid #f7f7f7;
+        border-bottom: 1px solid #f7f7f7;
+      }
+
+      .staic dd{
+        padding-left: 1em;
+        font-size: 12px;
+        line-height: 35px;
+      }
+
+        .staic .times em{
+          color: #ff0064;
+        }
+
+        .staic .amount em{
+          color: #ffa200;
+        }
+
+      .staic .money-unit{
+        position: relative;
+        display: block;
+        margin-top: 20px;
+        width: 231px;
+        height: 50px;
+        font-size: 14px;
+        background: #ae951f;
+      }
+
+        .money-unit .choose-model{
+          position: absolute;
+          top: 10px;
+          left: 13px;
+          width: 90%;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          background: #fff;
+        }
+        .money-unit .disabled {
+          background: #eee;
+        }
+        .money-unit .choose-list{
+          position: absolute;
+          width: 100%;
+          bottom: 29px;
+          left: 0;
+          background: #fff;
+          color: #333;
+        }
+
+          .money-unit .choose-input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            padding: 0 0 0 30px;
+            border: none;
+            line-height: 30px;
+            color: #947F1C;
+            background: transparent;
+            z-index: 1;
+            cursor: pointer;
+          }
+
+          .money-unit i{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+          }
+
+          .money-unit .choose-list a{
+            display: block;
+            width: 100%;
+            height: 35px;
+            border-bottom: 1px solid #f7f7f7;
+            line-height: 35px;
+            color: #fff;
+            background: #ae951f;
+          }
+
+            .money-unit .choose-list a:hover{
+              color: #333;
+              background: #CAAA13;
+            }
+
+  .body-pop-show .main{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  .fn-area{
+    float: left;
+    margin-left: 20px;
+  }
+
+    .current-pool{
+      margin: 14px 0 0 0;
+      font-size: 20px;
+      color: #b59c21;
+    }
+
+      .current-pool-amount li{
+        position: relative;
+        float: left;
+        width: 38px;
+        height: 56px;
+        margin: 0 0 0 1px;
+        text-align: center;
+        font-size: 44px;
+        color: #fff;
+        line-height: 56px;
+        border-bottom: 1px solid #5b5b5b;
+        overflow: hidden;
+        text-shadow: 1px 2px 2px rgba(0,0,0,0.8);
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#927e1a+0,b89e21+50,827017+50,a48c1e+100 */
+        background: rgb(146,126,26); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(146,126,26,1) 0%, rgba(184,158,33,1) 50%, rgba(130,112,23,1) 50%, rgba(164,140,30,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(146,126,26,1)), color-stop(50%,rgba(184,158,33,1)), color-stop(50%,rgba(130,112,23,1)), color-stop(100%,rgba(164,140,30,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(146,126,26,1) 0%,rgba(184,158,33,1) 50%,rgba(130,112,23,1) 50%,rgba(164,140,30,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(146,126,26,1) 0%,rgba(184,158,33,1) 50%,rgba(130,112,23,1) 50%,rgba(164,140,30,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(146,126,26,1) 0%,rgba(184,158,33,1) 50%,rgba(130,112,23,1) 50%,rgba(164,140,30,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(146,126,26,1) 0%,rgba(184,158,33,1) 50%,rgba(130,112,23,1) 50%,rgba(164,140,30,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#927e1a', endColorstr='#a48c1e',GradientType=0 ); /* IE6-9 */
+      }
+
+      .current-pool-amount li span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+    .bet-ticket{
+      width: 574px;
+      height: 485px;
+      background: url(../images/card-bg.png) no-repeat 0 0 #fff;
+    }
+
+      .bet-ticket li{
+        position: relative;
+        float: left;
+        width: 114px;
+        height: 79px;
+        margin: 1px 0 0 1px;
+        overflow: hidden;
+      }
+
+        .bet-ticket li a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(../images/card-logo.png) no-repeat center center #C58E25;
+          overflow: hidden;
+        }
+
+  .param-game{
+    height: 50px;
+    line-height: 50px;
+  }
+
+    .param-game .nums{
+      font-size: 14px;
+    }
+
+      .param-game .btn-area a{
+        padding: 0 15px;
+        font-size: 14px;
+      }
+      #J-auto-lottery {
+        white-space: nowrap;
+        width: 94px;
+        text-align: center;
+      }
+
+.related{
+
+}
+
+  .related .win-comb{
+
+  }
+
+  .related .win-comb li{
+    position: relative;
+    float: left;
+    width: 82px;
+    height: 69px;
+    margin: 0 0 0 1px;
+    background: url(../images/role.jpg) no-repeat #fff;
+  }
+
+  .related .win-comb .already .already-show{
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 62px;
+    background: url(../images/showed.png) 0 0 no-repeat;
+  }
+
+    .related .win-comb li span{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      background: 000;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      text-align: center;
+    }
+
+  .win-notice,
+  .rules-game{
+    max-width: 462px;
+    padding: 0 15px;
+    background: #6f8c54;
+  }
+
+    .win-notice h4,
+    .rules-game h4{
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      color: #fff;
+      border-bottom: 1px solid #5C7148;
+    }
+
+    .win-notice h4 i,
+    .rules-game h4 i{
+      font-size: 20px!important;
+    }
+
+    .win-notice h4{
+      border: none;
+    }
+    .rules-game p{
+      color: #fff;
+      line-height: 35px;
+    }
+
+    .rules-game p a{
+      line-height: 30px;
+    }
+
+    .rule-details{
+      padding: 10px 0;
+    }
+
+.win-notice{
+  background: #B3B3B3;
+}
+
+  .win-notice li{
+    height: 66px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 23px;
+    border-top: 1px solid #9E9E9E;
+  }
+
+    .win-notice li .icon{
+      width: 66px;
+      height: 66px;
+      text-align: center;
+      line-height: 54px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      background: url(../images/bg.png) no-repeat -337px 6px;
+    }
+
+    .win-notice .user,
+    .win-notice .winner-info{
+      padding-top: 11px;
+    }
+
+    .win-notice .user{
+      margin-left: 5px;
+    }
+
+    .win-notice .winner-info{
+      font-size: 12px;
+    }
+
+    .win-notice .amount{
+      font-size: 16px;
+    }
+
+  .game-fn-area{
+    position: relative;
+    width: 574px;
+    height: 479px;
+    margin-top: 25px;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+    background: #B5B5B5;
+    overflow: hidden;
+  }
+
+    .game-fn-area .bet-ticket{
+      position: absolute;
+      top: -479px;
+      left: 0;
+      height: 479px;
+    }
+
+footer{
+  width: 100%;
+  height: 80px;
+  background: #8a8a8a;
+}
+
+  footer .slogan{
+    width: 370px;
+    height: 80px;
+    background: transparent url(../images/bg.png) no-repeat -15px -50px;
+  }
+
+  footer .footer-desc{
+    padding-top: 25px;
+    color: #fff;
+    line-height: 20px;
+    text-align: right;
+  }
+
+.float-footer{
+  padding-bottom: 90px;
+}
+
+  .float-footer footer{
+    position: fixed;
+    bottom: 0;
+  }
+
+.card-winner{
+
+}
+
+  .card-name{
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    filter:alpha(opacity=50);       /* IE */
+    -moz-opacity:0.5;              /* 老版Mozilla */
+    -khtml-opacity:0.5;              /* 老版Safari */
+    opacity: 0.5;           /* 支持opacity的浏览器*/
+    background: #000;
+    text-align: center;
+    -moz-transition: bottom 0.2s ease-in;
+    -webkit-transition: bottom 0.2s ease-in;
+    -o-transition: bottom 0.2s ease-in;
+    transition: bottom 0.2s ease-in;
+    z-index: 2;
+  }
+
+  .winner-status{
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    -moz-transition: top 0.2s ease-in;
+    -webkit-transition: top 0.2s ease-in;
+    -o-transition: top 0.2s ease-in;
+    transition: top 0.2s ease-in;
+    background: url(../images/role.jpg) no-repeat;
+    z-index: 1;
+  }
+
+  .card-shadow{
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    -moz-transition: top 0.2s ease-in;
+    -webkit-transition: top 0.2s ease-in;
+    -o-transition: top 0.2s ease-in;
+    transition: top 0.2s ease-in;
+    background: #fff;
+    filter:alpha(opacity=50);       /* IE */
+    -moz-opacity:0.5;              /* 老版Mozilla */
+    -khtml-opacity:0.5;              /* 老版Safari */
+    opacity: 0.5;           /* 支持opacity的浏览器*/
+    z-index: 3;
+  }
+
+  .all .card-shadow{
+    top: 0;
+  }
+
+  .winner-level-area{
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    width: 76px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    -moz-transition: left 0.2s ease-in;
+    -webkit-transition: left 0.2s ease-in;
+    -o-transition: left 0.2s ease-in;
+    transition: left 0.2s ease-in;
+    filter:alpha(opacity=80);       /* IE */
+    -moz-opacity:0.8;              /* 老版Mozilla */
+    -khtml-opacity:0.8;              /* 老版Safari */
+    opacity: 0.8;           /* 支持opacity的浏览器*/
+    background: #F39C12;
+    border-radius: 5px;
+    color: #000;
+    z-index: 1;
+  }
+
+  .card-winner-level .winner-level-area{
+    left: 20px;
+  }
+
+  .card-winner .card-name{
+    bottom: 0;
+  }
+
+  .card-winner .winner-status{
+    top: 0;
+  }
+
+
+/* pop */
+.pop{
+  width:488px;
+  padding:10px;
+  border:1px solid #CACACA;
+  background-color:#FFF;
+  text-align:center;
+  word-wrap: break-word;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.pop .hd{height:28px;line-height:18px;border-bottom:1px solid #EFEFEF;font-size:14px;font-weight:700;text-align:left;}
+.pop .hd-info{margin-left:10px;font-size:12px;font-weight:100;}
+.pop .close{float:right;width:15px;height:14px;background-position:-240px -20px;cursor:pointer;}
+.pop .close:hover{height:15px;background-position:-240px 0;}.pop .bd{padding:10px;text-align:left;}
+.pop-title{padding:5px;text-align:center;font-size:14px;}
+.pop-btn{padding-top:20px;text-align:center;}
+.pop-btn .btn{margin:0 10px;}
+.pop .input{width:160px;}
+.pop .ui-select{width:170px;}
+.pop-error,.pop-success{text-align:center;}
+.pop .ico-success,.pop .ico-error{display:inline-block;*display:inline;*zoom:1;width:24px;height:24px;margin-right:5px;vertical-align:middle;}
+.pop .ico-success{background-position:-120px -80px;}
+.pop .ico-error{background-position:-150px -80px;}
+.pop-text{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;text-align:left;line-height:24px;font-size:14px;overflow:hidden;}
+.pop .bd .ico-success,.pop .bd .ico-error,.pop .bd .ico-waring{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;width:30px;height:30px;margin-right:10px;}
+.pop .bd .ico-success{background-position:0 -80px;}
+.pop .bd .ico-error{background-position:-40px -80px;}
+.pop .bd .ico-waring{background-position:-80px -80px;}
+
+
+.pop .confirm,
+.pop .cancel,
+.pop .closeTip{
+margin:0 8px;}
+.btn-inner{position:absolute;right:0;top:0;height:34px\9;width:15px\9;background:url(ui-btn.png) right 0\9;_right:-1px;}
+.btn:focus{outline:none;}
+.btn:hover .btn-inner{background:url(ui-btn.png) right -80px\9;}
+.btn:active{color:#25A38A;
+background-image:-webkit-linear-gradient(top,rgba(0,0,0,0.06),rgba(0,0,0,0));
+background-image:-moz-linear-gradient(top,rgba(0,0,0,0.06),rgba(0,0,0,0));
+background-image:-o-linear-gradient(top,rgba(0,0,0,0.06),rgba(0,0,0,0));
+background-image:linear-gradient(top,rgba(0,0,0,0.06),rgba(0,0,0,0));
+background:url(ui-btn.png) 0 -120px\9;
+}
+.btn:active .btn-inner{background:url(ui-btn.png) right -120px\9;}
+/* btn-small */
+.btn-small{height:28px;line-height:28px;font-size:12px;height:30px\9;line-height:30px\9;border:0 none\9;background:url(ui-btn.png) 0 -40px\9;}
+.btn-small .btn-inner{height:30px\9;background:url(ui-btn.png) right -40px\9;_right:-1px;}
+.btn-small:hover{background:url(ui-btn.png) 0 -160px\9;}
+.btn-small:hover .btn-inner{background:url(ui-btn.png) right -160px\9;}
+.btn-small:active{background:url(ui-btn.png) 0 -200px\9;}
+.btn-small:active .btn-inner{background:url(ui-btn.png) right -200px\9;}
+/* btn-primary */
+.btn-primary{color:#FFF;border-color:#D94241;box-shadow:0 1px 0 #FE7D7B inset;box-shadow:none\9;
+background-color:#FC4F4E;
+background:url(ui-btn.png) 0 -280px\9;
+}
+/* btn-important */
+.btn-important,
+.pop .confirm{
+  color:#FFF;
+  border-color:#1b84d0;
+  box-shadow:none\9;
+  background-color: #e74c3c;
+}
+
+.pop .confirm:hover{
+  background: #AB3427;
+}
+
+/* btn-disable */
+.btn-disable,.btn-disable:hover,.btn-disable:active{border-color:#CACACA;color:#BEBEBE;background:#F5F5F5;background:url(ui-btn.png) 0 -320px\9;text-decoration:none;cursor:default;}
+.btn-disable .btn-inner{height:34px;width:15px;background:url(ui-btn.png) right -320px\9;}
+.btn-disable:hover .btn-inner,.btn-disable:active .btn-inner{background:url(ui-btn.png) right -320px\9;}
+/* btn-submit */
+.btn-submit{display: inline-block;*display:inline;*zoom:1;width:68px;height:34px;border:0 none;line-height:32px;text-align:center;vertical-align:middle;box-shadow:0 1px 2px rgba(0,0,0,0.2);background:url(btn-submit.png) no-repeat 0 0;font-size:14px;font-weight:700;color:#FFF;cursor:pointer;}
+
+.pop .confirm,
+.pop .cancel,
+.pop .closeTip{
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.pop .cancel,
+.pop .closeTip{
+  background: #7e7e7e;
+  color: #fff;
+}
+
+.auto-num{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+  .auto-num i{
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 37px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    vertical-align: middle;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%);
+    /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(241, 241, 241, 1)), color-stop(51%, rgba(225, 225, 225, 1)), color-stop(100%, rgba(246, 246, 246, 1)));
+    /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%);
+    /* Opera 11.10+ */
+
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%);
+    /* IE10+ */
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%);
+    /* W3C */
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+    /* IE6-9 */
+  }
+
+  .auto-num i:hover{
+    background: #000;
+    color: #fff;
+  }
+
+  .auto-num .choose-input{
+    width: 96px;
+    height: 33px;
+    line-height: 33px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    text-align:  center;
+    font-size: 22px;
+    color: #e74c3c;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .banlance-score{
+    text-align: center;
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .change-exchange li{
+    line-height: 30px;
+    color: #888;
+    line-height: 25px;
+    border-bottom: 1px dashed #eee;
+    text-align: center;
+  }
+
+  .multi-area{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F8AA33;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+  }
+
+    .multi-area .multi-text{
+      float: left;
+      width: 40px;
+      font-size: 14px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    .multi-area .choose-model{
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 50px;
+      padding-left: 10px;
+      background-color: #D09F55;
+    }
+
+      .multi-area .choose-model input{
+        width: 68px;
+        height: 30px;
+        border-radius: 1px;
+        background-color: #f7f7f7;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0,0,0,0.9);
+      }
+      .multi-area .choose-model .disabled {
+        color: #aaa;
+      }
+
+      .multi-area .choose-model i{
+        display: inline-block;
+        *zoom: 1;
+        *display: inline;
+        width: 30px;
+        text-align: center;
+      }
+
+      .multi-area .choose-list{
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #F8AA33;
+        z-index: 99;
+      }
+
+        .multi-area .choose-list a{
+          display: block;
+          width: 100%;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          font-size: 12px;
+          color: #333;
+          border-bottom: 1px solid #CA810D;
+        }
+
+        .multi-area .choose-list a:hover{
+          color: #fff;
+          background-color: #CA810D;
+        }
+
+.win-details{
+  height: 200px;
+  overflow: hidden;
+}
+
+#prehand {
+  background: url(../images/hand.png) no-repeat -9999px -9999px;;
+}
+.wd-panel{
+  position: absolute;
+  left:240px;
+  top:150px;
+  width: 200px;
+  height: 186px;
+  margin: 0 0 0 65px;
+  background: url(../images/hand.png) 0 0 no-repeat;
+  z-index: 2;
+  -webkit-animation:hand 1s ease-in-out 0s infinite forwards;
+  -moz-animation:hand 1s ease-in-out 0s infinite forwards;
+  animation:hand 1s ease-in-out 0s infinite forwards;
+}
+
+@-webkit-keyframes hand{
+  10%{opacity:1;-webkit-transform:translateX(0);}
+  25%{opacity:1;-webkit-transform:translate(-50px,30px);}
+  40%{opacity:1;-webkit-transform:translateX(0);}
+  55%{opacity:1;-webkit-transform:translate(-70px,40px);}
+  70%{opacity:1;-webkit-transform:translateX(0);}
+  85%{opacity:1;-webkit-transform:translateX(-80px,50px);}
+  100%{opacity:1;-webkit-transform:translate(0,0);}
+}
+
+@-moz-keyframes hand{
+  10%{opacity:1;-moz-transform:translateX(0);}
+  25%{opacity:1;-moz-transform:translate(-50px,30px);}
+  40%{opacity:1;-moz-transform:translateX(0);}
+  55%{opacity:1;-moz-transform:translate(-70px,40px);}
+  70%{opacity:1;-moz-transform:translateX(0);}
+  85%{opacity:1;-moz-transform:translateX(-80px,50px);}
+  100%{opacity:1;-moz-transform:translate(0,0);}
+}
+
+@keyframes hand{
+  10%{opacity:1;transform:translateX(0);}
+  25%{opacity:1;transform:translate(-50px,30px);}
+  40%{opacity:1;transform:translateX(0);}
+  55%{opacity:1;transform:translate(-70px,40px);}
+  70%{opacity:1;transform:translateX(0);}
+  85%{opacity:1;transform:translateX(-80px,50px);}
+  100%{opacity:1;transform:translate(0,0);}
+}
+
+.rules-game article{
+  font-size: 14px;
+}
+/* for ggl client */
+.ggl-client header,
+.ggl-client .related,
+.ggl-client .current-pool span,
+.ggl-client .staic .staic-area,
+.ggl-client .float-footer footer,
+.ggl-client #J-footer{
+  display: none;
+}
+.ggl-client{
+  width: 574px;
+  height: 581px;
+  overflow: hidden;
+  display: block;
+}
+.ggl-client .current-pool-amount {
+  position: relative;
+  top: 25px;
+  left: -1px;
+}
+.ggl-client .current-pool em{
+  line-height: 50px;
+  margin: 15px 0 0 15px;
+}
+
+.ggl-client .main{
+  width: 574px;
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.ggl-client .main .staic{
+  position: relative;
+}
+
+.ggl-client .current-pool{
+  height: 25px;
+  margin: 0;
+}
+
+.ggl-client .staic .money-unit{
+  position: absolute;
+  top: 0 !important;
+  left: 343px !important;
+  margin: 0;
+  z-index: 10!important;
+}
+
+.ggl-client .money-unit .choose-list{
+  bottom: -216px;
+  z-index: 100;
+}
+
+.ggl-client .fn-area{
+  margin-left: 0;
+}
+
+.ggl-client .mt20{
+  margin-top: 0px!important;
+}
+
+.ggl-client .param-game .nums{
+  margin: 0 0 0 15px;
+}
+
+.ggl-client .multi-area{
+  margin: 0 5px 0 0;
+}
+
+.ggl-client #J-auto-lottery{
+  margin-left: 0!important;
+}
+.ggl-client .money-unit {
+  position: absolute !important;
+  top: 0;
+  left: 364px;
+  margin: 0;
+  z-index: 10!important;
+}
+@media all and (max-width: 1345px) {
+  header, footer {
+    width: 1345px;
+  }
+}
+/* Default wide-screen styles */
+@media all and (max-width: 1024px) {
+/* styles for narrow desktop browsers and iPad landscape */
+}
+@media all and (max-width: 574px) {
+  /* styles for narrower desktop browsers and iPad portrait */
+  header,
+  .related,
+  .current-pool span,
+  .staic .staic-area,
+  .float-footer footer,
+  #J-footer{
+    display: none;
+  }
+
+  body{
+    width: 574px;
+    height: 581px;
+    overflow: hidden;
+    display: block;
+  }
+  .current-pool-amount {
+    position: relative;
+    top: 25px;
+    left: -1px;
+  }
+  .current-pool em{
+    line-height: 50px;
+    margin: 15px 0 0 15px;
+  }
+
+  .main{
+    width: 574px;
+    overflow: hidden;
+    padding-top: 0;
+  }
+
+  .main .staic{
+    position: relative;
+  }
+
+  .current-pool{
+    height: 25px;
+    margin: 0;
+  }
+
+  .staic .money-unit{
+    position: absolute;
+    top: 0 !important;
+    left: 343px !important;
+    margin: 0;
+    z-index: 10!important;
+  }
+
+  .money-unit .choose-list{
+    bottom: -216px;
+    z-index: 100;
+  }
+
+  .fn-area{
+    margin-left: 0;
+  }
+
+  .mt20{
+    margin-top: 0px!important;
+  }
+
+  .param-game .nums{
+    margin: 0 0 0 15px;
+  }
+
+  .multi-area{
+    margin: 0 5px 0 0;
+  }
+
+  #J-auto-lottery{
+    margin-left: 0!important;
+  }
+}
+@media all and (max-width: 480px) {
+/* styles for iPhone/Android landscape (and really narrow browser windows) */
+}
+@media all and (max-width: 320px) {
+/* styles for iPhone/Android portrait */
+}
+@media all and (max-width: 240px) {
+/* styles for smaller devices */
+}

@@ -1,0 +1,142 @@
+
+.number.tdl-vs-dice span,.number.tdl-vs-dice span i {
+	width:45px;
+	height:45px
+}
+.number.tdl-vs-dice span i {
+	display:block;
+	font-size:0;
+	background:url(../../../images/dice.png) no-repeat 0 0
+}
+.number.tdl-vs-dice span.tvs-dice-1 i {
+	background-position:0 0
+}
+.number.tdl-vs-dice span.tvs-dice-2 i {
+	background-position:-48px 0
+}
+.number.tdl-vs-dice span.tvs-dice-3 i {
+	background-position:-96px 0
+}
+.number.tdl-vs-dice span.tvs-dice-4 i {
+	background-position:-144px 0
+}
+.number.tdl-vs-dice span.tvs-dice-5 i {
+	background-position:-192px 0
+}
+.number.tdl-vs-dice span.tvs-dice-6 i {
+	background-position:-240px 0
+}
+.number.tdl-vs-dice.k3code ul li span i,.number.tdl-vs-dice.k3code ul li span  {
+	width:55px;
+	height:55px
+}
+.number.tdl-vs-dice.ks-tdl-loading span i {
+	background:url(../../../images/tn.gif) no-repeat center top!important;
+	background-size:cover !important
+}
+.number.k3code ul li{padding:0px 10px;}
+.number.k3code img{width:55px; }
+.number.pks-tdl-loading {
+
+	background:url(../../../images/pks-loading.gif) no-repeat center top!important;
+	background-size:cover!important
+}
+
+
+.number {
+	position:relative
+}
+.number ul,.number ol,.number li {
+	display:inline-block;
+	margin: 0 auto;
+}
+.number li span {
+	display:inline-block;
+	font-size:12px;
+	overflow:hidden
+}
+
+
+.number.tdl-vs-base ul,.number.tdl-vs-dice ul{display: block;width: 100%;text-align: center}
+
+
+
+.ticker-drawing-viewer-base .number {
+	margin: 8px 0;
+	width: 100%;
+}
+.ticker-drawing-viewer .tdl-viewer-sub, .ticker-drawing-viewer .tdl-viewer-sub dl {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+}
+
+.ticker-drawing-viewer .number.tdl-vs-base span {
+	width:32px;
+	height:32px;
+	line-height:32px;
+	color:#fff;
+	font-size:20px;
+	border-radius:50%
+}
+.ticker-drawing-viewer .number.tdl-vs-base span {
+	width: 43px;
+	height:43px;
+	line-height: 43px;
+	margin: 0 4px;
+	font-size: 24px;
+
+	text-align: center;
+
+	float: left;
+	color: #ffffff;
+	background: -moz-linear-gradient(top,#ff4444 0,#ff0000 100%);
+	background: -webkit-linear-gradient(top,#ff4444 0,#ff0000 100%);
+	background: linear-gradient(to bottom,#ff4444 0,#ff0000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4444', endColorstr='#ff0000', GradientType=0 );
+	border-radius: 50%;
+
+
+	font-weight: 600;
+}
+ .number.tdl-vs-base.kl8code ul,.number.tdl-vs-dice.kl8code  ul{margin-bottom: 12px !important;}
+ .number.tdl-vs-base.kl8code span,.number.tdl-vs-dice.kl8code  span,.number.tdl-vs-dice.kl8code  span i{
+	width: 33px !important;
+	height:33px !important;
+	line-height: 33px;
+	margin: 0 4px;
+	font-size: 14px;
+
+
+}
+.number.tdl-vs-dice.kl8code  span,.number.tdl-vs-dice.kl8code  span i{
+
+
+	margin: 0px 2px !important;
+
+
+
+}
+
+.number.tdl-vs-base.pk10code ul,.number.tdl-vs-dice.pk10code  ul{margin-bottom: 10px !important;margin-top: -5px;}
+.number.tdl-vs-base.pk10code span,.number.tdl-vs-dice.pk10code  span,.number.tdl-vs-dice.pk10code  span i{
+	display: inline-block;
+	width: 40px !important;
+	height:40px !important;
+	line-height: 40px;
+	margin: 0 8px;
+	font-size: 16px;
+
+
+}
+.number.tdl-vs-dice.pk10code  span,.number.tdl-vs-dice.pk10code  span i{
+
+
+	margin: 0px 4px !important;
+
+
+
+}
+
+
+

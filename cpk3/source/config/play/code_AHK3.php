@@ -1,0 +1,98 @@
+<?
+$con_play_arr=array('code'=>array('2TH','2TH-dx','2BT','3TH','3TH-tx','3BT','3LH','3LH-ds','HZ-k3'),'firstcode'=>'HZ-k3','lot_date'=>'','lot_num'=>'');
+$con_title_arr=array(
+  '2TH'=>array('fullname'=>'二同号复选','mode'=>''),
+  '2BT'=>array('fullname'=>'二不同号','mode'=>''),
+  '3TH'=>array('fullname'=>'三同号单选','mode'=>''),
+  '3BT'=>array('fullname'=>'三不同号','mode'=>''),
+  '3LH'=>array('fullname'=>'三连号通选','mode'=>''),
+  '2TH-dx'=>array('fullname'=>'二同号单选','mode'=>''),
+  '3TH-tx'=>array('fullname'=>'三同号通选','mode'=>''),
+  '3LH-ds'=>array('fullname'=>'三连号单选','mode'=>''),
+  'HZ-k3'=>array('fullname'=>'和值','mode'=>'')
+);
+
+$con_code_arr=array(
+  '2BT'=>array(
+      '2BT-bz'=>array('ListKey'=>'2BT-bz','CodeTile'=>'二不同','ShowTile'=>'二不同标准','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2TH'=>array(
+      '2TH-fx'=>array('ListKey'=>'2TH-fx','CodeTile'=>'二同号复选','ShowTile'=>'二同号复选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2TH-dx'=>array(
+      '2TH-dx'=>array('ListKey'=>'2TH-dx','CodeTile'=>'二同号单选','ShowTile'=>'二同号单选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3BT'=>array(
+      '3BT-dx'=>array('ListKey'=>'3BT-dx','CodeTile'=>'三不同','ShowTile'=>'三不同标准','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3LH'=>array(
+      '3LH-tx'=>array('ListKey'=>'3LH-tx','CodeTile'=>'三连号通选','ShowTile'=>'三同号通选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3LH-ds'=>array(
+      '3LH-dx'=>array('ListKey'=>'3LH-dx','CodeTile'=>'三连号单选','ShowTile'=>'三连号单选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3TH'=>array(
+      '3TH-dx'=>array('ListKey'=>'3TH-dx','CodeTile'=>'三同号单选','ShowTile'=>'三同号单选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3TH-tx'=>array(
+      '3TH-tx'=>array('ListKey'=>'3TH-tx','CodeTile'=>'三同号通选','ShowTile'=>'三同号通选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'HZ-k3'=>array(
+      'K3HZ'=>array('ListKey'=>'K3HZ','CodeTile'=>'和值','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>'')
+  )
+);
+$con_play_pri=array(
+  '2TH-dx'=>array('','','','108.56'),
+  '2TH-fx'=>array('','','','22.99'),
+  '2BT-bz'=>array('','','','10'),
+  '2BT-dt'=>array('','','','10'),
+  '3TH-dx'=>array('','','','319.68'),
+  '3TH-tx'=>array('','','','64.28'),
+  '3BT-dx'=>array('','','','58.28'),
+  '3BT-dt'=>array('','','','58.28'),
+  '3LH-dx'=>array('','','','58.28'),
+  '3LH-tx'=>array('','','','16.470'),
+  'SH'=>array('','','','32.4|8.23|8.23|2.74|2.19'),
+  '2TH-qw'=>array('','','','11.49'),
+  '2BT-qw'=>array('','','','6.52'),
+  '3TH-qw'=>array('','','','29.14'),
+  'HZ-qw'=>array('','','','154|58.28|29.14|18.48|12.65|9.38|7.99|7.32|7.32|7.99|9.38|12.56|18.48|29.14|58.28|154'),
+  'KD-qx'=>array('','','','32.14|6.52|4.11|3.66|4.11|6.52'),
+  'BCH-qw'=>array('','','','1.59'),
+  'BDW-qw'=>array('','','','2.16'),
+  'ZYSM-qw'=>array('','','','1.93'),
+  '2BT-ds'=>array('','','','10'),
+  '2TH-ds'=>array('','','','108.56'),
+  '3BT-HZ'=>array('','','','63'),
+  '3BT-ds'=>array('','','','58.28'),
+  'k3_hz'=>array('','','','14')
+);
+
+$con_play_time=array(
+  '2TH-dx'=>array('','',''),
+  '2TH-fx'=>array('','',''),
+  '2BT-bz'=>array('','',''),
+  '2BT-dt'=>array('','',''),
+  '3TH-dx'=>array('','',''),
+  '3TH-tx'=>array('','',''),
+  '3BT-dx'=>array('','',''),
+  '3BT-dt'=>array('','',''),
+  '3LH-dx'=>array('','',''),
+  '3LH-tx'=>array('','',''),
+  'SH'=>array('','',''),
+  '2TH-qw'=>array('','',''),
+  '2BT-qw'=>array('','',''),
+  '3TH-qw'=>array('','',''),
+  'HZ-qw'=>array('','',''),
+  'KD-qx'=>array('','',''),
+  'BCH-qw'=>array('','',''),
+  'BDW-qw'=>array('','',''),
+  'ZYSM-qw'=>array('','',''),
+  '2BT-ds'=>array('','',''),
+  '2TH-ds'=>array('','',''),
+  '3BT-HZ'=>array('','',''),
+  '3BT-ds'=>array('','',''),
+  'k3_hz'=>array('','','')
+);
+
+?>

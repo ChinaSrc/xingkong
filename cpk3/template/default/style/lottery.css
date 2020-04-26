@@ -1,0 +1,498 @@
+.box .bonus {
+    color: #e4393c
+}
+
+.box:first-child {
+    border-top: none
+}
+
+.box {
+    background: #fff;
+    margin-bottom: 5px
+}
+.box .listtitle{
+    display: block;
+    background-color: #f3f3f3;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: calc(100% + 10px);
+    margin: -5px;
+    margin-bottom: 5px;
+}
+.box h3 {
+
+    display: inline-block;
+width: 49%;
+    float: left;
+
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+.box h3:last-child{float: right}
+.box  .active{    background: #fff;
+    cursor: default;
+    color: #222;
+    font-weight: 600;}
+.box .notSelect {
+    cursor: pointer
+}
+
+
+.box .yestoday ul li{
+    position: relative;
+    background: #fff;
+    height: 36px;
+    padding: 7px 0px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 400;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+.box .yestoday ul li:hover {
+    background: #f8f8fa;
+    position: relative;
+}
+
+
+.box .yestoday .sum {
+    font-weight: 700
+}
+.box .firsttitle{
+
+    background: #f2f4f7 !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    text-align: center;
+    font-weight: 400;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+
+}
+.box .yestoday  .info1 {
+
+    text-align: left;
+    color: #666;
+    display: inline-block;
+    width: 200px;
+    height:36px;
+    line-height: 18px;
+
+
+}
+.box .yestoday .info1 p{
+    margin: 0;
+    margin-top: 0;
+    line-height: 18px;
+    height: 36px;
+    display: inline-block;
+    text-align: left;
+}
+.box .yestoday .info1 p i{color: red}
+.box .yestoday .info2{
+    color: #cc0a2f;
+
+    text-align: center;     display: inline-block;
+    width: 30px;height:20px;line-height: 20px;padding: 8px 0px;margin-top: 0px; vertical-align: top}
+.box .yestoday li:first-child .info2 ins{
+    background: #f44;;
+}
+.box .yestoday li:nth-child(1) .info2 ins {
+    background: #eca233;
+}
+.box .yestoday li:nth-child(2) .info2 ins{
+    background: #3388ff;
+}
+.box .yestoday .info2 ins{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background: #bab8b8;
+    color: #fff;
+    text-align: center;
+
+}
+.box .yestoday .avatar{
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 9px;
+    transition: .5s;
+    vertical-align: top;
+}
+
+.box .yestoday em {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 2px;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 18px
+}
+
+.box .yestoday em+em {
+    margin-left: 6px
+}
+
+.box .yestoday .shuang, .box .yestoday .xiao {
+    background: #ff9726
+}
+
+.box .yestoday .da, .box .yestoday .dan {
+    background: #5691d7
+}
+
+
+
+.box .yestoday li:last-child td {
+    border-bottom: none
+}
+
+.box  .money, .box  .win {
+    color: #ff9600
+}
+
+.box .more {
+    width: 100%
+}
+
+.box .more td {
+    text-align: right;
+    padding-right: 15px
+}
+
+.box .more td a {
+    color: #f37036
+}
+
+.winnerListSlide li {
+    border-bottom: 1px dotted #ddd;
+    padding-top: 5px
+}
+
+.winnerListSlide li:hover {
+    background: #f8f8fa
+}
+
+.today table td:nth-child(2) {
+    color: red
+}
+
+.today .blue, .today .green, .today .red {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 18px;
+    margin: 0 2px
+}
+
+.today .plus {
+    color: #666;
+    font-size: 20px
+}
+
+.today .red {
+    background: #d90000;
+    background: linear-gradient(180deg,#ff3034 30%,#ea0505)
+}
+
+.today .blue {
+    background: #47b53a;
+    background: linear-gradient(180deg,#1dd05f 30%,#22a353)
+}
+
+.today .green {
+    background: #3990b4;
+    background: linear-gradient(180deg,#219ffd 30%,#0385e5)
+}
+
+.today .more {
+    display: inline-block;
+    width: 151px!important;
+    margin: 0 8px;
+    height: 26px;
+    text-align: right
+}
+
+.today .more a {
+    background: #fff;
+    display: inline-block;
+    line-height: 13px;
+    color: #555;
+    padding-right: 5px
+}
+
+.today .more a:last-child {
+    padding-left: 5px;
+    background: #fff;
+    border-left: 1px solid #555
+}
+
+.today .more a:hover {
+    color: #f37036;
+    text-decoration: underline
+}
+
+.winningList ins {
+    display: block;
+    width: 19px;
+    height: 19px;
+    margin: 0 auto;
+    color: #555
+}
+
+.winningList tr:nth-child(2) ins, .winningList tr:nth-child(3) ins, .winningList tr:nth-child(4) ins {
+    background: #f44;
+    color: #fff;
+    text-align: center;
+    line-height: 19px
+}
+
+.winningList tr:nth-child(3) ins, .winningList tr:nth-child(4) ins {
+    background: #eca233;
+    color: #fff;
+    text-align: center;
+    line-height: 19px
+}
+
+.winningList tr:nth-child(4) ins {
+    background: #0096ce;
+    color: #fff;
+    text-align: center;
+    line-height: 19px
+}
+
+.winningList tr:nth-child(5) ins, .winningList tr:nth-child(6) ins, .winningList tr:nth-child(7) ins, .winningList tr:nth-child(8) ins, .winningList tr:nth-child(9) ins, .winningList tr:nth-child(10) ins, .winningList tr:nth-child(11) ins {
+    background: #bab8b8;
+    color: #fff;
+    text-align: center;
+    line-height: 19px
+}
+
+.winningList .bd .tempWrap, .winningList .bd {
+    width: 100%;
+    padding: 0
+}
+
+.winningList .tempWrap {
+    vertical-align: initial
+}
+
+.winningList table tr:nth-child(2) td:nth-child(3), .winningList table tr:nth-child(3) td:nth-child(3), .winningList table tr:nth-child(4) td:nth-child(3) {
+    overflow: hidden;
+    font-size: 0
+}
+
+
+.winningList table td:nth-child(2) {
+    color: #cc0a2f;
+    width: 40px;
+    text-align: center
+}
+
+.winningList table td:nth-child(2):before {
+    background: radial-gradient(circle at 100px 100px,#5cabff,#000)
+}
+
+.winningList table td:nth-child(3) {
+    width: 46px;
+    text-align: center;
+    font-size: 14px
+}
+
+.winningList table td {
+    text-align: left;
+    padding: 7px 5px 7px 10px;
+    border-right: none
+}
+
+.winningList table td img {
+    height: 36px;
+    width: 36px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 9px;
+    transition: .5s
+}
+
+.winningList table td p {
+    margin: 0;
+    margin-top: 0;
+    line-height: 1.7;
+    height: 36px
+}
+
+.winningList table td p i {
+    color: red
+}
+
+.winningList table td:hover img {
+    opacity: .8
+}
+
+.winningList table td:first-child {
+    width: 280px
+}
+
+.winningList div {
+    line-height: 1.5
+}
+
+
+.winnerListSlide li {
+    border-bottom: 1px dotted #ddd;
+    padding-top: 5px;position: relative;
+    overflow: visible !important;
+}
+
+.winnerListSlide li:hover {
+    background: #f8f8fa
+}
+.winnerListSlide li .userinfo,.box .yestoday li .userinfo{
+    position: absolute;
+    left:-300px;top:0px;
+    width: 300px;height:210px;border: 1px #ddd solid;
+    background-color: #fff;
+    display: none;
+    padding: 0px;
+z-index: 999;
+}
+.winnerListSlide li:hover .userinfo,.box  .yestoday li:hover .userinfo{
+
+    display: block;
+}
+.winnerList li {
+    height: 40px;
+    padding:10px;
+    cursor: default
+}
+
+.winnerList li .avatar {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-right: 9px;
+    transition: .5s
+}
+
+.winnerList li:hover img {
+    opacity: .8
+}
+
+.winnerList li p {
+    margin: 0;
+    float: left;
+    line-height: 1.7
+}
+
+.winnerList li p span {
+    color: #f63745;
+    margin: 0 5px
+}
+.cardBox{
+    position: fixed;
+    z-index: 119
+}
+
+.fade-enter-active,.fade-leave-active{
+    transition: opacity .4s
+}
+
+.fade-enter,.fade-leave-active {
+    opacity: 0
+}
+
+.cardInfo{
+    display: inline-block;
+    margin-top: 12px
+}
+.cardCon {
+    background-color: initial!important
+}
+
+.cardCon .layui-layer-content {
+    overflow: initial!important
+}
+
+.card {
+    color: #666;
+    width: 300px;
+    height: 209px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.3);
+    font: 14px/1.8 Microsoft YaHei,SimSun,Arial;
+    box-sizing: border-box
+}
+
+.cardLeft {
+    width: 135px;display: inline-block;
+    text-align: center;
+}
+
+.cardLeft img {
+    display: block;
+
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px
+}
+
+.cardLeft h6 {
+    clear: both;
+
+    color: #1d93d8;
+    font-weight: 100;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.cardInfo,.cardLeft {
+    float: left;
+    height: 145px;
+}
+.cardInfo div{height: 27px;line-height: 27px;text-align: left}
+
+.cardIcon {
+    clear: both;
+    height: 30px;
+    background: #f5f5f5;
+    padding:10px 0px;
+    text-align: center;
+    float: none !important;
+
+}
+
+.cardIcon div {
+    float: left;
+    width: 12.4%
+}
+
+.cardIcon a{display: inline-block;width:32px;text-align: center;margin-top: 3px;}
+.cardIcon a img{height:28px !important;width: 28px !important;border-radius: 50%;vertical-align: middle}
+.cardIcon .hui{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}

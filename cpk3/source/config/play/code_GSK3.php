@@ -1,0 +1,50 @@
+<?
+$con_play_arr=array('code'=>array('2TH','2TH-dx','2BT','3TH','3TH-tx','3BT','3LH','3LH-ds','HZ-k3'),'firstcode'=>'HZ-k3','lot_date'=>'','lot_num'=>'');
+$con_title_arr=array(
+  '2TH'=>array('fullname'=>'二同号复选','mode'=>''),
+  '2BT'=>array('fullname'=>'二不同号','mode'=>''),
+  '3TH'=>array('fullname'=>'三同号单选','mode'=>''),
+  '3BT'=>array('fullname'=>'三不同号','mode'=>''),
+  '3LH'=>array('fullname'=>'三连号通选','mode'=>''),
+  '2TH-dx'=>array('fullname'=>'二同号单选','mode'=>''),
+  '3TH-tx'=>array('fullname'=>'三同号通选','mode'=>''),
+  '3LH-ds'=>array('fullname'=>'三连号单选','mode'=>''),
+  'HZ-k3'=>array('fullname'=>'和值','mode'=>'')
+);
+
+$con_code_arr=array(
+  '2BT'=>array(
+      '2BT-bz'=>array('ListKey'=>'2BT-bz','CodeTile'=>'二不同','ShowTile'=>'二不同标准','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2TH'=>array(
+      '2TH-fx'=>array('ListKey'=>'2TH-fx','CodeTile'=>'二同号复选','ShowTile'=>'二同号复选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2TH-dx'=>array(
+      '2TH-dx'=>array('ListKey'=>'2TH-dx','CodeTile'=>'二同号单选','ShowTile'=>'二同号单选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3BT'=>array(
+      '3BT-dx'=>array('ListKey'=>'3BT-dx','CodeTile'=>'三不同','ShowTile'=>'三不同标准','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3LH'=>array(
+      '3LH-tx'=>array('ListKey'=>'3LH-tx','CodeTile'=>'三连号通选','ShowTile'=>'三同号通选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3LH-ds'=>array(
+      '3LH-dx'=>array('ListKey'=>'3LH-dx','CodeTile'=>'三连号单选','ShowTile'=>'三连号单选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3TH'=>array(
+      '3TH-dx'=>array('ListKey'=>'3TH-dx','CodeTile'=>'三同号单选','ShowTile'=>'三同号单选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3TH-tx'=>array(
+      '3TH-tx'=>array('ListKey'=>'3TH-tx','CodeTile'=>'三同号通选','ShowTile'=>'三同号通选','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'HZ-k3'=>array(
+      'K3HZ'=>array('ListKey'=>'K3HZ','CodeTile'=>'和值','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>'')
+  )
+);
+$con_play_pri=array(
+);
+
+$con_play_time=array(
+);
+
+?>

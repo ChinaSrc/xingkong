@@ -1,0 +1,197 @@
+.box-kuai3  {
+
+    overflow: hidden;
+display: block;
+    background-color: #fff;
+    overflow: hidden;
+    width: 1180px;
+margin: 0 auto;
+}
+
+
+.lotteryContent {
+    border: 1px solid #e1e1e1;
+    background: #f6f6f6;
+    margin-top: 10px
+}
+
+.lotteryNav {
+    height: 42px;
+    border-bottom: 1px solid #e1e1e1
+}
+
+.lotteryNav li {
+    float: left;
+    line-height: 42px;
+    position: relative
+}
+
+.lotteryNav li a {
+    color: #444;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    width: 100px;
+    text-align: center
+}
+
+.lotteryNav li a:hover {
+    color: #fff
+}
+
+.lotteryNav li i {
+    top: 0;
+    left: -1px;
+    width: 1px;
+    display: inline-block;
+    position: absolute;
+    background: #e2e2e2;
+    height: 42px
+}
+
+.lotteryNav .hoverBg:hover a,.lotteryNav .on a {
+    color: #fff
+}
+
+.lotteryList {
+    padding: 15px 8px;
+    width: 100%!important;
+    overflow: hidden;
+}
+
+.lotteryList li {
+    background: #fff;
+    position: relative;
+    float: left;
+    width: 214px;
+    height: 100px;
+    border: 1px solid #e1e1e1;
+    padding: 16px 18px;
+    box-sizing: border-box;
+    transition: .3s;
+    margin: 9px;
+    cursor: pointer
+}
+.lotteryList li .bottom_line{
+
+    position: absolute;
+    bottom: -11px;left: 0px;
+    width: 100%;
+}
+
+.lotteryList li:hover .lotteryNow {
+    display: block
+}
+
+.lotteryList li i {
+    font-size: 60px;
+    line-height: 68px
+}
+
+.lotteryList li i:after,.lotteryList li i:before {
+    left: 20px
+}
+
+.lotteryList li img {
+
+}
+
+.lotteryDetail {
+    float: right;
+    width: 114px;
+    margin-top: 8px
+}
+
+.lotteryDetail h4 {
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    color: #516073;
+    font-weight: 100
+}
+
+.lotteryDetail em {
+    display: block;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin: 6px 0
+}
+
+.lotteryNow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none
+}
+
+.lotteryNow .now {
+    padding: 1px 8px;
+    margin: 51px 0 0 60px
+}
+
+.lotteryNow .helpbtn:hover i {
+    background: #c3c3c3;
+    color: #fff
+}
+
+.lotteryNow .helpbtn i {
+    bottom: 6px;
+    right: 7px;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    background: #d3d3d3;
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    line-height: 23px
+}
+.mainColorBtn {
+    display: inline-block;
+    color: #fff!important;
+    border-radius: 3px;
+    border: 1px solid #e54646;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background: #e73b3b;
+}
+.normalBg {
+    background: #fefefe;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefefe",endColorstr="#e2e2e2",GradientType=0);
+    background: linear-gradient(180deg,#fefefe 30%,#e2e2e2)
+}
+
+.focusBg,.hoverBg:hover {
+    background: #db3538;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db3538",endColorstr="#a92429",GradientType=0);
+    background: linear-gradient(180deg,#db3538 30%,#a92429)
+}
+
+.normalBtn {
+    text-align: center;
+    background: #fefefe;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefefe",endColorstr="#e2e2e2",GradientType=0);
+    background: linear-gradient(180deg,#fefefe 30%,#e2e2e2);
+    border: 1px solid #cecece;
+    color: #000
+}
+
+.focusBtn,.hoverBtn:hover {
+    text-align: center;
+    background: #db3538;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db3538",endColorstr="#a92429",GradientType=0);
+    background: linear-gradient(180deg,#db3538 30%,#a92429);
+    border: 1px solid #db3538;
+    color: #fff
+}
+
+.lotteryHall .tempWrap img {
+    width: 800px;
+    height: 240px
+}
+

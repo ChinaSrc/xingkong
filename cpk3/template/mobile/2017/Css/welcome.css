@@ -1,0 +1,7 @@
+﻿/*只需要修改宽高，按钮样式即可,其他建议不要修改*/
+#banner {position:relative; z-index:0;width:510px;height:230px;background: #fff;}
+#banner .banner-btn-bj{width:510px;height: 24px; position: absolute; bottom: 0; z-index:999; }
+#bannerBtn{float: right;}
+#bannerBtn li{float: left; display: inline;  width: 20px; height: 20px;line-height: 20px;text-align: center; margin-right:5px; background: #ccc; cursor: pointer; border: 1px solid #dcdcdc;}
+#bannerBtn li.cc{background:#c80000; border: 1px solid #be0000; color: #fff;}
+#bannerMain{width: 510px;height:230px;overflow: hidden;}

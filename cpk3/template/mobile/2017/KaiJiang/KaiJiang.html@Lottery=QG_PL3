@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <title>排列三_开奖查询_乐友网</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link href="../css/szc.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/kj.css" />
+</head>
+<body>
+    <div id="hd">
+        <!--头部导航开始-->
+        <link href="../Themes/Default/color.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+      //填充选择菜种[28]信息
+      function writeTopMenu() {
+          document.write('<div class="d-top"></div><div class="d-center">' +
+          '<ul>' +
+          '<li class="col2" style="height:90px;*height:85px;"><span class="l"><b class="b-f"></b><font>福彩</font></span><span class="r">' +
+          '<label><a href="../Trade/cssc.html@Lottery=CQ_SSC" title="重庆时时彩" class="red">重庆时时彩</a></label>' +
+          '<label><a href="../Trade/cssc.html@Lottery=JX_SSC" title="江西时时彩" class="red">江西时时彩</a></label>' +
+          '<label><a href="../Trade/cssc.html@Lottery=TJ_SSC" title="天津时时彩" class="red">天津时时彩</a></label>' +
+          '<label><a href="../Trade/cfcsd.html@Lottery=QG_FCSD" title="福彩3D">福彩3D</a></label>' +
+          '<label><a href="../Trade/xk3.html@Lottery=QG_LK3" title="老快三">老快三</a></label>' +
+          '<label><a href="../Trade/xk3.html@Lottery=QG_XK3" title="新快三">新快三</a></label>' +
+          '<label><a href="../Trade/xk3.html@Lottery=AH_K3" title="安徽快三">安徽快三</a></label>' +
+          '<label><a href="../Trade/xk3.html@Lottery=GX_K3" title="广西快三">广西快三</a></label>' +
+          '<label><a href="../Trade/xk3.html@Lottery=HB_K3" title="湖北快三" class="pl">湖北快三</a></label>' +
+          '<label><a href="../Trade/xk3.html@Lottery=XT_K3" title="乐快三" class="pl">乐快三</a></label>' +
+          '</span></li>' +
+          '<li class="col2 end" style="height:80px;*height:75px;"><span class="l"><b class="b-t"></b><font>体彩</font></span><span class="r">' +
+          '<label><a href="../Trade/c115.html@Lottery=QG_11YDJ" title="十一运夺金">十一运夺金</a></label>' +
+          '<label><a href="../Trade/cfcsd.html@Lottery=QG_PL3" title="排列三">排列三</a></label>' +
+          '</span></li>' +
+          '</ul>' +
+          '</div><div class="d-bottom"></div>');
+          enjoinMenuAndRClick($cailele_index_fid("downpanelDIV"));
+      }
+</script>
+
+<div class="header">
+    <div class="div_m" style="_overflow: hidden;">
+        <div class="person_part">
+            <ul id="nologin_info">
+                
+                <li>欢迎您，<span>zgq567</span></li>
+                <li>余额 <b class="engb red" id="money">￥0.00元</b></li>
+                <li>[<a href="../User/Logout.html" class="blue">退出</a>]</li>
+                <li>
+                 
+                <li class="gray_fg">|</li>
+            </ul>
+        </div>        
+        <div class="site_link">
+            <ul>
+                <li class="num1"><a href="../default.htm">首页</a></li>
+                <li><a href="../User/UserRecharge.asp">充值</a></li>
+                <li><a href="../User/UserDrawal.asp">取款</a></li>
+                
+                <li><a href="../help/default.htm">帮助</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--主导航-->
+<div id="navigation" style="clear: both;">
+    <table border="0" style="width:100%;" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="width:205px">
+                <div id="logo">
+                    <a href="../default.htm" title="购彩大厅"><img src="../Images/Public/navnew1.png" /></a>
+                </div>
+            </td>
+            <td style="width:143px; vertical-align:top;">
+                <div class="main-menu">
+                    <div class="navigationLongDIV">
+                        <div class="downpanel" id="downpanelDIV" onmouseover="showMenuDownPanel(1);" onmouseout="showMenuDownPanel(0);">
+
+                            <script type="text/javascript">try { writeTopMenu(); } catch (e) { }</script>
+
+                        </div>
+                        <div id="downpanelbgDIV">
+                        </div>
+                        <span class="menu" id="menuDownBtn" onmouseover="showMenuDownPanel(1,this);" onmouseout="showMenuDownPanel(0,this);">
+                            <label>
+                                选择彩种[<b>12</b>]</label></span>
+                    </div>
+                </div>
+            </td>
+            <td valign="top">
+                <div class="main-nav">
+                    <a href="../default.htm" title="购彩大厅">购彩大厅</a><a href="../User/index.html" title="我的账户">我的账户</a><a href="../hd/czjl/ljxf.html" title="活动奖励">活动奖励</a>
+                </div>
+            </td>
+            <td align="right">
+                <div class="sub-nav">
+                    <a href="KaiJiang.html@Lottery=CQ_SSC" title="开奖公告">开奖公告</a>|
+                    <a href="../Announce/default.htm" title="网站公告">网站公告</a>|
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style=" width:1000px; height:auto; margin:0 auto; clear:both">
+    <div style="margin-top:5px;">
+        <a href="../Announce/thread-270.html" target="_blank"><Img src="../Images/ad/Index_100064_20150501.jpg" width="998" height="64" /></a>
+    </div>	  
+</div>
+
+        <!--头部导航结束-->
+        <div id="bd">
+            <div class="all">
+                <div style="margin-top: 10px;">
+                    <span class="color-red">当前位置：</span><a href="../default.htm">乐友网</a>&nbsp;-&nbsp;<a href="default.htm">开奖公告</a>&nbsp;-&nbsp;<a class="color-blue" href="KaiJiang.html@Lottery=QG_PL3">排列三开奖结果查询</a>
+                </div>
+                <div class="clear"></div>
+                <div id="lottery-menu">
+                    <ul>
+                        
+                        <li class="li-CQ_SSC"><a href="KaiJiang.html@Lottery=CQ_SSC" class="lottery-menu-o">重庆时时彩</a></li>
+                        
+                        <li class="li-JX_SSC"><a href="KaiJiang.html@Lottery=JX_SSC" class="lottery-menu-o">江西时时彩</a></li>
+                        
+                        <li class="li-TJ_SSC"><a href="KaiJiang.html@Lottery=TJ_SSC" class="lottery-menu-o">天津时时彩</a></li>
+                        
+                        <li class="li-JX_115"><a href="KaiJiang.html@Lottery=JX_115" class="lottery-menu-o">江西11选5</a></li>
+                        
+                        <li class="li-CQ_115"><a href="KaiJiang.html@Lottery=CQ_115" class="lottery-menu-o">重庆11选5</a></li>
+                        
+                        <li class="li-GD_115"><a href="KaiJiang.html@Lottery=GD_115" class="lottery-menu-o">广东11选5</a></li>
+                        
+                        <li class="li-QG_11YDJ"><a href="KaiJiang.html@Lottery=QG_11YDJ" class="lottery-menu-o">十一运夺金</a></li>
+                        
+                        <li class="li-SH_SSL"><a href="KaiJiang.html@Lottery=QG_LK3" class="lottery-menu-o">老快三</a></li>
+                        
+                        <li class="li-QG_FCSD"><a href="KaiJiang.html@Lottery=QG_FCSD" class="lottery-menu-o">福彩3D</a></li>
+                        
+                        <li class="li-QG_XK3"><a href="KaiJiang.html@Lottery=QG_XK3" class="lottery-menu-o">新快三</a></li>
+                        
+                        <li class="li-QG_PL3"><a href="KaiJiang.html@Lottery=QG_PL3" class="lottery-menu-o">排列三</a></li>
+                        
+                        <li class="li-QG_PL5"><a href="KaiJiang.html@Lottery=XT_K3" class="lottery-menu-o">乐快三</a></li>
+                        
+                    </ul>
+                </div>
+                <script> 
+$(function(){
+tabs = "QG_PL3";
+$(".li-"+tabs).children().removeClass("lottery-menu-o").addClass("lottery-menu-on");
+$("#lottery-menu ul li a").mouseover(function(){
+$(this).addClass("lottery-menu-on").parent().siblings().children().removeClass("lottery-menu-on").addClass("lottery-menu-o");
+})
+})
+                </script>
+                <table class="kjls">
+                    <tbody>
+                        <tr class="thead">
+                            <td width="50"><span class="btd">序号</span></td>
+                            <td width="200"><span class="btd">期&nbsp;&nbsp;号</span></td>
+                            <td>
+                                <p class="btd">开奖结果</p>
+                            </td>
+                            <td width="200">
+                                <p class="btd">开奖日期</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>1</td>
+                            <td>第 2015124 期</td>
+                            <td>5,1,3</td>
+                            <td>2015-05-11 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>2</td>
+                            <td>第 2015123 期</td>
+                            <td>5,9,0</td>
+                            <td>2015-05-10 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>3</td>
+                            <td>第 2015122 期</td>
+                            <td>6,7,5</td>
+                            <td>2015-05-09 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>4</td>
+                            <td>第 2015121 期</td>
+                            <td>6,4,0</td>
+                            <td>2015-05-08 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>5</td>
+                            <td>第 2015120 期</td>
+                            <td>8,7,4</td>
+                            <td>2015-05-07 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>6</td>
+                            <td>第 2015119 期</td>
+                            <td>6,1,4</td>
+                            <td>2015-05-06 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>7</td>
+                            <td>第 2015118 期</td>
+                            <td>2,7,3</td>
+                            <td>2015-05-05 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>8</td>
+                            <td>第 2015117 期</td>
+                            <td>7,6,0</td>
+                            <td>2015-05-04 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>9</td>
+                            <td>第 2015116 期</td>
+                            <td>7,6,8</td>
+                            <td>2015-05-03 20:30:00</td>
+                        </tr>
+                        
+                        <tr class="kjls-tr-blue" onmouseover="this.className='over'" onmouseout="this.className='kjls-tr-blue'">
+                            <td>10</td>
+                            <td>第 2015115 期</td>
+                            <td>6,2,3</td>
+                            <td>2015-05-02 20:30:00</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="page">
+                    
+                    <a class="h_l">首页</a><a class="pre">上一页</a>
+                    
+                    <a class="next" href='KaiJiang.html@Lottery=QG_PL3&Page=2'>下一页</a>
+                    <a class="h_l" href='KaiJiang.html@Lottery=QG_PL3&Page=15'>末页</a>
+                    
+                    <span class="gray"><font color="#999999">当前第</font>页，总共有15页，145条记录，每页10条</FONT></span>
+                    转到：<select name='gopage' onchange="javascript:location.href='KaiJiang.html?Lottery=QG_PL3&Page=' + this.value + ''">
+                        
+                        <option value='1' selected>1</option>
+                        
+                        <option value='2' >2</option>
+                        
+                        <option value='3' >3</option>
+                        
+                        <option value='4' >4</option>
+                        
+                        <option value='5' >5</option>
+                        
+                        <option value='6' >6</option>
+                        
+                        <option value='7' >7</option>
+                        
+                        <option value='8' >8</option>
+                        
+                        <option value='9' >9</option>
+                        
+                        <option value='10' >10</option>
+                        
+                        <option value='11' >11</option>
+                        
+                        <option value='12' >12</option>
+                        
+                        <option value='13' >13</option>
+                        
+                        <option value='14' >14</option>
+                        
+                        <option value='15' >15</option>
+                        
+                    </select>
+                    页
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <!--底部开始-->
+    <div id="ft">
+<div class="footer">
+<div class="copy_new">
+<p><a href="../../zhanzhang.anquan.org/physical/report/@domain=www.le528.com" name="qmBy74LVqh9pa51zJmX3nJMyPJa3GRNgxR0HtRK8Yh1KUFZJYD"><img height="47" src="../../zhanzhang.anquan.org/static/common/images/zhanzhang.png"alt="安全联盟站长平台" /></a><img src="../images/public/link/wljc.gif" alt="网络警察举报平台" class="free" /><img src="../images/public/link/ggxx.gif" alt="公共信息安全网络监察" class="free" /><img src="../images/public/link/wsjy.gif" alt="网上交易保障中心" class="free" /><img src="../images/public/link/ggxx2.gif" alt="公共信息网络安全监察" /><img src="../images/public/link/xylh.gif" alt="网站信用良好" /><img src="../images/public/link/wljc2.gif" class="last" alt="网络警察举报平台" /></p>
+<p>郑重提示：彩票有风险，投注需谨慎</span> 不向未满18周岁的青少年出售彩票</p>
+</div>
+</div>
+</div>
+<script type='text/javascript' src='../../tb.53kf.com/kf.php@arg=10086020&style=2'></script>
+    <!--底部结束-->
+</body>
+</html>

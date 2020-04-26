@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+-----------------------------------------------
+Author: pengmeili (pengmeili@yeah.net)
+Version: 2011.03.18
+----------------------------------------------- */
+ul,ol,li{padding:0; margin:0; list-style:none;}
+body{margin:0 auto; padding:0px; font:12px/20px "宋体"; background-color:#fff; color:#595959;}
+h1,h2,h3,h4,h5,h6,li,p,form{padding:0; margin:0;}
+img{padding:0; margin:0; border:0;}
+h1,h2{font:14px normal "宋体";}
+
+/*清除浮动*/
+.clear{clear:both;font-size:1px; height:0; line-height:0;}
+/*链接样式*/
+a:link,a:visited{font:"宋体",Arial; text-decoration:none; color:#595959;}
+a:hover,a:active{color:#ffffff; text-decoration:none;}
+
+a.linkBlue:link,a.linkBlue:visited{ text-decoration:underline; color:#005aa0;}
+a.linkBlue:hover,a.linkBlue:active{ text-decoration:underline; color:#555;}
+
+a.linkBlue1:link,a.linkBlue1:visited{ color:#005aa0;}
+a.linkBlue1:hover,a.linkBlue1:active{ color:#555;} 
+.floatL{float:left;}
+.floatR{float:right;}
+.reinfor{padding-top:25px;}
+#container{ overflow:hidden; margin:0 auto; padding:0 auto; background:url("../images/login/bg.gif") top center no-repeat #fff;}
+.main{ margin:0 auto; padding:0 auto; padding-top:40px; width:1003px;}
+.left{ overflow:hidden; float:left; margin:0 auto; padding-left:31px; margin-right:27px; width:532px;}
+.left ul{ height:50px;overflow:hidden;padding-bottom:15px;}
+.left ul li{ overflow:hidden; display:inline; padding-right:10px;}
+.left ul li .lit_logos{color:#EB6100;font-family: Arial , "Microsoft Sans Serif";float:left;font-size:36px;font-weight:bold;padding:0px;display:inline;line-height:52px;padding-right:10px;}
+.left .images{height:361px;width:532px;overflow:hidden;}
+.left .left_bottom{height:47px;width:532px;overflow:hidden;}
+.right{ float:right; width:413px;}
+.right .top1{height:65px;}
+.rightTop{ margin:0px 0 30px 40px;}
+.rightTop li{ display:inline; padding-right:3px;}
+.rightTop li a:link,.right li a:visited{ color:#333;}
+.rightTop li a:hover,.right li a:active{ color:#999;}
+.login_bg{ overflow:hidden; height:381px; background:url("../images/login/login_bg.gif") no-repeat;}
+.login_bg h3{ margin:32px 0 15px 20px; height:38px; width:174px; background:url("../images/login/logo_pic.gif") no-repeat;}
+.login_bg dl{ margin:0 auto; padding:0 auto; }
+.login_bg dl dd{ width:323px; height:45px;}
+.login_bg dl dd label{ font:200 14px/16px "微软雅黑"; color:#5a3967;}
+.yzm{ margin-left:50px;}
+
+.form input{ vertical-align:middle;}
+.form input.text{ border:1px solid #838383; padding:8px 5px; background:url("../images/login/text_bg.gif") repeat-x; color:#333; font:12px/14px Verdana;}
+.form input.textHover{ border:1px solid #838383; padding:8px 5px; background:#ffffd6; color:#333; font:12px/14px Verdana;}
+
+.form input.password{ border:1px solid #838383; padding:8px 5px; background:url("../images/login/text_bg.gif") repeat-x; color:#333; font:12px/14px Verdana;}
+.form input.passwordHover{ border:1px solid #838383; padding:8px 5px; background:#ffffd6; color:#333; font:12px/14px Verdana;}
+
+input.btYellow,input.btYellowHover,input.btYellowDown{ margin-left:70px; width:221px; height:41px; border:0; background:url("../images/login/loginBtn1.gif") no-repeat 0 0; color:#fff; font:200 18px/41px "微软雅黑"; text-align:center; cursor:pointer;}
+input.btYellowHover{ background-position:0 -50px; color:#ff0;}
+input.btYellowDown{ background-position:0 -100px; color:#fff;}
+
+.login_bg dl dd .yzmtext{ padding:5px 5px; height:16px;}
+
+.footer{ margin:0 auto; margin-top:20px; padding:0 auto; width:1003px; font:Arial;text-align:center; line-height:2.5em; }
+.foot_line{background-color:#ed7019; height:3px; width:100%; font-size:1px; line-height:3px; margin-bottom:15px;}
+
+

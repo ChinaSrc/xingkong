@@ -1,0 +1,654 @@
+img {
+  border: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 12px 'Microsoft Yahei', 'Microsoft JhengHei', tahoma, Srial, helvetica, sans-serif;
+}
+.ys-content {
+  background: #3e4459;
+}
+.ys-content, .ys-content a {
+  color: #fff;
+}
+.ys-content .header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#383b4d+0,2d3041+100 */
+  background: #383b4d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #383b4d 0%, #2d3041 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #383b4d 0%,#2d3041 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #383b4d 0%,#2d3041 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383b4d', endColorstr='#2d3041',GradientType=0 ); /* IE6-9 */
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.82);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.82);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.82);
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 20px;
+
+}
+ .ys-content .main{
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  /*min-height: 621px;*/
+}
+  .section {
+    background: #2d3041;
+    background: rgba(45, 48, 65, 0.45);
+    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 10px;
+    font-size: 14px;
+    position: relative;
+  }
+  .pd6 {
+    padding-bottom: 6px !important;
+  }
+  .h105 {
+    height: 105px;
+  }
+  .section.h105:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+  .form {
+    margin-bottom: 0;
+  }
+  .not-table {
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .not-table .field {margin: 0;padding: 0;}
+  .not-table td {
+    display: inline-block;
+    padding: 10px 0;
+  }
+  .form .field {
+    display: block;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .form .inline-fields {
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+  }
+  .form .inline-fields .field {
+    display: inline-block;
+    margin: 0 5px 0 0px;
+    border-bottom: none;
+  }
+  .form .inline-fields .field:last-child{
+    margin: 0;
+  }
+  .form .field label {
+    min-width: 105px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .form .inline-fields label {
+    min-width:0;
+  }
+  .form .inline-fields .field:first-child label {
+    min-width:105px;
+  }
+  .form .field .user_type_radio, .form .field .user_type_checkbox {
+    margin: 0;
+    min-width: 0;
+    cursor: pointer;
+  }
+  .form input[type="text"],.form input[type="password"] {
+    width: 139px;
+    height: 30px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: none;
+    padding: 0 8px;
+  }
+    .section .selection {
+      width: 160px;
+    }
+    .btn, .alert_btn {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f19c5e+0,e15a22+100 */
+      background: #f19c5e; /* Old browsers */
+      background: -moz-linear-gradient(top,  #f19c5e 0%, #e15a22 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #f19c5e 0%,#e15a22 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #f19c5e 0%,#e15a22 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f19c5e', endColorstr='#e15a22',GradientType=0 ); /* IE6-9 */
+      border: none;
+      width: 80px;
+      height: 30px;
+      color: #fff;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      cursor: pointer;
+      text-shadow: 0 1px 1px #444;
+      -webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.82);
+      -moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.82);
+      box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.82);
+      margin: 0 17px 17px 17px;
+      font-family: Microsoft YaHei;
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      text-align:center;
+      line-height:30px;
+      text-decoration:none;
+      font-weight: normal;
+    }
+    .alert_btn {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff8989+0,9b1f1f+100 */
+      background: #ff8989; /* Old browsers */
+      background: -moz-linear-gradient(top,  #ff8989 0%, #9b1f1f 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #ff8989 0%,#9b1f1f 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #ff8989 0%,#9b1f1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8989', endColorstr='#9b1f1f',GradientType=0 ); /* IE6-9 */
+    }
+    .form .btn {
+      margin: 0 17px 0 136px;
+    }
+    .formCheck{
+      margin-top:18px;
+      margin-left:10px;
+    }
+    .btn:hover {
+      background: #e15a22; /* Old browsers */
+      background: -moz-linear-gradient(top,  #e15a22 0%, #f19c5e 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #e15a22 0%,#f19c5e 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #e15a22 0%,#f19c5e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      color: #fff;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e15a22', endColorstr='#f19c5e',GradientType=0 ); /* IE6-9 */
+    }
+    .alert_btn:hover {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b1f1f+0,ff8989+100 */
+      background: #9b1f1f; /* Old browsers */
+      background: -moz-linear-gradient(top,  #9b1f1f 0%, #ff8989 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #9b1f1f 0%,#ff8989 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #9b1f1f 0%,#ff8989 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b1f1f', endColorstr='#ff8989',GradientType=0 ); /* IE6-9 */
+    }
+    .cur .btn {
+      background: #e15a22;
+    }
+    .section .currentpoint {
+      color: #ff8e3f;
+    }
+    .form .text-input {
+      width: 144px;
+      height: 30px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      border: none;
+      padding: 0 8px;
+    }
+    .section .select2-container {
+      height: 30px;
+    }
+      .section .select2-container .select2-selection--single {
+        height:30px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+      }
+    .section #select2-keeppoint-container {
+      padding-left: 12px;
+      padding-right: 30px;
+    }
+    .section .select2-selection__arrow {
+      width: 30px;
+      height: 28px;
+      border-left: 1px solid #ccc;
+    }
+      .section .select2-selection__arrow b {
+        border-width: 6px 5px 0 4px;
+        border-color: #656974 transparent transparent transparent;
+      }
+  .section .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 800px;
+    margin: auto;
+    height: 24px;
+    font-size: 16px;
+  }
+  .section .url-divider {
+    background: url(../images/matt/url-divider.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 165px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 73px;
+    width: 14px;
+  }
+  .section .urls {
+    position: relative;
+    margin: 0;
+    list-style-type: none;
+    padding: 0 5px;
+    font-size: 12px;
+    left: 185px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+    .section .urls li {
+      height: 36px;
+      line-height: 36px;
+    }
+      .section .urls li a {
+        margin-right: 10px;
+      }
+      .section .urls button {
+        border: none;
+        color: #fff;
+        background: #292b35;
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 0;
+      }
+      .section .urls button .copy {
+        background: url(../images/matt/copy.png);
+        display: inline;
+        padding: 0 7px;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+      }
+  .list  {
+    margin: 15px;
+    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #2d3041;
+    background: rgba(45, 48, 65, 0.45);
+  }
+    .intro_content {
+      padding: 10px;
+      color: #fff;
+      font-size: 16px;
+    }
+     table {
+      width: 100%;
+      border-spacing: 0;
+      color: #fff;
+    }
+      .list table thead {
+        background: #222531; /* Old browsers */
+      }
+        .list table thead th {
+          font-weight: normal;
+          padding: 10px 0;
+          font-size: 14px;
+        }
+        .list table tbody td {
+          text-align: center;
+          font-weight: normal;
+          font-size: 14px;
+          padding: 7px 0;
+          border-top: 1px solid #494d5f;
+        }
+        .list table tbody tr:first-child td {
+          border-top: none
+        }
+        .list table tfoot th {
+          border-top: 1px solid #494d5f;
+          font-size: 14px;
+          padding: 10px 20px;
+          font-weight: normal;
+        }
+        .align-left {
+          text-align: left;
+        }
+.ui-state-hover, .ui-state-focus {
+  border: none !important;
+}
+.page {
+  text-align: left;
+  padding: 0;
+  color:#fff;
+}
+/*幫助中心常見問題*/
+.section h4 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 20px 0 12px 38px;
+  position: relative;
+}
+.section h4:before {
+  border: 3px solid #fff;
+  content: "";
+  height: 6px;
+  position: absolute;
+  left: 13px;
+  top: 24px;
+  width: 6px;
+}
+.help-answer {
+  background: #1f3f70;
+  border: 1px solid #2e4f7a;
+  line-height: 24px;
+  margin: 0 0 18px;
+  padding: 15px 12px 20px;
+  width: 948px;
+}
+.help-answer h5 {
+  border-bottom: 1px solid #4a6183;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+.help-answer ol {
+  list-style: decimal;
+  margin-left: 20px;
+}
+/* pop */
+.pop{
+	width:488px;
+	padding:10px;
+	border:1px solid #CACACA;
+	background-color:#FFF;
+	text-align:center;
+	word-wrap: break-word;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.pop .hd{height:28px;line-height:18px;border-bottom:1px solid #EFEFEF;font-size:14px;font-weight:700;text-align:left;}
+.pop .hd-info{margin-left:10px;font-size:12px;font-weight:100;}
+.pop .close{float:right;width:15px;height:14px;background-position:-240px -20px;cursor:pointer;}
+.pop .close:hover{height:15px;background-position:-240px 0;}.pop .bd{padding:10px;text-align:left;}
+.pop-title{padding:5px;text-align:center;font-size:14px;}
+.pop-btn{padding-top:20px;text-align:center;}
+.pop-btn .btn{margin:0 10px;}
+.pop .input{width:160px;}
+.pop .ui-select{width:170px;}
+.pop-error,.pop-success{text-align:center;}
+.pop .ico-success,.pop .ico-error{display:inline-block;*display:inline;*zoom:1;width:24px;height:24px;margin-right:5px;vertical-align:middle;}
+.pop .ico-success{background-position:-120px -80px;}
+.pop .ico-error{background-position:-150px -80px;}
+.pop-text{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;text-align:left;line-height:24px;font-size:14px;overflow:hidden;}
+.pop .bd .ico-success,.pop .bd .ico-error,.pop .bd .ico-waring{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;width:30px;height:30px;margin-right:10px;}
+.pop .bd .ico-success{background-position:0 -80px;}
+.pop .bd .ico-error{background-position:-40px -80px;}
+.pop .bd .ico-waring{background-position:-80px -80px;}
+
+.alertify-message {
+  color: #383b4d;
+}
+
+/* 新版充值 */
+.form .btn {
+  margin: 0 17px 0 150px;
+}
+.tab-last {
+  border-right: 1px solid #333;
+}
+.tab-container {
+  border-top: none;
+  width: 100%;
+  background: #3e4459;
+  margin: auto;
+  position: relative;
+}
+.tab-content {
+  padding: 0 20px 20px;
+  border: 1px solid #3e4459;
+  background: #3e4459;
+  min-height: 388px;
+}
+.tab-drawer-heading {
+  text-align: center;
+  background-color: #323547;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0;
+  padding: .5em .5em 3em .7em;
+  display: block;
+  font-size: 16px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.Bank-card {
+  background: #203F71
+}
+.d-active {
+  border-radius: 3px 3px 0 0;
+  background-color: #052d29;
+  color: #fff;
+  display: block;
+}
+.d-zhow {
+  display: block;
+}
+
+.t-add, .b-add {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#send-alipay,
+#send-alipay_bank,
+#send-atm,
+#send-baokim,
+#send-bank,
+#send-bankatm,
+#send-bdpay,
+#send-jdpay,
+#send-qqpay,
+#send-scratchoff,
+#send-unionpay_nocard,
+#send-unionpay_scanpay,
+#send-wechat,
+#send-wechat_bank {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+#send-wechat {
+  margin: 10px 3px;
+}
+
+
+.t-add input[type="text"] {
+  width: 241px;
+  height: 27px;
+  border: 1px solid #c3c1c1;
+  text-align: left;
+  line-height: 20px;
+  margin: 0 10px;
+  outline: 0;
+}
+.card-block {
+  display: block;
+  margin-top: 16px;
+}
+.card-block span {
+  font-size: 0.8em;
+  color: #FFF;
+}
+.ct-notice {
+  color: #FFF;
+  display: block;
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.new-cards {
+  padding: 25px 0 0 65px;
+  background: #363a4e;
+  border: 1px solid #5e6171;
+  margin: 10px 0;
+}
+.new-cards span {
+  display: inline-block;
+  width: 190px;
+  text-align: left;
+  margin: 0 20px 20px 0;
+}
+.hidden {
+  display: none !important;
+}
+.show {
+  display: block;
+}
+.new-information {
+  margin: 10px 0;
+}
+.new-cards input {
+  position: relative;
+  bottom: 0px;
+  margin-bottom: 0;
+}
+
+.owl-pagination {
+  display: none;
+}
+
+#alipay-msg,
+#alipay_bank-msg,
+#atm-msg,
+#bank-msg,
+#bankatm-msg,
+#baokim-msg,
+#bdpay-msg,
+#jdpay-msg,
+#qqpay-msg,
+#scratchoff-msg,
+#unionpay_nocard-msg,
+#unionpay_scanpay-msg,
+#wechat-msg,
+#wechat_bank-msg {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  color: red;
+  margin: 10px 0 10px 20px;;
+}
+
+/*游戏记录 追号查询 详细号码*/
+.ys-content .detail_num {color: khaki;cursor: pointer;}
+.note-white{
+	color:#fff;
+	display: block;
+	padding: 0 0 10px 30px;
+}
+
+/* 帳戶中心頁面跳轉文字是白色使用者看不到 背景改為暗灰色 */
+#error.content_mid, #success.content_mid {
+	background-color: #3e4459;
+	height: 100%;
+}
+
+/*2016/10/12 hsien add start*/
+.text-white{color:#fff;}
+/*2016/10/12 hsien add end*/
+
+/* bank */
+.cards {
+  padding: 25px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.cards span {
+  display: inline-block;
+  padding: 25px;
+}
+
+.cards span input {
+  position: relative;
+  bottom: 0;
+}
+
+/*消息 发信*/
+.message_table table {
+  width: auto;
+}
+.message_table table .btn {
+  margin: 17px;
+}
+
+/**/
+.csmsg-block {
+  font-size: 14px;
+}
+.csmsg-block .btn.active {
+  background: #e15a22;
+}
+@media screen and (max-width:1080px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+       -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+  }
+}/*end media 1080px*/
+
+/*充值:按鈕箭頭*/
+.arrow{
+    height:10px;
+}
+.arrow_left {
+  border-width:4px;
+  border-style:solid;
+  border-color:transparent #000 transparent transparent;
+  width: 0;
+  height: 0;
+  margin: 3px 0px 3px 0px;
+}
+.arrow_right {
+  border-width:4px;
+  border-style:solid;
+  border-color:transparent transparent transparent #000;
+  width: 0;
+  height: 0;
+  margin: 3px 0px 3px 0px;
+}
+/*20170623-bobo新增帐变页面下级浮动方块*/
+.userchild_name{
+  position: relative;
+}
+.userchild_name span{
+  position: absolute;  
+  background: #f2f2f2;
+  color: #000;
+  z-index: 1;
+  font-size: 12px;
+  min-width: 60px;
+  padding: 0.2em;
+  left: 30%;
+  top: 80%;
+  display: none;
+}
+.userchild_name:hover span{
+  display: block;
+}
+.pull-right{
+	float: right;
+}
+span.clearfix{clear:both;}
+.pull-left{float:left;}
+.fivetypercent{width:225px;margin:5px;}
+.btnfor-remove-checked-items{margin: 0 5px;}

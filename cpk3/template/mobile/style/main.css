@@ -1,0 +1,737 @@
+#page-header{
+
+	margin: auto;
+}
+#header01{
+	float:left;
+	margin: auto;
+	
+	height:221px;
+	background: url("../images/bl/header.jpg") left top no-repeat;
+}
+#header02{
+	float:left;
+	margin: auto;
+
+	height:221px;
+	background: url("../images/bl/header02.jpg") left top no-repeat;
+}
+#page-body,#head-title-body{
+
+	margin: auto;
+}
+#page-content{
+	float:left;
+	width: 700px;
+	padding: 20px 0px 20px 0px;
+}
+#head-logo{
+	float:left;
+}
+#page-left{
+	float:left;
+	width:247px;
+	margin-left: 10px;
+	_margin-left: 5px;
+	padding-top: 20px;
+}
+.block{
+    display:block;
+}
+.clear{
+    clear:both;
+}
+#logo-swf {
+	position: absolute;
+}
+#logo-mask {
+	 opacity: 0;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	 background-color: #FFFFFF;
+	 display: block;
+	 position: relative;
+	 width: 280px;
+	 height: 120px;
+}
+#flag{
+	float:right;
+	width:130px;
+	text-align:right;
+	margin:7px 20px 0px 0px;
+}
+/*主選單*/
+#main-Menual{
+    width:960px;
+    height:43px;
+    padding:20px 20px 0 20px;
+    float:left;
+}
+#main-Menual ul.topNav li{
+    float:left;
+    width:94px;
+    padding:0px 1px;
+}
+#main-Menual ul li a{
+    height:25px;
+    padding-top:10px;
+    display:block;
+    text-align:center;
+    font: 13px/13px "新細明體";
+    font-weight:bold;
+    color:#FFFFFF;
+    text-decoration:none;
+    line-height:13px;
+}
+#main-Menual ul li a:hover ,#main-Menual ul li a.current{
+ 	color:#FF9;
+	background: url("../images/bl/nav_over.jpg") top left repeat-x;;
+}
+.current_span{
+    display:block;
+    color:#FF9;
+	background: url("../images/bl/nav_over.jpg") top left repeat-x;;
+}
+#L-Sub{
+    position: relative;
+    z-index: 9999;
+    clear: both;
+    margin-top:-20px \9;
+}
+#L-Sub div {
+    display:none;
+    position: absolute;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    z-index:100;
+}
+#L-Sub div a {
+    float: left;
+    display: block;
+    background: url("../images/bl/deep_red.gif") 32px repeat-x;
+    padding: 0 4px;
+    color: #FCC;
+    text-decoration: none;
+    font-size: 12px;
+}
+#L-Sub div a:hover {color:#F93;}
+#L-Sub span {
+    display: block;
+    float: left;
+    width: 7px;
+    height: 32px;
+}
+#L-Sub span.subbg-left {
+    background: url("../images/bl/deep_red.gif") left top no-repeat;
+}
+#L-Sub span.subbg-right {
+    background: url("../images/bl/deep_red.gif") left bottom no-repeat;
+}
+/*登入表單*/
+#A-Menual{
+	float: right;
+	width:500px;
+	margin-top:19px;
+	text-align: left;
+}
+#A-Menual #login_TXT{
+	width:480px;
+	height:20px;
+	float:left;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #CC3;
+	text-decoration: none;
+	padding-left:20px;
+}
+#A-Menual .za_form{
+	width:185px;
+	height:26px;
+	float:left;
+	margin-left:5px;
+	margin-top:8px;
+	padding: 0 20px;
+	line-height:26px;
+	background: url("../images/bl/loginBOX.jpg") no-repeat;
+}
+#A-Menual .za_text{
+	float:left;
+    border:0px;
+    width:180px;
+	height:18px;
+	color: #FC9;
+	margin-top:1px;
+	padding:4px 0px 2px 3px;
+	background-color:#000;
+}
+#A-Menual .za_text2{
+	float:left;
+    border:0px;
+    width:72px;
+	height:18px;
+	color: #FC9;
+	margin-top:1px;
+	padding:4px 0px 2px 3px;
+	background-color:#000;
+}
+.head-left{
+	float:left;
+	width: 254px;
+	height: 204px;
+}
+.head-right{
+	float:left;
+	width: 706px;
+	height: 204px;
+    background:#ffffff;
+}
+.head-right img{
+	display: block;
+}
+#SU-Menual-first{
+	float:left;
+	width:254px;
+	height:auto;
+	font-size:12px;
+}
+#SU-Menual{
+	width:940px;
+	height:12px;
+	float:right;
+	padding: 10px;
+}
+#SU-Menual-first ul{
+	padding-top: 10px;
+}
+#SU-Menual ul li,#SU-Menual-first ul li{
+	float:left;
+    color:#FFF;
+}
+#SU-Menual ul li a{
+	font-size: 12px;
+	line-height: 12px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight:normal;
+	padding: 0px 8px 0px 8px;
+}
+#SU-Menual-first ul li a{
+	font-size: 12px;
+	line-height: 12px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight:normal;
+	padding: 0px 8px 0px 0px;
+}
+#SU-Menual ul li a:hover,#SU-Menual-first ul li a:hover{
+	color: #FCC;
+	text-decoration: none;
+	font-weight:normal;
+}
+/*首頁*/
+#special_flash{
+	position:absolute;
+	right:31px;
+	top:-1px;
+	width:88px;
+	height:29px;
+	line-height:29px;
+	background:url("../images/bl/specialFlashBG.jpg") center center no-repeat;
+}
+#special_flash a{
+    color:#000;
+    text-decoration:none;
+}
+#first-left {
+    float: left;
+	width:254px;
+}
+#first-login{
+	width:254px;
+	height:170px;
+    background:url("../images/bl/login.jpg") no-repeat;
+}
+#first-login #login_TXT{
+	float:left;
+	width:234px;
+	height:37px;
+	padding-left:20px;
+	font-size: 13px;
+	line-height: 37px;
+	font-weight: bold;
+	color: #CC3;
+	text-align: left;
+}
+#first-login #validcode_source {
+	width: 120px;
+}
+#first-right {
+	float: right;
+	width: 706px;
+	height: 345px;
+}
+.login_input{
+    float: left;
+    height: 13px;
+    width: 200px;
+    color: #FFCC99;
+    text-align:left;
+    margin: 0px 0px 10px 25px;
+    padding: 7px 3px 5px 0px;
+    border: 0;
+    background-color: transparent;
+}
+#vPic{
+
+    cursor:pointer;
+
+}
+#btnLoginbg{
+	float:left;
+	width:230px;
+	height:27px;
+	line-height:27px;
+	color: #FC9;
+	padding-left: 19px;
+}
+#btnLoginbg a{
+	font-size: 12px;
+	color: #FFCC99;
+	text-decoration: none;
+}
+#btnLoginbg a:hover{
+	color: #FFF;
+}
+#btnLoginbg .btnLogin{
+    width: 97px;
+    height: 27px;
+    color: #CCCC33;
+    border: 0;
+    font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	margin-left:12px;
+	_margin-left:10px;
+    cursor: pointer;
+    display:inline;
+    background: url("../images/bl/loginBTN.jpg") left top no-repeat;
+}
+#btnLoginbg .btnLogin02{
+    width: 97px;
+    height: 27px;
+    color: #CCCC33;
+    border: 0;
+    font-size: 13px;
+	line-height: 27px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	margin-left:15px;
+    cursor: pointer;
+    display:inline;
+    background: url("../images/bl/loginBTN02.jpg") left top no-repeat;
+}
+#loginpic-first{
+	float:left;
+    width:239px;
+	height:165px;
+	_height:160px;
+	font-size:14px;
+	font-weight: bold;
+	padding:10px 15px 0px 0px;
+	_padding:10px 0px 0px 0px;
+	text-indent:1em;
+	text-align:left;
+	background-color:#593E29;
+}
+.login-account{
+	float:right;
+    width:470px;
+	height:auto;
+	font-size:14px;
+	font-weight: bold;
+	padding-top:10px;
+	margin-right:30px;
+	text-indent:1em;
+	text-align:left;
+}
+#loginpic-first p.title, .login-account div.title{
+    color: #C49A36;
+}
+#loginpic-first p{
+    color:#FDD8BD;
+    padding:2px 0px;
+}
+.login-account p{
+	float:left;
+	font-size:12px;
+    color:#FDD8BD;
+    padding:2px 0px;
+}
+#loginpic-first p span, .login-account p span{
+	color: #FFBA03;
+	font-weight: normal;
+}
+#first-new,.head_news{
+	float:left;
+	width:900px;
+	height:35px;
+	font-size: 12px;
+	line-height: 35px;
+	color: #FFF;
+	text-decoration: none;
+	padding: 0px 20px 0px 40px;
+	_padding: 0px 10px 0px 40px;
+	text-align: left;
+	background:url("../images/bl/news.jpg") top left no-repeat;
+}
+#first-gameMenu{
+	width:960px;
+	height:321px;
+	float:left;
+	padding: 26px 0;
+	background-color:#440010;
+}
+#first-gameMenu div{
+	float:left;
+	margin-left:8px;
+	_margin-left:6px;
+}
+#first-gameMenu a{
+    display:block;
+}
+#first-btn{
+	width:960px;
+	height:85px;
+	float:left;
+	padding-bottom:20px;
+    background-color:#440010;
+}
+#first-btn ul li{
+	float:left;
+}
+/*遊戲*/
+.content-area{
+	width:955px;
+	height:auto;
+	float:left;
+	padding:20px 0px 20px 5px;
+	background-color:#440010;
+}
+#Game-layout{
+	width:300px;
+	height:110px;
+	background:url("../images/bl/game_bg.jpg") no-repeat;
+	float:left;
+	margin:5px 8px;
+	_margin:5px 6px;
+}
+
+.gameimgTXT{
+	width:170px;
+	height:52px;
+}
+.gameimgTXT-lottery{
+	width:170px;
+	height:37px;
+}
+.gameimgTXT01{
+	width:150px;
+	height:19px;
+	padding: 5px 0px 0px 0px;
+	text-indent: 20px;
+}
+.gameimgTXT02{
+	width:160px;
+	height:53px;
+	padding: 5px 0px 0px 10px;
+}
+.gameimgTXT01 ul li{
+	width:auto;
+	height:15px;
+	float:left;
+}
+.gameimgTXT01 ul li a{
+	width:auto;
+	height:15px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: left;
+	padding-right: 5px;
+	text-indent: 10px;
+}
+.gameimgTXT02 ul li{
+	width:80px;
+	height:15px;
+	float:left;
+	background:url("../images/bl/game_TXT.gif") no-repeat;
+	margin: 3px;
+}
+.gameimgTXT02 ul li a{
+	width:80px;
+	height:15px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+}
+.gameimgTXT02 ul li a:hover, .gameimgTXT01 ul li a:hover{
+	color: #FCC;
+}
+.gameIMG{
+	width:130px;
+	height:110px;
+	float: right;
+}
+.gameIMG a{
+	width:130px;
+	height:110px;
+	display:block;
+}
+.yellow01{ font-family: Arial; color: #FC0; font-size:11px;}
+.boxcaption_lottery{
+	float:left;
+	position:relative;
+	background: #3C0A13;
+	color:#FFFFFF;
+	height: 40px;
+	width: 269px;
+	margin-top:-50px;
+	padding:3px 0px 5px 31px ;
+	text-align:left;
+	opacity: .7;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	z-index: 1;
+}
+/*GameMenual.html 選單 use*/
+#Game-Menual #Menual-list{
+    width:247px;
+    margin:0px auto;
+}
+#Menual-list li{
+    width:247px;
+	height:36px;
+	background-image:url("../images/bl/leftNAV.jpg");
+	background-repeat:no-repeat;
+}
+#Menual-list li a,
+#Menual-list li a:active,
+#Menual-list li a:visited{
+	font-size: 13px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #FC0;
+	text-decoration: none;
+	text-align: center;
+}
+#Menual-list li a:hover{
+	font-size: 13px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #FF9;
+	text-decoration: none;
+	text-align: center;
+}
+/*footer*/
+#page-footer{
+	width:1000px;
+	height:202px;
+	margin: auto;
+}
+
+.header-bottom{
+	height:34px;
+	text-align: center;
+}
+.header-bottom a{
+	font-size: 12px;
+	line-height: 34px;
+	color: #FFF;
+	padding-left:8px;
+	text-decoration: none;
+}
+.header-bottom a:hover{
+	color: #FC3;
+}
+#footer_logo{
+	width:271px;
+	height:41px;
+	float:left;
+	background:url("../images/bl/Philippines.jpg") no-repeat;
+	margin:75px 0 0 100px;
+	_margin:75px 0 0 50px;
+}
+#footer #Bank{
+	width:550px;
+	height:22px;
+	float:left;
+    margin: 40px 0 0 20px;
+}
+#footer #Bank img{
+	margin-left:7px;
+}
+#copyright{
+	width:550px;
+        height:52px;
+	float:left;
+	margin: 5px 0 0 20px;
+}
+#bbin_txt{
+    width:400px;
+	float:left;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFF;
+	text-decoration: none;
+    padding:12px 0px 0px 20px;
+	text-align: left;
+}
+/*文案*/
+#direction{
+	width:650px;
+	_width:660px;
+	float: left;
+	margin-left:5px;
+	color:#FFFFFF;
+	padding:0px 20px 0px 20px;
+	_padding:0px 10px 0px 10px;
+	border: 1px solid #900;
+	text-align: left;
+}
+#direction ul.mtab-menual{
+	width:628px;
+	height:29px;
+	float:left;
+	background: url("../images/bl/Menu.jpg") repeat-x;
+	margin: 5px 0px;
+}
+#direction ul.mtab-menual li{
+	float:left;
+	font-size: 13px;
+	line-height: 29px;
+	padding: 0px 8px 0px 15px;
+	cursor: pointer;
+}
+#direction .mtab{
+    color: #FC0;
+}
+.MenuLeft{
+	float:left;
+	width:11px;
+	height:29px;
+	margin-top:5px;
+	background:url("../images/bl/Menu_left.jpg") top left no-repeat;
+}
+.MenuRight{
+	float:left;
+	width:11px;
+	height:29px;
+	margin-top:5px;
+	display:block;
+	background:url(../images/bl/Menu_right.jpg) top left no-repeat;
+}
+
+a.prizeBB-zh-tw{
+	background: url(../images/bl/PrizeBB_tw.jpg) top left no-repeat;
+}
+a.prizeBB-zh-cn{
+	background: url(../images/bl/PrizeBB_cn.jpg) top left no-repeat;
+}
+/*共用頁面*/
+.Tpl-table01 {
+    background-color: #FFFFFF;
+    border: 1px solid #666;
+    color: #000;
+    font-size: 12px;
+}
+table .Tpl-title01 th{
+    background-color: #850000;
+    height: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* IE10 */
+    background: -ms-linear-gradient(top, #AD0000 0%, #850000 100%);
+    /* Mozilla Firefox */
+    background: -moz-linear-gradient(top, #AD0000 0%, #850000 100%);
+    /* Opera */
+    background: -o-linear-gradient(top, #AD0000 0%, #850000 100%);
+    /* Webkit (Chrome 11+) */
+    background: -webkit-linear-gradient(top, #AD0000 0%, #850000 100%);
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AD0000', endColorstr='#850000',GradientType=0 );
+    /* Proposed W3C Markup */
+    background: linear-gradient(top, #AD0000 0%, #850000 100%);
+}
+#Tpl-user-acc span{
+    line-height:20px;
+    color: #0000FF;
+}
+.Tpl-table01 th, .Tpl-table01 td {
+    height: 22px;
+    border: 1px solid #666;
+}
+tr.Tpl-trcolor1{
+    background: #FFFFFF;
+    /* IE10 */
+    background: -ms-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Mozilla Firefox */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Opera */
+    background: -o-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Webkit (Chrome 11+) */
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+    /* Proposed W3C Markup */
+    background: linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+}
+tr.Tpl-trcolor2{
+    background: #EEEEEE;
+}
+tr.Tpl-trmouseenter {
+    background: #DEF;
+}
+#Tpl-memdata .Tpl-table01 th, #Tpl-memdata .Tpl-table01 td.Tpl-left{
+	text-align: center;
+}
+#Tpl-memdata .Tpl-table01 td.Tpl-right{
+    text-align: left;
+}
+.Tpl-blue {
+	color: #0000FF;
+}
+.Tpl-fontcolor1 {
+	color: #D73600;
+}
+.Tpl-fontcolor2 {
+	color: #0000FF;  
+}
+.game_ul{width:100%;margin:5px auto;border:1px solid #ccc;background:#fff;margin-bottom:5px;box-shadow:0 0 8px rgba(0, 0, 0, 0.2);text-align:center;}
+.game_ul li{height:30px;line-height:30px;border-bottom:1px solid #ccc;padding:0px 5px;}
+.game_ul_li{}
+.game_ul_li a{color:#444;text-decoration:none;font-weight:bold;}
+.game_ul_li_cur{background:#fef9f3;}
+.game_ul_li_cur a{color:#222;text-decoration:none;font-weight:bold;}
+.game_ul li:hover{background:#fef9f3;} 
+.game_ul li:hover a{color:#222;text-decoration:underline;} 
+.roll2{height:180px;padding:10px;;overflow:hidden;color:#CCCCCC;text-align:left;list-style-type: none;}
+.roll3{height:30px;line-height:30px;overflow:hidden;text-align:left;list-style-type: none;}
+.game_pri{overflow:hidden;width:100%;margin:10px auto;padding:5px 0px;border:2px solid #ccc;margin-bottom:5px;box-shadow:0 0 8px rgba(0, 0, 0, 0.2);height:200px;}
+.bul_party{overflow:hidden;width:100%;margin:10px auto;padding:0px;border:2px solid #ccc;padding-bottom:8px;margin-bottom:5px;box-shadow:0 0 8px rgba(0, 0, 0, 0.2);}
+
+.bul_party li{height:30px;line-height:30px;padding:0px 5px;overflow:hidden;}
+.bul_party_li_title{font-weight:bold;color:#222;}
+.bul_party_li a{color:#222;text-decoration:none;font-weight:bold;}
+.bul_party_li_cur{background:#440011;}
+.bul_party_li_cur a{color:#222;text-decoration:none;font-weight:bold;}
+.bul_party li:hover{background:#fef9f3;} 

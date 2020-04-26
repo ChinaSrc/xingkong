@@ -1,0 +1,21 @@
+#drawing_tableDetail table{line-height: 40px;text-align: center;font-size: 14px;border-spacing: 0px}
+#drawing_tableDetail table th{background-color: #fafafa;font-weight: 600;}
+#drawing_tableDetail table td{border-bottom:1px #eee dotted;}
+#drawing_tableDetail table tr:hover td{
+    background-color: #fafafa;
+}
+.numbers span{
+display: inline-block;
+    height:22px;width: 22px;line-height:22px;border-radius: 50%;
+    margin:0 3px;
+    background-color: #e4393c;color:#fff;font-weight: 600;
+    background: -moz-linear-gradient(top,#ff4444 0,#e4393c 100%);
+    background: -webkit-linear-gradient(top,#ff4444 0,#e4393c 100%);
+    background: linear-gradient(to bottom,#ff4444 0,#e4393c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4444', endColorstr='#e4393c', GradientType=0 );
+}
+
+.db-config ul li{display: inline-block;padding: 0 20px;margin: 0 5px;}
+.AwardDiff{height:30px;line-height: 30px;border:1px #ddd solid;border-radius: 5px;}
+.AwardDiff.active{background-color: #e4393c;color: #fff; border-color:#e4393c; }
+.AwardDiff.active a{color: #fff;font-weight: 600;}

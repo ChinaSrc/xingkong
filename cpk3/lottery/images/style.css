@@ -1,0 +1,191 @@
+body,p,div,td,th {  font-family: "宋体"; font-size: 14px; margin:0px;}
+a {  color: #333; font-size: 14px;text-decoration: none;cursor: pointer}
+a:hover {  color: #333; font-size: 14px;text-decoration: none}
+a:link {  color: #333; font-size: 14px;text-decoration: none}
+a:visited {  color: #333; font-size: 14px;text-decoration: none}
+
+input[type="text"],input[type="number"],select,input[type="password"]
+{
+height:30px;line-height:30px;padding:0px 10px; font-family: "Tahoma", "宋体"; font-size: 14px;border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
+input[type="number"]{padding-right: 0px;}
+textarea{
+    font-size: 14px;border-radius: 4px;
+    border: 1px solid #ccc;
+
+    line-height:30px;padding:0px 10px; font-family: "Tahoma", "宋体";
+}
+table{
+width: 100%;
+    border: 1px solid #ddd;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-collapse:collapse;border-spacing:0;
+
+}
+th {
+    color: #fff;
+    background-color: #5e6171;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+th a{color:#fff;}
+tr{height:40px;line-height:40px;}
+.my_tbl tr:hover td{background-color: #fafafa;color:#000;}
+.my_tbl tr:hover td a{color:#000;}
+td{
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    height: 40px;
+
+
+}
+#dialogClose,#dialogBoxTitle{border: 0px !important;;}
+#dialogBoxShadow{display: none;}
+.list_tbl td{text-align: center !important;}
+.my_tbl td{text-align: left}
+.arrow-up{
+    position: relative;
+}
+.arrow-up:after {
+    margin-left: 3px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    margin-top:5px;
+}
+
+.arrow-down{
+    position: relative;
+}
+.arrow-down:after {
+    margin-left: 3px;
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    margin-top:20px;
+}
+
+
+.arrow-up1{
+    position: relative;
+}
+.arrow-up1:after {
+    margin-left: 3px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #ff0000;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    margin-top:5px;
+}
+
+.arrow-down1{
+    position: relative;
+}
+.arrow-down1:after {
+    margin-left: 3px;
+    border: 5px solid transparent;
+    border-top: 5px solid #ff0000;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    margin-top:20px;
+}
+.button {
+
+display: inline-block;
+    height: 30px;
+    padding: 0 15px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: #5e6171;
+    border: 0px;
+    border-radius: 5px;
+
+
+    font-size:14px;font-weight:600;color:#fff;
+
+}
+
+.button:hover{color:#fff;background-color:#222;text-decoration:none;}
+
+
+.input { font-family: "Tahoma", "宋体"; font-size: 14px;heigh:25px;line-height:25px;
+}
+.showpage{height:40px;line-height:40px;}
+.showpage li{display:inline;float:left;min-width:20px;text-align:center;margin-left:2px;margin-right:3px;}
+.div_left{float:left;}
+.div_right{float:right;}
+.message { font-family: "Tahoma", "宋体"; font-size: 14px;background-color:expression(this.type=="text"?'#ffffff':'');
+BORDER-RIGHT: rgb(0,0,0) 0px solid; BORDER-TOP: rgb(0,0,0) 0px solid; BORDER-LEFT: rgb(0,0,0) 0px solid; BORDER-BOTTOM: #CCCCCC 1px solid;HEIGHT: 24px;}
+
+
+/*投注说明样式*/
+.cu{ font-weight:bold;}
+/*投注示例样式*/
+#text {margin:50px auto; width:500px;}
+.hotspot {color:#900; padding-bottom:1px; border-bottom:1px dotted #000; cursor:pointer}
+#tt {position:absolute; display:block; background:#fff;border:1px #484848 solid; font-family:Arial;padding:2px; line-height:22px; font-weight:bold;color:#666;}
+#tttop {display:block; height:2px; margin-left:5px; background:#fff; }
+#ttbot {display:block; height:2px; margin-left:5px; background:#fff; overflow:hidden; font-size:14px;}
+
+ .link_02{color:#333;}
+.winpop { width:250px; height:0px; position:absolute; right:0; bottom:0;z-index: 100; border:1px solid #999999; margin:0; padding:1px; overflow:hidden; display:none; background:#FFFFFF}
+.winpop .title { width:100%; height:30px; line-height:30px; background:#1d252d; font-weight:bold; text-align:center; font-size:14px;color:#fff;}
+.winpop .msg_con { width:250px; height:130px; margin-top:30px;margin-left:20px; font-weight:bold; font-size:12px; color:#FF0000;text-align:left;padding-left:25px;}
+#silu { font-size:13px; color:#999999; position:absolute; right:0; text-align:right; text-decoration:underline; line-height:22px;}
+.close11 { position:absolute; right:4px; top:-1px; color:#FFFFFF; cursor:pointer;font-size:20px;}
+.mp31{background:url('../../static/images/mp31.png') no-repeat;}
+.mp32{background:url('../../static/images/mp32.png') no-repeat;}
+
+#secondary_bar {
+    height: 38px;
+    /* background: #F1F1F4 url(../images/new/secondary_bar.png) repeat-x; */
+    display:none;background-color:#fff;width:100%;position:fixed; top:0px;left:0px;z-index: 100;
+}
+.breadcrumbs_container{float:left;width:80%;height:38px;display: none;}
+.breadcrumbs{float:left;padding:0 10px;border:1px solid #ccc;-webkit-box-shadow:0 1px 0 #fff;-moz-box-shadow:0 1px 0 #fff;box-shadow:0 1px 0 #fff;height:23px;margin:4px 15px;}
+
+.breadcrumbs a{display:inline-block;float:left;height:24px;line-height:23px;font-weight:bold;text-decoration:none;color:#333;}
+.breadcrumbs a.current,.breadcrumbs a.current:hover{color:#f09b22;text-shadow:0 1px 0 #fff;}
+.breadcrumb_divider{display:inline-block;width:12px;height:24px;background:url(../images/new/breadcrumb_divider.png) no-repeat;float:left;margin:0 5px;}
+
+.search_box1{padding:5px 10px;}
+
+.table_add{margin-top:10px;}
+.table_add tr td{padding: 0 4px;text-align: left;}
+.table_add tr td:first-child{text-align: right}
+
+.table_add tr td input[type='text']{width: 100%;}
+.table_add li{display: inline-block;width: 110px;height:30px;line-height: 30px;text-align: left;padding: 0 5px;}
+.virtual td{background: #00c77a;color:#fff;}
+.ipabnormal td{background: #c70000;color:#fff;}
+.virtual td a{color:#fff;}
+.tips{font-size: 12px;color:#999;}
+.red{color:#ff0000;}
+.page{clear: both;height:40px;line-height: 40px;text-align: center;margin-bottom: 20px;}
+
+.page a{padding:4px 8px;border:1px #444 solid;margin:0 5px;border-radius:2px;}
+
+.page .current{font-weight: 600;color: #000;padding:4px 8px;margin:0 3px;}
+
+
+.btn0,.btn1{display:inline-block;color: #fff;font-size: 12px;height:20px;line-height: 20px;padding: 0 10px;border-radius: 10px;cursor: pointer;}
+.btn0:hover,.btn1:hover{color: #fff;font-size: 12px;}
+.btn0{background: #3388ff}
+.btn1{background: #00c77a}

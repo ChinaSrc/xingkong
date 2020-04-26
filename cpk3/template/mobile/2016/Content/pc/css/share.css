@@ -1,0 +1,392 @@
+
+
+#ticket-base {
+	position: relative;
+	background: #fff;
+	height: 88px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+#ticket-base .tb-body {
+	display:table;
+	width:100%
+}
+#ticket-base .tb-body>.tb-b-column {
+	display:table-cell;
+	line-height:0;
+	vertical-align:top
+}
+#ticket-base .tb-body .tb-sub {
+	position: relative;
+	float: left;
+	padding: 10px 0;
+}
+#ticket-base .tb-body .tb-sub>.sub {
+	display:inline-block;
+	vertical-align:middle;
+
+	float:left;
+	margin-top:5px;
+	margin-left:4px;
+}
+#ticket-base #ticket-cutdown .tb-sub,#ticket-base #ticker-drawing-last .tb-sub {
+	position: relative;
+
+	display: table;
+	float: left;
+
+}
+#ticket-base-info {
+	width:104px
+}
+
+#ticket-base .issue {
+	position: absolute;
+	top: 21px;
+	left: 0;
+	width: 140px;
+	font-size: 13px;
+	text-align: right;
+
+}
+
+#ticket-base-info .image {
+	font-size:0;
+	height:60px;
+	position:relative;
+	padding:3px 0;
+	overflow:hidden;
+	text-align:center
+}
+#ticket-base-info .stickie-handle,#ticket-base-info .stickie-handle a {
+	display:block;
+	width:24px;
+	height:24px;
+	overflow:hidden
+}
+#ticket-base-info .stickie-handle em {
+	display:none
+}
+#ticket-base-info .stickie-handle {
+	position:absolute;
+	left:0;
+	top:4px
+}
+#ticket-base-info .stickie-handle a {
+	background:url(../../../images/kc-icon.png) no-repeat -4px -4px
+}
+#ticket-base-info .stickie-handle-on a {
+	background-position:-36px -4px
+}
+
+
+
+
+
+
+#cutdown-clock-basec ul {
+
+	width: 232px;
+	height: 44px;
+	line-height: 44px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+	border-radius: 6px;
+	background: url("../../../images/surplus_time_bg.png") no-repeat;
+}
+#cutdown-clock-base ul,#cutdown-clock-base ul li {
+	display:inline-block;
+	font-size:0;
+	height:48px;
+	vertical-align:middle
+}
+#cutdown-clock-base ul li span {
+	color:#fff;
+	font-size:18px;
+
+}
+#ticket-cutdown .tc-refer {
+	font-size:12px;
+	text-align:center;
+	line-height:20px;
+	color:#666;
+}
+#ticket-cutdown .tc-refer i,#ticket-cutdown .tc-refer em,#ticket-cutdown .tc-refer span {
+	padding:0 2px;
+	font-style:normal
+}
+#ticket-cutdown .title span {
+	display:block;text-align:right;
+}
+#ticket-cutdown .title em {
+	color:#ff0a09;
+	font-size:14px
+}
+
+
+#ticket-cutdown .option {
+	float:right!important;
+	padding-right:4px
+}
+#ticket-cutdown .option a,#ticket-cutdown .option i {
+	display:block;
+	padding:0
+}
+#ticket-cutdown .option a {
+	height:24px;
+	line-height:24px;
+	position:relative;
+	padding-left:26px
+}
+#ticket-cutdown  .option i {
+	width:24px;
+	height:24px;
+	background:url(../../../images/kc-icon.png) no-repeat -4px -4px;
+	position:absolute;
+	top:0;
+	left:0
+}
+#ticket-cutdown  .option a.tdl-o-chart i {
+	background-position:-292px -196px
+}
+#ticket-cutdown  .option a.tdl-o-remark i {
+	background-position:-324px -196px
+}
+#cutdown-clock-fixed {
+	color:#fff;
+	position:fixed;
+	left:-400px;
+	top:10px;
+	background:#3388ff;
+	border-radius:4px;
+	padding:5px 5px 0;
+	z-index:999;
+	border:1px #2319dc solid
+}
+#cutdown-clock-fixed h4 {
+	position:relative;
+	height:24px
+}
+#cutdown-clock-fixed h4 em {
+	display:block;
+	position:absolute;
+	width:24px;
+	height:24px;
+	left:0;
+	top:0;
+	background:url(../../../images/cutdown-fixed-icon.png) no-repeat 0 0
+}
+#cutdown-clock-fixed h4 span {
+	margin-left:24px;
+	line-height:24px;
+	font-size:12px;
+	padding:0 10px 0 5px
+}
+#cutdown-clock-fixed ul,#cutdown-clock-fixed ul li {
+	display:inline-block;
+	height:48px;
+	line-height:0;
+	font-size:0
+}
+#cutdown-clock-fixed ul {
+	width:100%;
+	text-align:center
+}
+#cutdown-clock-fixed ul li span {
+	display:block;
+	font-size:24px;
+	text-align:center;
+	line-height:48px
+}
+
+.number.tdl-vs-dice span.tvs-dice-1 i {
+	background-position:0 0
+}
+.number.tdl-vs-dice span.tvs-dice-2 i {
+	background-position:-48px 0
+}
+.number.tdl-vs-dice span.tvs-dice-3 i {
+	background-position:-96px 0
+}
+.number.tdl-vs-dice span.tvs-dice-4 i {
+	background-position:-144px 0
+}
+.number.tdl-vs-dice span.tvs-dice-5 i {
+	background-position:-192px 0
+}
+.number.tdl-vs-dice span.tvs-dice-6 i {
+	background-position:-240px 0
+}
+.number.tdl-vs-dice.ks-tdl-loading span i ,.number.ks-tdl-loading .k3code ul li {
+	background:url(../../../images/tn.gif) no-repeat center top!important;
+	background-size:30px!important
+}
+
+.number.k3code ul li{padding:0px 10px;}
+.number.k3code img{width:30px; }
+.number.pks-tdl-loading {
+
+	background:url(../../../images/pks-loading.gif) no-repeat center top!important;
+	background-size:cover!important
+}
+.number.pks-tdl-loading {
+
+	background:url(../../../images/pks-loading.gif) no-repeat center top!important;
+	background-size:cover!important
+}
+.number.pks-tdl-loading ul {
+
+	visibility:hidden
+}
+.number.tdl-vs-poker {
+	margin:4px 0
+}
+.number.tdl-vs-poker span {
+	background:#fff;
+	position:relative;
+	border-radius:2px;
+	width:32px;
+	height:44px;
+	position:relative
+}
+.number.tdl-vs-poker span i,.number.tdl-vs-poker span em {
+	position:absolute;
+	padding:0!important
+}
+.number.tdl-vs-poker span em {
+	color:#333;
+	left:0;
+	top:0;
+	width:18px;
+	height:18px;
+	text-align:center;
+	line-height:18px;
+	font-size:18px;
+	font-family:Courier,"Courier New"
+}
+.number.tdl-vs-poker span i {
+	width:32px;
+	height:32px;
+	background-image:url(../../../images/poker-bg.png);
+	background-image:-webkit-image-set(url(../../../images/poker-bg.png) 1x,url(../../../images/poker-bg_402x.png) 2x);
+	background-repeat:no-repeat;
+	font-size:0;
+	top:100%;
+	margin-top:-30px;
+	left:50%;
+	margin-left:-16px
+}
+.number.tdl-vs-poker span.tvs-poker-dt i {
+	background-position:-32px -48px
+}
+.number.tdl-vs-poker span.tvs-poker-rt i {
+	background-position:-64px -48px
+}
+.number.tdl-vs-poker span.tvs-poker-mh i {
+	background-position:-96px -48px
+}
+.number.tdl-vs-poker span.tvs-poker-fp i {
+	background-position:-128px -48px
+}
+.number.tdl-vs-poker span.tvs-poker-loading {
+	line-height:0;
+	width:32px;
+	height:44px
+}
+.number.tdl-vs-poker span.tvs-poker-loading em {
+	display:none
+}
+.number.tdl-vs-poker span.tvs-poker-loading i {
+	display:block;
+	width:28px!important;
+	height:40px!important;
+	margin:0!important;
+	left:2px;
+	top:2px;
+	margin-left:0;
+	background-position:-10px -92px;
+	overflow:hidden
+}
+
+.ticker-drawing-viewer .number.tdl-vs-ks {
+	height:48px
+}
+.ticker-drawing-viewer .number.tdl-vs-ks span {
+	width:48px;
+	height:48px;
+	line-height:48px;
+	color:#333;
+	font-size:28px
+}
+.ticker-drawing-viewer .number.tdl-vs-base {
+	height:30px;display: block;width: 100%;
+	line-height: 30px;
+}
+.ticker-drawing-viewer .number ul{display: block;width: 100%;text-align: center;height:30px;line-height: 30px;}
+.ticker-drawing-viewer .number.tdl-vs-base-pks span {
+	width:26px;
+	height:26px;
+	line-height:26px;
+	font-size:18px
+}
+.ticker-drawing-viewer .number.tdl-vs-base-pks {
+	height:auto;
+	margin:2px 0
+}
+.ticker-drawing-viewer .number.tdl-vs-base-pks span {
+	width:30px;
+	height:44px;
+	font-size:0;
+	margin:0;
+	-webkit-border-radius:0;
+	border-radius:0
+}
+.ticker-drawing-viewer dl.tdl-vs-sum dd span {
+	font-size:24px;
+	font-weight:bold;
+	color:#f50
+}
+.ticker-drawing-viewer dl.tdl-vs-pattern dd span {
+	padding:0!important;
+	display:inline-block;
+	color:#fff;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	margin:2px 5px;
+	border-radius:2px
+}
+.ticker-drawing-viewer dl.tdl-vs-type dd span {
+	display:inline-block;
+	padding:0 8px!important
+}
+.ticker-drawing-viewer dl.tdl-vs-type dd .tdl-vs-t-red {
+	color:#f50
+}
+.ticker-drawing-viewer dl.tdl-vs-type dd .tdl-vs-t-green {
+	color:#690
+}
+.ticker-drawing-viewer dl.tdl-vs-type dd .tdl-vs-t-blue {
+	color:#09f
+}
+.number.tdl-vs-dice span,.number.tdl-vs-dice span i {
+	width:30px;
+	height:30px
+}
+.number.tdl-vs-dice span i {
+	display:block;
+	font-size:0;
+	background:url(../../../images/dice.png) no-repeat 0 0
+}
+.ticker-drawing-viewer .tdl-viewer-sub,.ticker-drawing-viewer .tdl-viewer-sub dl {
+	display:inline-block;
+	vertical-align:middle;
+	line-height:0
+}
+
+.complete{
+	text-align: center;
+	line-height: 30px;
+}

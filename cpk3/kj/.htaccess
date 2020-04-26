@@ -1,0 +1,20 @@
+ <IfModule mod_rewrite.c>
+rewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*).aspx$  $1.php  [QSA,L]
+RewriteRule index.html$  index.php  [QSA,L]
+RewriteRule login.html$  index.php?mod=login  [QSA,L]
+RewriteRule reg.html$  index.php?mod=reg  [QSA,L]
+RewriteRule index_(.*).html$  index.php?mod=$1 [QSA,L]
+RewriteRule main.html$  index.php?mod=main [QSA,L]
+RewriteRule game_(.*).html$  index.php?mod=game&id=$1  [QSA,L]
+RewriteRule game1_(.*)_(.*).html$  index.php?mod=game&play=$1&type=$2  [QSA,L]
+RewriteRule lottery_(.*).html$  index.php?mod=kaijiang&key=$1  [QSA,L]
+RewriteRule home_(.*)_(.*).html$  index.php?mod=$1&code=$2  [QSA,L]
+RewriteRule home.html$  index.php?mod=report&code=index  [QSA,L]
+RewriteRule admin_(.*)_(.*).html$ index.php?controller=$1&action=$2  [QSA,L]
+RewriteRule hemai.html$  index.php?mod=hemai [QSA,L]
+RewriteRule hemai_(.*).html$  index.php?mod=hemai&id=$1 [QSA,L]
+RewriteRule default.html$  index.php?mod=welcome [QSA,L]
+</IfModule>

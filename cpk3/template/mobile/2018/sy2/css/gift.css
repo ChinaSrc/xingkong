@@ -1,0 +1,41 @@
+.content p {margin: 0;padding: 0;}
+.section {font-size: 14px;line-height: 24px;}
+.formTable {
+  background: #d5d3d4;
+  color: #242424;
+  line-height: 24px;
+  margin: 0 0 10px;
+}
+div.formTable {padding: 10px 20px;}
+.formTable div {
+  display: inline-block;
+  *display: inline;
+  margin: 20px 0 0;
+  *zoom: 1;
+}
+.formTable div[class*="left"] {width: 650px;}
+.formTable div[class*="left"] span {font-size: 16px;font-weight: bold;}
+.formTable div[class*="right"] {width: 100px;}
+
+table.formTable td + td {text-align: center;}
+table.formTable tr:nth-of-type(even) td {background: #c9c6c7;}
+table.formTable tr:hover td {background: #b9b6b7;}
+table.formTable tr th, table.formTable tr td {padding: 10px 10px 10px 20px;}
+table.formTable tr th + th, table.formTable tr td + td {padding: 10px;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+h2  {font-size: 18px;margin: 0 0 10px 30px;}
+h3 {font-size: 15px;margin: 0 0 10px 30px;}
+h3 img {vertical-align: middle;}
+h4 {font-size: 15px;margin-bottom: 5px;}
+.step {margin: 0 0 20px;padding: 0 60px;}
+
+img {max-width: 100%;}
+.section table{
+  width: 100% !important;
+}

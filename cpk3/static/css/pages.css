@@ -1,0 +1,13 @@
+
+.pages{margin:auto 0px;width:100%;overflow:hidden;}
+.div_left{float:left;margin-left:10px;}
+.div_right{float:right;margin-right:10px;}
+.pages_ul{margin-left:20px;display:inline;}
+
+
+.pages_ul li{float:left;margin-right:5px; text-align:center;display:inline;padding:0 5px;}
+.pages_ul li a{color:#333;}
+.pages_ul li a:hover{color:#FF6600;background-color: #FBE5E5;display:block;}
+.pages_ul li#img{height:19px;padding:0px;}
+.pages_ul li#cur{display:block;color:#fff;height:20px;}
+.pages_ul li#cur a{color:#FF0000;font-weight:800;}

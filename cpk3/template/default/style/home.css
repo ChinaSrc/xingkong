@@ -1,0 +1,354 @@
+.wi-layout-wrap {
+    overflow: hidden;
+    background: #fff;
+
+    min-height: 720px;
+    display: flex;
+
+}
+
+
+.user-operating-wrap a i {
+    width: 20px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px
+}
+
+.user-operating-wrap a:first-child {
+    background: #b4ae00
+}
+
+.user-operating-wrap a:nth-child(2) {
+    background: #235ad6
+}
+
+.user-operating-wrap a:nth-child(3) {
+    background: #f56e5b
+}
+
+.user-operating-wrap a {
+    display: inline-block;
+
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 15px
+}
+
+.user-operating-wrap {
+    width: 250px;
+    height: 90px
+}
+
+.username-allmoney h1 {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #fff;
+    margin-left: 90px
+}
+
+.username-allmoney h2 {
+    margin-left: 87px;
+    color: #ffeb3b;
+    font-size: 16px
+}
+
+.username-allmoney>span>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -12px
+}
+
+.username-allmoney>span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: hsla(0,0%,100%,.2);
+    position: absolute;
+    top: 20px;
+    left: 20px
+}
+
+.username-allmoney {
+    width: 270px;
+    height: 90px;
+    position: relative
+}
+
+.username-safety h1 {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px
+}
+
+.manager-userdata-wrap li.username-safety {
+    width: 200px;
+    height: 90px;
+    padding-left: 20px
+}
+
+.manager-userdata-wrap li {
+    float: left
+}
+
+.manager-userdata-wrap,.manager-userimg {
+    float: left;
+    overflow: hidden;
+    height: 90px
+}
+
+.manager-userimg {
+    width: 90px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer
+}
+
+.manager-userimg img {
+    width: 100%
+}
+
+.wi-layout-top {
+    padding: 15px;
+    width: 1150px;
+    height: 100px;
+    background: #ff6666;
+
+    clear: both;
+}
+
+.wi-layout-left {
+    vertical-align: top;
+    background-color: #fbfbfb;
+
+    overflow: hidden;
+    border:1px solid #ddd;
+    float: left;width: 200px;
+    ;
+
+}
+
+.wi-layout-right {
+    width: 970px;
+    padding-left: 10px;
+    float: right;color:#444;
+    background-color: #fff;
+}
+
+
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px
+}
+
+.content .layout {
+    padding-bottom: 20px;
+    min-height: 680px
+}
+
+.ivu-menu-item {
+    display: block;
+    outline: none;
+    list-style: none;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out
+}
+
+.ivu-menu-item>i {
+    margin-right: 6px
+}
+
+.ivu-menu-submenu-title>i,.ivu-menu-submenu-title span>i {
+
+    float: right;
+
+    top: 4px;
+    color:#666;
+}
+
+.ivu-menu-horizontal .ivu-menu-item,.ivu-menu-horizontal .ivu-menu-submenu {
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    transition: all .2s ease-in-out
+}
+
+.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item,.ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu {
+    height: inherit;
+    line-height: inherit;
+    border-bottom: 2px solid transparent;
+    color: #657180
+}
+
+.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item-active,.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item:hover,.ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu-active,.ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu:hover {
+    color: #00b9b9;
+    border-bottom: 2px solid #00b9b9
+}
+
+.ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item,.ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu {
+    color: #9ea7b4
+}
+
+.ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item-active,.ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item:hover,.ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu-active,.ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu:hover,.ivu-menu-primary.ivu-menu-horizontal .ivu-menu-item,.ivu-menu-primary.ivu-menu-horizontal .ivu-menu-submenu {
+    color: #fff
+}
+
+.ivu-menu-primary.ivu-menu-horizontal .ivu-menu-item-active,.ivu-menu-primary.ivu-menu-horizontal .ivu-menu-item:hover,.ivu-menu-primary.ivu-menu-horizontal .ivu-menu-submenu-active,.ivu-menu-primary.ivu-menu-horizontal .ivu-menu-submenu:hover {
+    background: #3091f2
+}
+
+.ivu-menu-horizontal .ivu-menu-submenu .ivu-select-dropdown {
+    min-width: 100%;
+    width: auto;
+    max-height: none
+}
+
+.ivu-menu-horizontal .ivu-menu-submenu .ivu-select-dropdown .ivu-menu-item {
+    height: auto;
+    border-bottom: 0;
+    float: none
+}
+
+.ivu-menu-item-group {
+    line-height: normal
+}
+
+.ivu-menu-item-group-title {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+    font-size: 14px;
+    color: #999
+}
+
+.ivu-menu-item-group>ul {
+    padding: 0!important;
+    list-style: none!important
+}
+
+.ivu-menu-vertical .ivu-menu-item,.ivu-menu-vertical .ivu-menu-submenu-title {
+    padding: 10px 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .2s ease-in-out
+}
+.ivu-menu-vertical .ivu-menu-submenu-title a{
+
+    color: #253647;font-weight: 600;font-size: 14px;
+}
+.ivu-menu-vertical .ivu-menu-submenu-title a span{
+    margin-right: 5px;
+}
+.ivu-menu-vertical .ivu-menu-item:hover,.ivu-menu-vertical .ivu-menu-submenu-title:hover {
+    background: #f3f3f3
+}
+
+.ivu-menu-vertical .ivu-menu-submenu-title-icon {
+    float: right;
+    position: relative;
+    top: 4px
+}
+
+.ivu-menu-submenu-title-icon {
+    transition: transform .2s ease-in-out
+}
+
+.ivu-menu-opened .ivu-menu-submenu-title-icon {
+    transform: rotate(180deg)
+}
+
+.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item {
+    padding-left: 43px
+}
+
+.ivu-menu-vertical .ivu-menu-item-group-title {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    padding-left: 28px
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-group-title {
+    color: #657180
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item {
+    border-right: 2px solid transparent
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+    color: #ff0000;
+    border-right: 2px solid #ff0000;
+    z-index: 2
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active a{color: #253647;font-weight: 600;font-size: 14px;}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item,.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title {
+    color: #9ea7b4
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu),.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):hover,.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu),.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu):hover {
+    background: #313540
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item:hover,.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title:hover {
+    color: #fff;
+    background: #464c5b
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu),.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu) {
+    color: #00b9b9;
+    border-right: 2px solid #00b9b9
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item:hover {
+    color: #fff;
+    background: transparent!important
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active,.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover {
+    border-right: none;
+    color: #fff;
+    background: #00b9b9!important
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active .ivu-menu-submenu-title {
+    color: #fff
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened {
+    background: #313540
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title {
+    background: #464c5b
+}
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+    color: #f56e5b;
+    border-right: 2px solid #f56e5b;
+    z-index: 2;
+}
+.w-caidan a.active {
+    color: #f56e5b;
+}
+
+

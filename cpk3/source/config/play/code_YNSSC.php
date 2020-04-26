@@ -1,0 +1,142 @@
+<?
+$con_play_arr=array('code'=>array('5X','4X','3X','2X','1X','BDW','DXDS','QW-SSC-SH','QW-SSC-BCH','QW-SSC-BDW','QW-SSC-KD','QW-SSC-ZYSM','QW-SSC-DWT','QW-SSC-HZ','QW-SSC-3LH','QW-SSC-2TH','QW-SSC-2BT','QW-SSC-LHH','QW-SSC-DN'),'firstcode'=>'5X','lot_date'=>'','lot_num'=>'');
+$con_title_arr=array(
+  '5X'=>array('fullname'=>'五星','mode'=>'default'),
+  '4X'=>array('fullname'=>'四星','mode'=>'fix'),
+  '3X'=>array('fullname'=>'三星','mode'=>''),
+  '2X'=>array('fullname'=>'二星','mode'=>'default'),
+  '1X'=>array('fullname'=>'定位胆','mode'=>'default'),
+  'BDW'=>array('fullname'=>'不定位','mode'=>'default'),
+  'DXDS'=>array('fullname'=>'大小单双','mode'=>'default'),
+  'QW-SSC-SH'=>array('fullname'=>'梭哈','mode'=>''),
+  'QW-SSC-BCH'=>array('fullname'=>'不出号','mode'=>''),
+  'QW-SSC-BDW'=>array('fullname'=>'不定位','mode'=>''),
+  'QW-SSC-KD'=>array('fullname'=>'跨度','mode'=>''),
+  'QW-SSC-ZYSM'=>array('fullname'=>'自由双面','mode'=>''),
+  'QW-SSC-DWT'=>array('fullname'=>'定位投','mode'=>''),
+  'QW-SSC-HZ'=>array('fullname'=>'和值','mode'=>''),
+  'QW-SSC-3LH'=>array('fullname'=>'三连号','mode'=>''),
+  'QW-SSC-2TH'=>array('fullname'=>'二同号','mode'=>''),
+  'QW-SSC-2BT'=>array('fullname'=>'二不同','mode'=>''),
+  'QW-SSC-LHH'=>array('fullname'=>'龙虎和','mode'=>''),
+  'QW-SSC-DN'=>array('fullname'=>'斗牛','mode'=>'')
+);
+
+$con_code_arr=array(
+  '1X'=>array(
+      '1X_dwd'=>array('ListKey'=>'1X_dwd','CodeTile'=>'','ShowTile'=>'定位胆','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2X'=>array(
+      '2X_1_zhxfs'=>array('ListKey'=>'2X_1_zhxfs','CodeTile'=>'前二直选','ShowTile'=>'前二(复式)','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_zhxds'=>array('ListKey'=>'2X_1_zhxds','CodeTile'=>'前二直选','ShowTile'=>'前二(单式)','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzhxhz'=>array('ListKey'=>'2X_1_2xzhxhz','CodeTile'=>'前二直选','ShowTile'=>'前二和值','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzhxkd'=>array('ListKey'=>'2X_1_2xzhxkd','CodeTile'=>'前二直选','ShowTile'=>'前二跨度','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_zhxfs'=>array('ListKey'=>'2X_2_zhxfs','CodeTile'=>'后二直选','ShowTile'=>'后二(复式)','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_zhxds'=>array('ListKey'=>'2X_2_zhxds','CodeTile'=>'后二直选','ShowTile'=>'后二(单式)','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_2xzhxhz'=>array('ListKey'=>'2X_2_2xzhxhz','CodeTile'=>'后二直选','ShowTile'=>'后二和值','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_2xzhxkd'=>array('ListKey'=>'2X_2_2xzhxkd','CodeTile'=>'后二直选','ShowTile'=>'后二跨度','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzxfs'=>array('ListKey'=>'2X_1_2xzxfs','CodeTile'=>'前二组选','ShowTile'=>'前二(复式)','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_zxds'=>array('ListKey'=>'2X_1_zxds','CodeTile'=>'前二组选','ShowTile'=>'前二(单式)','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzxhz'=>array('ListKey'=>'2X_1_2xzxhz','CodeTile'=>'前二组选','ShowTile'=>'前二和值','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzxbd'=>array('ListKey'=>'2X_1_2xzxbd','CodeTile'=>'前二组选','ShowTile'=>'前二包胆','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_2xzxfs'=>array('ListKey'=>'2X_2_2xzxfs','CodeTile'=>'后二组选','ShowTile'=>'后二(复式)','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_zxds'=>array('ListKey'=>'2X_2_zxds','CodeTile'=>'后二组选','ShowTile'=>'后二(单式)','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '4X'=>array(
+      '4X1_fs'=>array('ListKey'=>'4X1_fs','CodeTile'=>'前四直选','ShowTile'=>'前四直选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '4X1_ds'=>array('ListKey'=>'4X1_ds','CodeTile'=>'前四直选','ShowTile'=>'前四直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '4X_fs'=>array('ListKey'=>'4X_fs','CodeTile'=>'后四直选','ShowTile'=>'后四直选复式','Rebates'=>'Normal','MaxNote'=>''),
+      '4X_ds'=>array('ListKey'=>'4X_ds','CodeTile'=>'后四直选','ShowTile'=>'后四直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '4X_z24'=>array('ListKey'=>'4X_z24','CodeTile'=>'四星组选','ShowTile'=>'组选24','Rebates'=>'Normal','MaxNote'=>''),
+      '4X_z12'=>array('ListKey'=>'4X_z12','CodeTile'=>'四星组选','ShowTile'=>'组选12','Rebates'=>'Normal','MaxNote'=>''),
+      '4X_z6'=>array('ListKey'=>'4X_z6','CodeTile'=>'四星组选','ShowTile'=>'组选6','Rebates'=>'Normal','MaxNote'=>''),
+      '4X_z4'=>array('ListKey'=>'4X_z4','CodeTile'=>'四星组选','ShowTile'=>'组选4','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '5X'=>array(
+      '5X_fs'=>array('ListKey'=>'5X_fs','CodeTile'=>'直选','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>''),
+      '5X_ds'=>array('ListKey'=>'5X_ds','CodeTile'=>'直选','ShowTile'=>'手工','Rebates'=>'Normal','MaxNote'=>''),
+      '5X_z120'=>array('ListKey'=>'5X_z120','CodeTile'=>'组选','ShowTile'=>'组选120','Rebates'=>'Normal','MaxNote'=>''),
+      '5X_z60'=>array('ListKey'=>'5X_z60','CodeTile'=>'组选','ShowTile'=>'组选60','Rebates'=>'Normal','MaxNote'=>''),
+      '5X_z30'=>array('ListKey'=>'5X_z30','CodeTile'=>'组选','ShowTile'=>'组选30','Rebates'=>'Normal','MaxNote'=>''),
+      '5X_z20'=>array('ListKey'=>'5X_z20','CodeTile'=>'组选','ShowTile'=>'组选20','Rebates'=>'Normal','MaxNote'=>''),
+      '5X_z10'=>array('ListKey'=>'5X_z10','CodeTile'=>'组选','ShowTile'=>'组选10','Rebates'=>'Normal','MaxNote'=>''),
+      '5X_z5'=>array('ListKey'=>'5X_z5','CodeTile'=>'组选','ShowTile'=>'组选5','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'BDW'=>array(
+      'BDW3_hsym'=>array('ListKey'=>'BDW3_hsym','CodeTile'=>'一码','ShowTile'=>'全五','Rebates'=>'Second','MaxNote'=>''),
+      'BDW_qsym'=>array('ListKey'=>'BDW_qsym','CodeTile'=>'一码','ShowTile'=>'前三','Rebates'=>'Second','MaxNote'=>''),
+      'BDW_zsym'=>array('ListKey'=>'BDW_zsym','CodeTile'=>'一码','ShowTile'=>'中三','Rebates'=>'Second','MaxNote'=>''),
+      'BDW_hsym'=>array('ListKey'=>'BDW_hsym','CodeTile'=>'一码','ShowTile'=>'后三','Rebates'=>'Second','MaxNote'=>''),
+      'BDW_qsem'=>array('ListKey'=>'BDW_qsem','CodeTile'=>'二码','ShowTile'=>'前三','Rebates'=>'Second','MaxNote'=>''),
+      'BDW_zsem'=>array('ListKey'=>'BDW_zsem','CodeTile'=>'二码','ShowTile'=>'中三','Rebates'=>'Second','MaxNote'=>''),
+      'BDW_hsem'=>array('ListKey'=>'BDW_hsem','CodeTile'=>'二码','ShowTile'=>'后三','Rebates'=>'Second','MaxNote'=>'')
+  ),
+  'QW-SSC-2BT'=>array(
+      '2BT-q3'=>array('ListKey'=>'2BT-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      '2BT-z3'=>array('ListKey'=>'2BT-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      '2BT-h3'=>array('ListKey'=>'2BT-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-2TH'=>array(
+      '2TH-q3'=>array('ListKey'=>'2TH-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      '2TH-z3'=>array('ListKey'=>'2TH-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      '2TH-h3'=>array('ListKey'=>'2TH-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-3LH'=>array(
+      '3LH-q3'=>array('ListKey'=>'3LH-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      '3LH-z3'=>array('ListKey'=>'3LH-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      '3LH-h3'=>array('ListKey'=>'3LH-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-BCH'=>array(
+      'BCH-q5'=>array('ListKey'=>'BCH-q5','CodeTile'=>'玩法选择','ShowTile'=>'全五','Rebates'=>'Normal','MaxNote'=>''),
+      'BCH-q3'=>array('ListKey'=>'BCH-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      'BCH-z3'=>array('ListKey'=>'BCH-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      'BCH-h3'=>array('ListKey'=>'BCH-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-BDW'=>array(
+      'BDW-q5'=>array('ListKey'=>'BDW-q5','CodeTile'=>'玩法选择','ShowTile'=>'全五','Rebates'=>'Normal','MaxNote'=>''),
+      'BDW-q3'=>array('ListKey'=>'BDW-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      'BDW-z3'=>array('ListKey'=>'BDW-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      'BDW-h3'=>array('ListKey'=>'BDW-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-DN'=>array(
+      'DN-q5'=>array('ListKey'=>'DN-q5','CodeTile'=>'','ShowTile'=>'全五','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-DWT'=>array(
+      'DWT-q1'=>array('ListKey'=>'DWT-q1','CodeTile'=>'玩法选择','ShowTile'=>'前一','Rebates'=>'Normal','MaxNote'=>''),
+      'DWT-z1'=>array('ListKey'=>'DWT-z1','CodeTile'=>'玩法选择','ShowTile'=>'中一','Rebates'=>'Normal','MaxNote'=>''),
+      'DWT-h1'=>array('ListKey'=>'DWT-h1','CodeTile'=>'玩法选择','ShowTile'=>'后一','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-HZ'=>array(
+      'HZ-q3'=>array('ListKey'=>'HZ-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      'HZ-z3'=>array('ListKey'=>'HZ-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      'HZ-h3'=>array('ListKey'=>'HZ-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-KD'=>array(
+      'KD-q5'=>array('ListKey'=>'KD-q5','CodeTile'=>'玩法选择','ShowTile'=>'全五','Rebates'=>'Normal','MaxNote'=>''),
+      'KD-q3'=>array('ListKey'=>'KD-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      'KD-z3'=>array('ListKey'=>'KD-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      'KD-h3'=>array('ListKey'=>'KD-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-LHH'=>array(
+      'LHH-q5'=>array('ListKey'=>'LHH-q5','CodeTile'=>'玩法选择','ShowTile'=>'全五','Rebates'=>'Normal','MaxNote'=>''),
+      'LHH-q3'=>array('ListKey'=>'LHH-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      'LHH-z3'=>array('ListKey'=>'LHH-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      'LHH-h3'=>array('ListKey'=>'LHH-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-SH'=>array(
+      'SH-q5'=>array('ListKey'=>'SH-q5','CodeTile'=>'玩法选择','ShowTile'=>'全五','Rebates'=>'Normal','MaxNote'=>''),
+      'SH-q3'=>array('ListKey'=>'SH-q3','CodeTile'=>'玩法选择','ShowTile'=>'前三','Rebates'=>'Normal','MaxNote'=>''),
+      'SH-z3'=>array('ListKey'=>'SH-z3','CodeTile'=>'玩法选择','ShowTile'=>'中三','Rebates'=>'Normal','MaxNote'=>''),
+      'SH-h3'=>array('ListKey'=>'SH-h3','CodeTile'=>'玩法选择','ShowTile'=>'后三','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  'QW-SSC-ZYSM'=>array(
+      'ZYSM-q5'=>array('ListKey'=>'ZYSM-q5','CodeTile'=>'','ShowTile'=>'全五','Rebates'=>'Normal','MaxNote'=>'')
+  )
+);
+$con_play_pri=array(
+);
+
+$con_play_time=array(
+);
+
+?>

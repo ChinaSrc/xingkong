@@ -1,0 +1,134 @@
+<?
+$con_play_arr=array('code'=>array('3X4','2X3','3D_BDW','3D_DWD','2X4','2X5'),'firstcode'=>'3X4','lot_date'=>'','lot_num'=>'');
+$con_title_arr=array(
+  '3X4'=>array('fullname'=>'三星','mode'=>'default'),
+  '2X3'=>array('fullname'=>'二星','mode'=>'default'),
+  '3D_BDW'=>array('fullname'=>'不定位','mode'=>'fix'),
+  '3D_DWD'=>array('fullname'=>'定位胆','mode'=>'default'),
+  '2X4'=>array('fullname'=>'前二','mode'=>''),
+  '2X5'=>array('fullname'=>'后二','mode'=>'')
+);
+
+$con_code_arr=array(
+  '2X3'=>array(
+      '2X3_2_zhxfs'=>array('ListKey'=>'2X3_2_zhxfs','CodeTile'=>'二星','ShowTile'=>'后二直选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_2_zhxds'=>array('ListKey'=>'2X3_2_zhxds','CodeTile'=>'二星','ShowTile'=>'后二直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_2_2xzxfs'=>array('ListKey'=>'2X3_2_2xzxfs','CodeTile'=>'二星','ShowTile'=>'后二组选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_2_zxds'=>array('ListKey'=>'2X3_2_zxds','CodeTile'=>'二星','ShowTile'=>'后二组选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zhxfs'=>array('ListKey'=>'2X3_1_zhxfs','CodeTile'=>'二星','ShowTile'=>'前二直选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zhxds'=>array('ListKey'=>'2X3_1_zhxds','CodeTile'=>'二星','ShowTile'=>'前二直选单式','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_2xzxfs'=>array('ListKey'=>'2X3_1_2xzxfs','CodeTile'=>'二星','ShowTile'=>'前二组选','Rebates'=>'Normal','MaxNote'=>''),
+      '2X3_1_zxds'=>array('ListKey'=>'2X3_1_zxds','CodeTile'=>'二星','ShowTile'=>'前二组选单式','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2X4'=>array(
+      '2X_1_zhxfs'=>array('ListKey'=>'2X_1_zhxfs','CodeTile'=>'直选','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzhxhz'=>array('ListKey'=>'2X_1_2xzhxhz','CodeTile'=>'直选','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzxfs'=>array('ListKey'=>'2X_1_2xzxfs','CodeTile'=>'组选','ShowTile'=>'包号','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_2xzxhz'=>array('ListKey'=>'2X_1_2xzxhz','CodeTile'=>'组选','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_1_zhxds'=>array('ListKey'=>'2X_1_zhxds','CodeTile'=>'手工','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '2X5'=>array(
+      '2X_2_zhxfs'=>array('ListKey'=>'2X_2_zhxfs','CodeTile'=>'直选','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_2xzhxhz'=>array('ListKey'=>'2X_2_2xzhxhz','CodeTile'=>'直选','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_2xzxfs'=>array('ListKey'=>'2X_2_2xzxfs','CodeTile'=>'组选','ShowTile'=>'包号','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_2xzxhz'=>array('ListKey'=>'2X_2_2xzxhz','CodeTile'=>'组选','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>''),
+      '2X_2_zhxds'=>array('ListKey'=>'2X_2_zhxds','CodeTile'=>'手工','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3D_BDW'=>array(
+      'BDW_qsym'=>array('ListKey'=>'BDW_qsym','CodeTile'=>'不定位','ShowTile'=>'一码不定位','Rebates'=>'Normal','MaxNote'=>''),
+      'BDW_qsem'=>array('ListKey'=>'BDW_qsem','CodeTile'=>'不定位','ShowTile'=>'二码不定位','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3D_DWD'=>array(
+      '1X1_dwd'=>array('ListKey'=>'1X1_dwd','CodeTile'=>'定位胆','ShowTile'=>'定位胆','Rebates'=>'Normal','MaxNote'=>'')
+  ),
+  '3X4'=>array(
+      '3X1_fs'=>array('ListKey'=>'3X1_fs','CodeTile'=>'直选','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_zhxhz'=>array('ListKey'=>'3X1_zhxhz','CodeTile'=>'直选','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_dt'=>array('ListKey'=>'3X1_dt','CodeTile'=>'直选','ShowTile'=>'胆拖','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_kd'=>array('ListKey'=>'3X1_kd','CodeTile'=>'直选','ShowTile'=>'跨度','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_ds'=>array('ListKey'=>'3X1_ds','CodeTile'=>'手工','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>''),
+      '3X_zsbt'=>array('ListKey'=>'3X_zsbt','CodeTile'=>'组三','ShowTile'=>'标准','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_z3'=>array('ListKey'=>'3X1_z3','CodeTile'=>'组三','ShowTile'=>'包号','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_zxhz'=>array('ListKey'=>'3X1_zxhz','CodeTile'=>'组三','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_z6'=>array('ListKey'=>'3X1_z6','CodeTile'=>'组六','ShowTile'=>'包号','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_z6dt'=>array('ListKey'=>'3X1_z6dt','CodeTile'=>'组六','ShowTile'=>'胆拖','Rebates'=>'Normal','MaxNote'=>''),
+      '3X1_z6hz'=>array('ListKey'=>'3X1_z6hz','CodeTile'=>'组六','ShowTile'=>'和值','Rebates'=>'Normal','MaxNote'=>'')
+  )
+);
+$con_play_pri=array(
+  '3X1_kd'=>array('','','','1880'),
+  '3X1_zhxhz'=>array('','','','1880'),
+  '3X1_z6dt'=>array('','','','311.180'),
+  '3X1_hhzx'=>array('','','','320.18'),
+  '3X1_z6'=>array('','','','311.180'),
+  '3X1_z3'=>array('','','','622.36'),
+  '3X1_zxhz'=>array('','','','622.36'),
+  '3X1_ds'=>array('','','','1880'),
+  '3X1_fs'=>array('','','','1880'),
+  '3X1_dt'=>array('','','','1880'),
+  '3X_zsbt'=>array('','','','622.36'),
+  '3X1_z6hz'=>array('','','','311.180'),
+  '2X3_2_zhxfs'=>array('','','','96.5'),
+  '2X3_2_zhxds'=>array('','','','96.5'),
+  '2X3_2_2xzxfs'=>array('','','','96.5'),
+  '2X3_2_zxds'=>array('','','','96.5'),
+  '2X3_1_zhxfs'=>array('','','','96.5'),
+  '2X3_1_zhxds'=>array('','','','96.5'),
+  '2X3_1_2xzxfs'=>array('','','','96.5'),
+  '2X3_1_zxds'=>array('','','','96.5'),
+  'BDW_qsym'=>array('','','','6.928'),
+  'BDW_qsem'=>array('','','','34.797'),
+  '1X1_dwd'=>array('','','','18.80'),
+  '2X_1_zhxfs'=>array('','','','188.00'),
+  '2X_1_zhxds'=>array('','','','188.00'),
+  '2X_1_2xzhxhz'=>array('','','','188.00'),
+  '2X_1_2xzxfs'=>array('','','','94.00'),
+  '2X_1_2xzxhz'=>array('','','','94.00'),
+  '2X_2_zhxfs'=>array('','','','188.00'),
+  '2X_2_zhxds'=>array('','','','188.00'),
+  '2X_2_2xzhxhz'=>array('','','','188.00'),
+  '2X_2_2xzxfs'=>array('','','','94'),
+  '2X_2_2xzxhz'=>array('','','','94'),
+  'DXDS_qedx'=>array('','','','7.52'),
+  'DXDS_hedx'=>array('','','','7.52')
+);
+
+$con_play_time=array(
+  '3X1_kd'=>array('','',''),
+  '3X1_zhxhz'=>array('','',''),
+  '3X1_z6dt'=>array('','',''),
+  '3X1_hhzx'=>array('','',''),
+  '3X1_z6'=>array('','',''),
+  '3X1_z3'=>array('','',''),
+  '3X1_zxhz'=>array('','',''),
+  '3X1_ds'=>array('','',''),
+  '3X1_fs'=>array('','',''),
+  '3X1_dt'=>array('','',''),
+  '3X_zsbt'=>array('','',''),
+  '3X1_z6hz'=>array('','',''),
+  '2X3_2_zhxfs'=>array('','',''),
+  '2X3_2_zhxds'=>array('','',''),
+  '2X3_2_2xzxfs'=>array('','',''),
+  '2X3_2_zxds'=>array('','',''),
+  '2X3_1_zhxfs'=>array('','',''),
+  '2X3_1_zhxds'=>array('','',''),
+  '2X3_1_2xzxfs'=>array('','',''),
+  '2X3_1_zxds'=>array('','',''),
+  'BDW_qsym'=>array('','',''),
+  'BDW_qsem'=>array('','',''),
+  '1X1_dwd'=>array('','',''),
+  '2X_1_zhxfs'=>array('','',''),
+  '2X_1_zhxds'=>array('','',''),
+  '2X_1_2xzhxhz'=>array('','',''),
+  '2X_1_2xzxfs'=>array('','',''),
+  '2X_1_2xzxhz'=>array('','',''),
+  '2X_2_zhxfs'=>array('','',''),
+  '2X_2_zhxds'=>array('','',''),
+  '2X_2_2xzhxhz'=>array('','',''),
+  '2X_2_2xzxfs'=>array('','',''),
+  '2X_2_2xzxhz'=>array('','',''),
+  'DXDS_qedx'=>array('','',''),
+  'DXDS_hedx'=>array('','','')
+);
+
+?>
