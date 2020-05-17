@@ -15,11 +15,16 @@ if($action=='userinfo'){
 
 
 if($action=='tranfer'){
+
     $username=$_GET['username'];
     $user=$db->exec("select * from user where username='{$username}'");
+  	if (!$user) {
+    	$data=array('result'=>'fail','msg'=> '找不到用户');
+      	exit(json_encode($data));
+    }
     $money=$_GET['amount'];
-  $id=  add_charge($user['userid'],$money,'chat',2,'聊天室转入');
-     $data=array('result'=>'ok','id'=>$id);
+    $id=add_charge($user['userid'],$money,'chat',2,'聊天室转入');
+    $data=array('result'=>'ok','id'=>$id);
     exit(json_encode($data));
 }
 

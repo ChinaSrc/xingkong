@@ -26,33 +26,9 @@ if ($isgetdata == "yes") {
     } else {
         $perid = $_SESSION["userid"];
     }
-    $search = " where b.is_succeed='yes' and b.is_zuih='no' ";
-
-    $today = get_day_time();
-    if ($_GET['begintime']) {
-        $begintime = $_GET['begintime'] . " " . $search_time_arr['begin'];
-    } else {
-        $begintime = $today[0];
-    }
-    if ($_GET['endtime']) {
-        $endtime = $_GET['endtime'] . " " . $search_time_arr['end'];
-    } else {
-        $endtime = $today[1];
-    }
-    $begin = substr($begintime, 0, 10);
-    $end = substr($endtime, 0, 10);
-    $search .= " and b.creatdate>='{$begintime}' and b.creatdate<='{$endtime}' ";
-    $tpl->assign('begin', $begin);
-    $tpl->assign('end', $end);
-    if ($projectno) {
-        $t_url .= "&projectno=" . $projectno;
-        $search .= " and b.buyid='{$projectno}'";
-    }
-    if ($_GET['period']) {
-        $search .= " and b.period='{$_GET['period']}'";
-    }
-    //if(!$_GET['username']) $_GET['username']=$_SESSION['user_name'];
-    if ($_GET['username']) {
+  
+$search = " where 1=1 ";
+  if ($_GET['username']) {
         $uu = $db->fetch_first("select * from user where username='{$_GET['username']}' and admin='0'");
         if (is_team($uu['userid'], $_SESSION['userid']) or $uu['userid'] == $_SESSION['userid']) {
             //if($_GET['st']==1 || $_GET['st']==3 || !$_GET['st'])
@@ -98,6 +74,34 @@ if ($isgetdata == "yes") {
             $search .= " and  b.userid='{$_SESSION['userid']}'";
         }
     }
+    $today = get_day_time();
+    if ($_GET['begintime']) {
+        $begintime = $_GET['begintime'] . " " . $search_time_arr['begin'];
+    } else {
+        $begintime = $today[0];
+    }
+    if ($_GET['endtime']) {
+        $endtime = $_GET['endtime'] . " " . $search_time_arr['end'];
+    } else {
+        $endtime = $today[1];
+    }
+    $begin = substr($begintime, 0, 10);
+    $end = substr($endtime, 0, 10);
+    $search .= " and b.creatdate>='{$begintime}' and b.creatdate<='{$endtime}' ";
+    $tpl->assign('begin', $begin);
+    $tpl->assign('end', $end);
+  
+$search .= " and b.is_succeed='yes' and b.is_zuih='no' ";
+  
+    if ($projectno) {
+        $t_url .= "&projectno=" . $projectno;
+        $search .= " and b.buyid='{$projectno}'";
+    }
+    if ($_GET['period']) {
+        $search .= " and b.period='{$_GET['period']}'";
+    }
+    //if(!$_GET['username']) $_GET['username']=$_SESSION['user_name'];
+
     if ($is_prize) {
         $t_url .= "&is_prize=" . $is_prize;
         if ($is_prize == "3") {
@@ -192,7 +196,7 @@ if ($isgetdata == "yes") {
 
 
 
-            $show_body .= "<td title='" . $game_list[$j][buyid] . "'><a onclick=\"javascript:DialogResetWindow('查看投注单','" . $this_url . "','800','480')\" target='_blank' style='cursor:pointer;text-decoration none;'>" . $buy_num . "</a></td>";
+            $show_body .= "<td title='" . $game_list[$j][buyid] . "'>" . $buy_num . "</a></td>";
             if (strlen($game_list[$j]['number']) > 30) {
                 $number = substr($game_list[$j]['number'], 0, 30) . '...';
             } else {
@@ -219,7 +223,7 @@ if ($isgetdata == "yes") {
             $show_body .= "<td><div class='td_div'>" . $pri_m . "</div></td>";
             $show_body .= "<td><div class='td_div'>" . show_buystatus($game_list[$j]) . "</div></td>";
             $show_body .= "<td >" . $game_list[$j][creatdate] . "</td>";
-            $show_body .= "<td><div class='td_div'><input type='button' onclick=\"javascript:DialogResetWindow('查看投注单','" . $this_url . "','800','480')\" class='button'  value='详情'></div></td>";
+           // $show_body .= "<td><div class='td_div'><input type='button' onclick=\"javascript:DialogResetWindow('查看投注单','" . $this_url . "','800','480')\" class='button'  value='详情'></div></td>";
             $show_body .= "</tr>";
             $moneys = $moneys + $game_list[$j][money];
             if (!$moneys) {

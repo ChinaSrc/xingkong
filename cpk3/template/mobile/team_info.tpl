@@ -167,7 +167,7 @@ font-size: 14px;
 
             <li class="<!--{if $begin==$time_arr[1]['begin']}--> active<!--{/if}-->" id="num_1"   onclick="set_data(1);"  >昨日</li>
             <li class="<!--{if $begin==$time_arr[2]['begin']}--> active<!--{/if}-->" id="num_2"   onclick="set_data(2);" >本周</li>
-            <li class="<!--{if $begin==$time_arr[3]['begin']}--> active<!--{/if}-->" id="num_3"   onclick="set_data(3);" >本月</li>
+           <!-- <li class="<!--{if $begin==$time_arr[3]['begin']}--><!-- active<!--{/if}--><!--" id="num_3"   onclick="set_data(3);" >本月</li> -->
 
         </ul></div>
 </div>

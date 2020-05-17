@@ -16,11 +16,14 @@ $con_game_arr=array(
   '13'=>array('ckey'=>'JXK3','fullname'=>'江西快三','skey'=>'k3'),
   '14'=>array('ckey'=>'SDK3','fullname'=>'山东快三','skey'=>'k3'),
   '15'=>array('ckey'=>'SHXIK3','fullname'=>'幸运快三','skey'=>'k3'),
-  '16'=>array('ckey'=>'XJK3','fullname'=>'新疆快三','skey'=>'k3'),
-  '17'=>array('ckey'=>'HYK3','fullname'=>'好运快三','skey'=>'k3'),
-  '18'=>array('ckey'=>'SXK3','fullname'=>'陕西快三','skey'=>'k3'),
-  '19'=>array('ckey'=>'5FK3','fullname'=>'五分彩','skey'=>'k3'),
-  '20'=>array('ckey'=>'3FK3','fullname'=>'三分彩','skey'=>'k3')
+  '16'=>array('ckey'=>'TJK3','fullname'=>'天津快三','skey'=>'k3'),
+  '17'=>array('ckey'=>'3FK3','fullname'=>'三分彩','skey'=>'k3'),
+  '18'=>array('ckey'=>'5FK3','fullname'=>'五分彩','skey'=>'k3'),
+  '19'=>array('ckey'=>'SXK3','fullname'=>'陕西快三','skey'=>'k3'),
+  '20'=>array('ckey'=>'XJK3','fullname'=>'新疆快三','skey'=>'k3'),
+  '21'=>array('ckey'=>'ZJK3','fullname'=>'浙江快三','skey'=>'k3'),
+  '22'=>array('ckey'=>'GZK3','fullname'=>'贵州快三','skey'=>'k3'),
+  '23'=>array('ckey'=>'10FK3','fullname'=>'十分彩','skey'=>'k3')
 );
 
 $con_game_list=array(
@@ -40,10 +43,13 @@ $con_game_list=array(
   'JXK3'=>'江西快三',
   'SDK3'=>'山东快三',
   'SHXIK3'=>'幸运快三',
-  'XJK3'=>'新疆快三',
-  'HYK3'=>'好运快三',
-  'SXK3'=>'陕西快三',
+  'TJK3'=>'天津快三',
+  '3FK3'=>'三分彩',
   '5FK3'=>'五分彩',
-  '3FK3'=>'三分彩'
+  'SXK3'=>'陕西快三',
+  'XJK3'=>'新疆快三',
+  'ZJK3'=>'浙江快三',
+  'GZK3'=>'贵州快三',
+  '10FK3'=>'十分彩'
 );
 ?>

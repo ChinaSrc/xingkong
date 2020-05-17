@@ -342,7 +342,7 @@ if($_GET['type']=='day_prize'){
 
           if(date('H:i:s')>$con_system['active_day_begin'] and date('H:i:s')<$con_system['active_day_end']){
               $from=strtotime(date('Y-m-d',time()).' 00:00:00');
-              $row=$db->exec("select * from active where userid='{$_SESSION['userid']}' and  type='day' and time>'{$from}'");
+              $row=$db->exec("select * from active where userid='{$_SESSION['userid']}'  and time>'{$from}'  and  type='day'");
               if($row){
 
                   show_message('每日加奖今日已领取完毕','index_active.html');

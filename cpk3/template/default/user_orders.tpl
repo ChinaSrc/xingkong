@@ -61,7 +61,7 @@
                  <span >时间：
         <a  class="userSearch <!--{if $begindate==$time_arr[1]}-->active<!--{/if}-->"  name="time" onclick="change_time('<!--{$time_arr[1]}-->','<!--{$time_arr[0]}-->',0);">今天</a>
                      <a  class="userSearch <!--{if $begindate==$time_arr[2]}-->active<!--{/if}-->"  name="time" onclick="change_time('<!--{$time_arr[2]}-->','<!--{$time_arr[1]}-->',1);">昨天</a>
-                     <a  class="userSearch <!--{if $begindate==$time_arr[3]}-->active<!--{/if}-->"  name="time" onclick="change_time('<!--{$time_arr[3]}-->','<!--{$time_arr[0]}-->',2);">七天</a>
+                     
                  </span>
       </td>
       <td  align="center" >

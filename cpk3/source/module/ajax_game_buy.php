@@ -2,6 +2,8 @@
 if (time() - $_SESSION['buytime'] <= 5) {
     exit;
 }
+//var_dump($_SERVER['REQUEST_URI']);
+//var_dump($_POST);die;
 $_SESSION['buytime'] = time();
 $selArr = isset($_GET[selArr]) ? $_GET[selArr] : $_POST[selArr];
 $lotteryKey = trim(explode('|', $selArr['0'])['0']);
@@ -28,7 +30,13 @@ if ($istask == "yes") {
 $temp = '';
 $TaskMoney = 0;
 $buymax_arr = array();
+if ($issueData != $lotpriod) {
+	echo "no|11";
+    exit;
+}
+
 //file_put_contents('/www/wwwroot/xingkong/cpk3/source/module/game.txt', 'gelArr：' . var_export($_POST[selArr], true) . PHP_EOL, FILE_APPEND);
+//file_put_contents('/www/wwwroot/xingkong/cpk3/source/module/game.txt', 'gelArr：' . var_export($_POST[selArr], true).' period='.$lotpriod . PHP_EOL, FILE_APPEND);
 foreach ($_POST[selArr] as $key => $value) {
     $selArr = $value;
     $wei = '';
@@ -50,6 +58,7 @@ foreach ($_POST[selArr] as $key => $value) {
     $CurMode = Trim($arrs[7]);
     $CurModeType = Trim($arrs[8]);
     $times = Trim($arrs[9]);
+  	$period = Trim($arrs[10]);
     $lines = Trim($arrs[12]);
     $per_money = $money / $times;
     if ($istask == "yes") {
@@ -76,7 +85,14 @@ foreach ($_POST[selArr] as $key => $value) {
         $TaskMoney += $money;
     }
     
-
+   //异常处理
+    if ($period != $lotpriod) {
+        exception_log("game_buy_error");
+        echo "no|11";
+        exit;  
+    }
+  
+	//file_put_contents('/www/wwwroot/xingkong/cpk3/source/module/game.txt', '$period='.$period . PHP_EOL, FILE_APPEND);
     //判断投注数量和内容是否正常
     $exception = 1;
   	if (in_array($playid, array('K3HZ','2TH-fx','3TH-dx','3TH-tx','3LH-tx','3LH-dx','2TH-dx','2BT-bz','3BT-dx'))) {

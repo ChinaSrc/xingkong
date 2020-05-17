@@ -52,19 +52,27 @@ function set_chat_data($userid)
 	$userinfo = get_user_info($userid);
 
 	$data             = array();
+  	$data['uid'] = $userinfo['userid'];
 	$data['username'] = $userinfo['username'];
 	$data['nickname'] = $userinfo['nickname'];
 	$data['rid']      = $userinfo['rid'];
 	$data['groupid']  = $userinfo['groupid'];
-	$data['regtime']  = strtotime($userinfo['registertime']);
-	$sex              = 0;
-	if ($userinfo['sex'] == '男') $sex = 1;
-	if ($userinfo['sex'] == '女') $sex = 2;
-	$data['sex'] = $sex;
+	$data['higherid'] = $userinfo['higherid'];
+	$uData = get_user_pid($userinfo['userid']);
+	$uData = array_reverse($uData);
 	if ($userinfo['higherid'] > 0) {
 		$parent             = get_user_info($userinfo['higherid']);
 		$data['parentname'] = $parent['username'];
 	}
+	$data['pid'] = $uData[1]['userid'];
+  	//$data['adminid'] = $uData[1]['userid'];
+  	//$data['regtime']  = strtotime($userinfo['registertime']);
+    $data['regtime']  = $userinfo['registertime'];
+	$sex              = 0;
+	if ($userinfo['sex'] == '男') $sex = 1;
+	if ($userinfo['sex'] == '女') $sex = 2;
+	$data['sex'] = $sex;
+
 	return $data;
 }
 

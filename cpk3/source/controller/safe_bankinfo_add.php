@@ -63,7 +63,7 @@ $flags="no";$re_infos="您输入的提现密码不正确";
 
 $sql = "SELECT Count(*) as num FROM user_bank_list WHERE realname ='{$realname}'";
 $row=$db->exec($sql);
-if($row['num']>2){
+if($row['num']>10){
 
  $flags="no";$re_infos="绑卡异常，请联系客服";
 }

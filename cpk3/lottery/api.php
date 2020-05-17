@@ -253,4 +253,138 @@ if ($action == 'get_rebates') {
     echo json_encode(['sjdl'=>$pids[1]['username'],'bzdjsm'=>$str,'username'=>$rowss[username],'min' => $minrebate,'max' => $maxrebate, 'rebates' => $rebates]);
   	exit;
 }
+
+
+
+if ($action == 'yktimer') {
+    $serData = date('Y-m-d', strtotime('-1 day'));
+    $begintime = $serData . " " . $search_time_arr['begin'];
+    $endtime = $serData . " " . $search_time_arr['end'];
+    $sql = "SELECT
+	t10.userid AS 'userid',
+	t10.username AS 'username',
+	t11.realname AS 'realname',
+	CONCAT(
+		t11.province,
+		t11.city,
+		t11.area 
+	) AS 'addr',
+	t10.charge AS 'charge',
+	t10.platform AS 'platform',
+	t10.starAmount AS 'starAmount',
+	t10.endAmount AS 'endAmount',
+	t10.profit AS 'profit' 
+FROM
+	(
+	SELECT
+		t8.userid,
+		t9.username,
+		sum( t8.charge ) AS charge,
+		sum( t8.platform ) AS platform,
+		sum( t8.starAmount ) AS starAmount,
+		sum( t8.endAmount ) AS endAmount,
+		sum( t8.platform ) + sum( t8.endAmount ) - sum( t8.starAmount ) - sum( t8.charge ) AS profit 
+	FROM
+		(
+		SELECT
+			t1.userid,
+			sum(
+			CASE
+					
+					WHEN t1.cate = 'recharge' THEN
+					t1.money ELSE 0 
+				END 
+				) AS 'charge',
+				sum(
+				CASE
+						
+						WHEN t1.cate = 'platform' THEN
+						t1.money ELSE 0 
+					END 
+					) AS 'platform',
+					0 AS starAmount,
+					0 AS endAmount 
+				FROM
+					user_funds t1 
+				WHERE
+					creatdate BETWEEN '{$begintime}' 
+					AND '{$endtime}' 
+					AND t1.`status` = 1 
+				GROUP BY
+					t1.userid UNION ALL
+				SELECT
+					t2.userid,
+					0 AS charge,
+					0 AS platform,
+					t2.hig_amount AS starAmount,
+					0 AS endAmount 
+				FROM
+					user_funds t2 
+				WHERE
+					t2.`first` = 1 
+					AND t2.`status` = 1 --  (select min(t3.id) minid ,t3.userid, min(t3.creatdate)minDate from user_funds t3  where creatdate BETWEEN '2000-01-01 00:00:00' and '2021-01-01 23:59:59' and t3.status=1  and t3.first =1 group by t3.userid) t4
+--  where t2.userid=t4.userid and t2.creatdate=t4.mindate and t2.id=minid
+				UNION ALL
+				SELECT
+					t5.userid,
+					0 AS charge,
+					0 AS platform,
+					0 AS starAmount,
+					t5.amountafter AS endAmount 
+				FROM
+					user_funds t5,
+					(
+					SELECT
+						max( t6.id ) maxid,
+						t6.userid,
+						max( t6.creatdate ) maxdate 
+					FROM
+						user_funds t6 
+					WHERE
+						creatdate BETWEEN '{$begintime}' 
+						AND '{$endtime}' 
+						AND t6.`status` = 1 
+					GROUP BY
+						t6.userid 
+					) t7 
+				WHERE
+					t5.userid = t7.userid 
+					AND t5.creatdate = t7.maxdate 
+					AND t5.id = maxid 
+				) t8,
+				`user` t9 
+			WHERE
+				1 = 1 
+				AND t8.userid = t9.userid 
+				AND t9.virtual = 0 
+			GROUP BY
+				t8.userid 
+			) t10,
+			user_bank_list t11 
+		WHERE
+			t10.userid = t11.userid 
+	ORDER BY
+	9 DESC";
+    $user_list = $db->fetch_all($sql);
+    $sql = 'insert into `yingkui_log`(`userid`,`username`,`realname`,`addr`,`charge`,`platform`,`starAmount`,`endAmount`,`profit`,`date`) values';
+    $addarrs = [];
+    foreach ($user_list as $key => $value) {
+        $addArr = [
+            $value['userid'],
+            '"' . $value['username'] . '"',
+            '"' . $value['realname'] . '"',
+            '"' . $value['addr'] . '"',
+            $value['charge'],
+            $value['platform'],
+            $value['starAmount'],
+            $value['endAmount'],
+            $value['profit'],
+            '"' . $serData . '"'
+        ];
+        $addarrs[] = '(' . implode(',', $addArr) . ')';
+    }
+    $sql .= implode(',', $addarrs);
+    $db->exec($sql);
+    return true;
+}
 ?>

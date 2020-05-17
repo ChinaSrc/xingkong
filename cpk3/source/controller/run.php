@@ -281,7 +281,8 @@ else{
 
 
 }
-    $row=$db->fetch_all("select * from user_msg where ((userid='{$_SESSION['userid']}' and del1='0' and read1='0') or (perid='{$_SESSION['userid']}' and del2='0' and read2='0') ) and replyid='0' ");
+  	$before=date("Y-m-d H:i:s", strtotime("-1 week"));
+    $row=$db->fetch_all("select * from user_msg where 1=1 and  creatdate > '$before' and ((userid='{$_SESSION['userid']}' and del1='0' and read1='0') or (perid='{$_SESSION['userid']}' and del2='0' and read2='0') ) and replyid='0' ");
 
     $tpl->assign('msg_num',count($row));
 $tpl->assign('tranfer',$tranfer);

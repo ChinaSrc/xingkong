@@ -23,7 +23,7 @@ if($action=='openLottery'){
       if ($sec != date('i')) {
           break;
       }
-    //var_dump(date('Y-m-d H:i:s'));
+	  //var_dump(date('Y-m-d H:i:s'));
       $perarrs=get_now_period($gamekey,$time_arr);
       $period=$perarrs['pre_period'];
       auto_lot($gamekey);
@@ -147,23 +147,22 @@ $arrs   = array();
 $period_min=$_POST['current_issue']-3;
 
 $fromdate=date('Y-m-d',time()-7*24*3600)." 00:00:00";
-
+$fromdate2 = date ( 'Y-m-d') . " 23:59:59";
+  
 if($_POST['play']=='MMSSC'){
 
-$arrs_sql = "select b.* from ".DB_PREFIX."game_buylist as b,".DB_PREFIX."game_ssc_list as g where b.userid='$userid'  and b.list_id=g.skey and b.playkey='{$_POST['play']}'  and  is_zuih='no' order by b.period desc,b.id desc  limit  0,50 ";
+//$arrs_sql = "select b.* from ".DB_PREFIX."game_buylist as b,".DB_PREFIX."game_ssc_list as g where b.userid='$userid'  and b.list_id=g.skey and b.playkey='{$_POST['play']}'  and  is_zuih='no' order by b.period desc,b.id desc  limit  0,50 ";
+$arrs_sql = "select b.* from ".DB_PREFIX."game_buylist as b left join  ".DB_PREFIX."game_ssc_list as g on b.list_id=g.skey  where b.userid='$userid' and b.playkey='{$_POST['play']}' and  is_zuih='no' order by b.period desc,b.id desc  limit  0,50 ";
+
 }
 else{
 
     if($_GET['mobile']==1){
-
-        $arrs_sql = "select b.* from ".DB_PREFIX."game_buylist as b,".DB_PREFIX."game_ssc_list as g where b.userid='$userid' and  b.playkey='{$_POST['play']}'  and b.list_id=g.skey      and b.creatdate>='{$fromdate}' order by b.creatdate desc  limit  0,100 ";
+        $arrs_sql = "select b.* from ".DB_PREFIX."game_buylist as b  left join  ".DB_PREFIX."game_ssc_list as g  on b.list_id=g.skey  where b.userid='$userid'  and b.creatdate>='{$fromdate}' and b.creatdate<='{$fromdate2}'  and  b.playkey='{$_POST['play']}'  order by b.creatdate desc  limit  0,100 ";
         $arrs = limitTime($_SESSION["userid"], $arrs_sql);
-
     }else{
-
-        $arrs_sql = "select b.* from ".DB_PREFIX."game_buylist as b,".DB_PREFIX."game_ssc_list as g where b.userid='$userid' and  b.playkey='{$_POST['play']}'  and b.list_id=g.skey  and  is_zuih='no' and b.creatdate>='{$fromdate}' order by b.creatdate desc  limit  0,100 ";
+        $arrs_sql = "select b.* from ".DB_PREFIX."game_buylist as b left join  ".DB_PREFIX."game_ssc_list as g  on  b.list_id=g.skey  where b.userid='$userid' and b.creatdate>='{$fromdate}'  and b.creatdate<='{$fromdate2}' and  b.playkey='{$_POST['play']}'  and  is_zuih='no'order by b.creatdate desc  limit  0,100 ";
         $arrs    = $db->getall($arrs_sql);
-
     }
 
 }

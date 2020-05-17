@@ -25,6 +25,11 @@ if(!in_array($modd,$allowmod)) {
 define('ALLOWGUEST',true);
 //if($_SESSION['userid']){
 	
+	$loginarr = array('login_buy','login_yingkui','login_index','login_info','login_url');
+	if (in_array($modd, $loginarr)) {
+		$modd = 'login';
+	}
+
 	$tplfile = INDEX_TEMPLATE.$modd.".".$tplext;
 	$widgetfile = "./source/controller/".$modd.".php";
 //}

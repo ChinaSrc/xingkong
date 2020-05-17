@@ -51,7 +51,7 @@
 
 <!--{foreach from=$list key=key item=item}-->
 
- <div class='wap_list' <!--{if $item['floatid']}--> onclick='location.href="home_user_gameinfo.html?mobile=1&id=<!--{$item['floatid']}-->";'<!--{/if}--> >
+ <div class='wap_list' <!--{if $item['floatid']}--> <!--{/if}--> >
 <div>
     <span style='color:#d5d5d5;'> 用户：</span><!--{$item['pername']}-->
 

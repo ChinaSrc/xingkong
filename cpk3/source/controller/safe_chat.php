@@ -44,7 +44,7 @@ if($_POST){
                     exit();
                 }else{
 					
-                  	$url= get_chaturl('apk/index.php')."&act=member_info&username=".$userinfo['username'];;
+                    $url= get_chaturl('apk/index.php')."&act=member_info&username=".$userinfo['username'];;
                     $json=file_get_contents($url);
                     $json = trim($json, "\xEF\xBB\xBF");
                     $chat_user=json_decode($json,1);
@@ -53,7 +53,8 @@ if($_POST){
                       show_message('请先登录聊天室，再进行充值操作！',$_SERVER['HTTP_REFERER'],'warn');
                       exit();
                     }
-                    $url=get_chaturl_new('apk/index.php')."&act=tranfer&amount={$amount}&username=".$userinfo['username'];;
+                    $url = getChatUrl('api/pay/wallet/in/myWallet') . '&uid=' . $userinfo['userid'] . '&username=' . $userinfo['username'] . '&money=' . $amount;
+                    //$url=get_chaturl_new('apk/index.php')."&act=tranfer&amount={$amount}&username=".$userinfo['username'];;
                     $json=file_get_contents($url);
                     $json = trim($json, "\xEF\xBB\xBF");
                     $json=json_decode($json,1);
@@ -87,13 +88,20 @@ if($_POST){
 
 
 $tpl->assign('amount',get_user_amount($_SESSION['userid']));
-$url= get_chaturl('apk/index.php')."&act=member_info&username=".$userinfo['username'];;
+$url= getChatUrl('api/pay/wallet/myWallet')."&username=".$userinfo['username'];;
+//$url= get_chaturl('apk/index.php')."&act=member_info&username=".$userinfo['username'];;
 
 
 $json=file_get_contents($url);
 $json = trim($json, "\xEF\xBB\xBF");
 $chat_user=json_decode($json,1);
-if(!isset($chat_user['money'])) $chat_user['money']=0;
+$chat_user=[];
+if(!isset($chat_user['data']['money'])) {
+	$chat_user['money']=0;
+} else {
+	$chat_user['money']=$chat_user['data']['money'];
+}
+//if(!isset($chat_user['money'])) $chat_user['money']=0;
 $tpl->assign('chat_user',$chat_user);
 
 ?>

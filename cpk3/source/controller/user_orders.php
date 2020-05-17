@@ -116,7 +116,9 @@ if ($isgetdata == "yes") {
         $gameListsTmp = '';
         if ($floatids) {
           	$before=date("Y-m-d H:i:s", strtotime("-1 week"));
-        	$gameListsTmp = $db->fetch_all("select period,modes,playkey,buyid,list_id from `game_buylist` where creatdate > '$before' and buyid in (" . implode(',', $floatids) . ")");
+        	$gameListsTmp = "";
+            // buyid改为id才可能有查询结果
+            //$db->fetch_all("select period,modes,playkey,buyid,list_id from `game_buylist` where creatdate > '$before' and buyid in (" . implode(',', $floatids) . ")");
         }
 
         if ($gameListsTmp) {
@@ -160,15 +162,15 @@ if ($isgetdata == "yes") {
                 } else {
                     $this_url = "do.aspx?mod=read&code=game&list=info&flag=yes&active=lot_back&uid=" . $game_list[$j]['floatid'];
                 }
-                $chekd = " DialogResetWindow('查看投注单','{$this_url}','800','550')";
+                //$chekd = " DialogResetWindow('查看投注单','{$this_url}','800','550')";
             } else {
                 $chekd = '';
             }
             $show_body .= "<tr " . $trbg . " onclick=\" {$chekd}\">";
             $this_link = "";
             if (in_array($game_list[$j][cate], $have_link_gp) === true) {
-                $this_url = $do_url . "?mod=read&code=game&list=info&flag=yes&active=lot_back&uid=" . $game_list[$j][floatid];
-                $this_link = "href='#' onclick=\"javascript:DialogResetWindow('查看投注单','" . $this_url . "','600','500')\"";
+                //$this_url = $do_url . "?mod=read&code=game&list=info&flag=yes&active=lot_back&uid=" . $game_list[$j][floatid];
+                //$this_link = "href='#' onclick=\"javascript:DialogResetWindow('查看投注单','" . $this_url . "','600','500')\"";
             }
             $num = $j + 1 + $start;
             if (strlen($game_list[$j][accountid]) - 8 >= 0) {

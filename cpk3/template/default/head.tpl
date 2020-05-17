@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="<!--{$file_uri}-->/<!--{$skinpath}-->2018/sy2/css/default.min.css" />
 
 
-    <link rel="stylesheet" href="<!--{$root_url}-->/<!--{$skinpath}-->style/fontello.css" />
+    <link rel="stylesheet" href="<!--{$root_url}--><!--{$skinpath}-->style/fontello.css" />
 
     <link rel="stylesheet" href="<!--{$tplpath}-->style/lottery.css" type="text/css" />
 </head>
@@ -42,6 +42,103 @@
 
 <style>
 #BgDiv{background-color:#000000; position:fixed; z-index:7777; left:0; top:0;right:0px;bottom:0px; display:none; width:100%; height:100%;opacity:0.7;filter: alpha(opacity=40);-moz-opacity: 0.7;}
+/*#header {
+    min-width: 980px;
+    background: #7fcab9;
+}*/
+/*#nav{
+    height: 50px;
+    line-height: 50px;
+}*/
+/*#navbar #settings {
+    margin-top: 10px;
+}
+.topBar-inner {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "宋体", Arial, Tahoma;
+}
+#menu-container {
+    background: #7a8e97;
+}
+#menu ul li:after, #menu ul li:before {
+   display: none;
+}
+#menu ul li.active a, #menu ul li a:hover {
+    color: orange;
+}
+#menu ul li.active a, #menu ul li a:hover {
+    background: none !important;
+}
+#wrap {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    box-shadow: 0px 5px 9px #ccc;
+}
+#menu ul li a i {
+    font-size: 30px;
+}*/
+/*#bg-base{
+    padding-top: 140px!important;
+}*/
+.index_left {
+    border-radius: 25px;
+    padding: 10px;
+    width: 245px;
+    float: left;
+    display: block;
+    border: 1px solid #ff6633!important;
+    border-top: 5px solid #ff6633!important;
+    box-shadow: 2px 2px 5px #ff6633!important;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.leftNav li {
+    height: 52px;
+    line-height: 52px;
+    background-color: #ffff99;
+}
+#sidebar .account .account-1 {
+    background: #e6551c!important;
+    float: left;
+}
+#sidebar .account .account-1:hover {
+    background: #669999!important;
+    float: left;
+}
+.openTab .hd ul .cur {
+    border-top: 2px solid skyblue!important;
+}
+.text {
+    font-size: 15px;
+}
+.hc-con-inner {
+    width: 1200px!important;
+}
+#sidebar {
+    width: 320px!important;
+}
+#sidebar .news {
+    border: 1px #ddd solid;
+    padding: 0 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 19px orange;
+}
+.winningList {
+    height: 213px;
+    box-shadow: 0px 2px 18px red;
+}
+.openTab {
+    box-shadow: 0 2px 10px blue;
+}
+/*.ttBox{
+    background: #7fcab9!important;
+}*/
 </style>
 
 

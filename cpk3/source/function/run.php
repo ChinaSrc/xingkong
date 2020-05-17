@@ -5,7 +5,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 header("content-type:text/html; charset=utf-8");
 //error_reporting(E_ERROR);
 date_default_timezone_set('Asia/Shanghai');
-define('FILE_URI', 'http://images-useh.oss-accelerate.aliyuncs.com');
+define('FILE_URI', 'http://images-used.oss-accelerate.aliyuncs.com');
 
 if (PHP_VERSION < "5.3") {
     set_magic_quotes_runtime(0);
@@ -438,7 +438,8 @@ if ($path_type == 'index') {
 
 
     }
-    $row = $db->fetch_all("select * from user_msg where ((userid='{$_SESSION['userid']}' and del1='0' and read1='0') or (perid='{$_SESSION['userid']}' and del2='0' and read2='0') ) and replyid='0' ");
+  	$before=date("Y-m-d H:i:s", strtotime("-1 week"));
+    $row = $db->fetch_all("select * from user_msg where 1=1 and creatdate > '$before' and  ((userid='{$_SESSION['userid']}' and del1='0' and read1='0') or (perid='{$_SESSION['userid']}' and del2='0' and read2='0') ) and replyid='0' ");
 
     $tpl->assign('msg_num', count($row));
     $tpl->assign('tranfer', $tranfer);

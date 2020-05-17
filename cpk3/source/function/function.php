@@ -1206,6 +1206,20 @@ function get_user_pid($userid, $arr = array()) {
 }
 
 
+function getChatUrl($router = '') {
+  	$key = 'I8HIhXbkAyy4mQWh';
+  	$rand = rand(100000, 999999);
+  	$md5 = md5(md5($key) . $rand);
+	return 'http://207.148.97.101:8000/' . $router . '?flowno=' . $md5 . '&salt=' . $rand;
+	$serverName = $_SERVER['SERVER_NAME'];
+	$tmp = explode('.', $serverName);
+	if (count($tmp) > 2) {
+		$tmp['0'] = 'chat';
+		return 'http://' . implode('.', $tmp) . '/' . $router . '?flowno=' . $md5 . '&salt=' . $rand;
+	} else {
+		return 'http://chat.' . $serverName . '/' . $router . '?flowno=' . $md5 . '&salt=' . $rand;
+	}
+}
 
 function get_user_nextid($userid,$virtual=0) {
 	global $db, $con_system;
@@ -1542,12 +1556,14 @@ function get_yingkui($userid, $begintime, $endtime, $tx = '',$virtual=0) {
 	if ($endtime)
 		$str .= " and creatdate<='{$endtime}'";
 	// 充值
-	$recharge_row = $db->fetch_first ( "SELECT SUM(money) as sum FROM `user_funds` WHERE 1=1 {$str} AND `cate` = 'recharge' AND `status` = 1  and userid in ({$userid})" );
+	//$recharge_row = $db->fetch_first ( "SELECT SUM(money) as sum FROM `user_funds` WHERE 1=1 {$str} AND `cate` = 'recharge' AND `status` = 1  and userid in ({$userid})" );
+  	$recharge_row = $db->fetch_first ( "SELECT SUM(money) as sum FROM `user_funds` WHERE 1=1  and userid = {$userid} {$str} AND `cate` = 'recharge' AND `status` = 1 " );
 	$arr ['recharge'] = $recharge_row['sum'];
 
 	
 	// 提现
-	$mention_row = $db->fetch_first ( "SELECT SUM(money) as sum FROM `user_funds` WHERE 1=1 {$str} AND `cate` = 'platform' AND `status` = 1 and userid in ({$userid})" );
+	//$mention_row = $db->fetch_first ( "SELECT SUM(money) as sum FROM `user_funds` WHERE 1=1 {$str} AND `cate` = 'platform' AND `status` = 1 and userid in ({$userid})" );
+  	$mention_row = $db->fetch_first ( "SELECT SUM(money) as sum FROM `user_funds` WHERE 1=1  and userid = {$userid} {$str} AND `cate` = 'platform' AND `status` = 1 " );
 	$arr ['mention'] = $mention_row['sum'];
 
 
@@ -1751,51 +1767,71 @@ function active_charge($userid, $amount) {
 //充值
 
 
-function add_charge($userid, $amount, $bankname, $online = '0', $mark = '') {
-	global $db;
-	$bank=array();
-	$bank['type']='hand';
-	$user_bank = $db->fetch_first ( "select * from user_bank where userid='{$userid}'" );
-	if ($online == 1) {
-		$bank ['bankname'] = '线上支付';
-		$bank ['realname'] = $mark;
-		$bank ['banknum'] = '';
-
-		$bank['type']='online';
-		$status = 0;
-	} else if ($online == 2) {
-		$bank ['bankname'] = '聊天室';
-		$status = 0;
-		$bank ['banknum'] = '';
-		$bank ['realname']='';
-		$bank['type']='chat';
-	}else if ($bankname == 'card') {
-		$bank ['bankname'] = '充值卡';
-		$status = 0;
-		$bank ['banknum'] = '';
-		$bank ['realname']='';
-		$bank['type']='card';
+function add_charge($userid, $amount, $bankname, $online = '0', $mark = '')
+{
+    global $db;
+    $bank = array();
+    $bank['type'] = 'hand';
+    $user_bank = $db->fetch_first("select * from user_bank where userid='{$userid}'");
+    $hasRecode = $db->fetch_first("select * from user_funds where `type`='chat' and userid='{$userid}' and `status`=0");
+    if ($hasRecode) {
+    	return '提现失败!您还有未完成的订单,请勿用重复提交.';
 	}
-	else{
-		$bank = $db->fetch_first ( "select * from system_bank where id='{$bankname}'" );
+    if ($online == 1) {
+        $bank ['bankname'] = '线上支付';
+        $bank ['realname'] = $mark;
+        $bank ['banknum'] = '';
 
-		$status = '0';
-		$bank['type']='hand';
-	}
-	$remark=$mark;
-	$nowtime = date ( "Y-m-d H:i:s" );
+        $bank['type'] = 'online';
+        $status = 0;
+    } else if ($online == 2) {
+        $bank ['bankname'] = '聊天室';
+        $status = 0;
+        $bank ['banknum'] = '';
+        $bank ['realname'] = '';
+        $bank['type'] = 'chat';
+    } else if ($bankname == 'card') {
+        $bank ['bankname'] = '充值卡';
+        $status = 0;
+        $bank ['banknum'] = '';
+        $bank ['realname'] = '';
+        $bank['type'] = 'card';
+    } else {
+        $bank = $db->fetch_first("select * from system_bank where id='{$bankname}'");
 
-	if (! $user_bank ['low_amount']) $user_bank ['low_amount'] = '0.00';
-	$order_sn =  time () . rand ( 1000, 9999 );
-	$charge_sum=$user_bank['charge_sum'];
-	if($charge_sum==0) $first=1;
-	else $first=0;
+        $status = '0';
+        $bank['type'] = 'hand';
+    }
+    $remark = $mark;
+    $nowtime = date("Y-m-d H:i:s");
 
-	$array = array ('userid' => $userid, 'money' => $amount, 'cate' => 'recharge', 'Man_remark' => $remark, 'creatdate' => $nowtime, 'realname' => $bank ['realname'], 'banknum' => $bank ['banknum'], 'bankname' => $bank ['bankname'], 'status' => $status, 'hig_amount' => $user_bank ['hig_amount'],'amountafter' => $user_bank ['hig_amount'], 'low_amount' => $user_bank ['low_amount'], 'online' => $online, 'order_sn' => $order_sn,'first'=>$first,'type'=>$bank['type'] );
+    if (!$user_bank ['low_amount']) $user_bank ['low_amount'] = '0.00';
+    $order_sn = time() . rand(1000, 9999);
+    $charge_sum = $user_bank['charge_sum'];
+    if ($charge_sum == 0) $first = 1;
+    else $first = 0;
 
-	$db->insert ( "user_funds", $array );
+    $array = array(
+    	'userid' => $userid,
+		'money' => $amount,
+		'cate' => 'recharge',
+		'Man_remark' => $remark,
+		'creatdate' => $nowtime,
+		'realname' => $bank ['realname'],
+		'banknum' => $bank ['banknum'],
+		'bankname' => $bank ['bankname'],
+		'status' => $status,
+		'hig_amount' => $user_bank ['hig_amount'],
+		'amountafter' => $user_bank ['hig_amount'],
+		'low_amount' => $user_bank ['low_amount'],
+		'online' => $online,
+		'order_sn' => $order_sn,
+		'first' => $first,
+		'type' => $bank['type']);
 
-	return $db->insert_id ();
+    $db->insert("user_funds", $array);
+
+    return $db->insert_id();
 
 }
 
@@ -2041,7 +2077,8 @@ function agree_charge($id, $remark = '') {
 		}
 		if($funds['type']=='chat'){
 
-			$url=get_chaturl('apk/index.php')."&act=recharge_order&id={$id}&type=1&content=";;
+			$url=getChatUrl('api/pay/wallet/verify')."&act=recharge_order&id={$id}&type=1&content=";;
+			//$url=get_chaturl('apk/index.php')."&act=recharge_order&id={$id}&type=1&content=";;
 
 			file_get_contents($url);
 
@@ -2172,6 +2209,10 @@ function cumulativeRecharge($userId, $payname, $money) {
 		return true;
 	}
 	if ($record['date'] != $lastDayDate || $record['num'] < 1) { // 非连续充值
+		$logData = [
+			$record,$lastDayDate,$userId, $payname, $money,$isDayFirst,$user
+		];
+		file_put_contents('/www/wwwroot/xingkong/cpk3/source/function/log.txt', json_encode($logData), FILE_APPEND);
 		$db->query("update `cumulative_recharge` set num=1,`date`='{$todayDate}',updated_at='{$dateTime}', sign_data = '" . json_encode([$todayDate => $money]) . "', `max_money`={$money}, `money`={$money} where id={$record['id']}");
 		return true;
 	}
@@ -2212,9 +2253,9 @@ function deny_charge($id, $remark = '') {
 			$db->query ( "update user_funds set admin='{$admin['username']}' where id='{$id}'" );
 		}
 		if($funds['type']=='chat'){
-
-			$url=get_chaturl('apk/index.php')."&act=recharge_order&id={$id}&type=2&content={$remark}";;
-
+			$content = urlencode($remark);
+			$url=getChatUrl('api/pay/wallet/verify')."&act=recharge_order&id={$id}&type=2&content=" . $content;
+			//$url=get_chaturl('apk/index.php')."&act=recharge_order&id={$id}&type=2&content={$remark}";;
 			file_get_contents($url);
 
 		}
@@ -4259,11 +4300,11 @@ function error_orders() {
 
 		$now = time ();
 		$db->query ( "update `sys` set `value`='{$now}' where `key`='error_time'" );
-
 		$from = date ( 'Y-m-d H:i:s', time () - $con_system ['error_time'] );
-
-		$str = " (status=1 or status=2 or status=3) and error='0'  and creatdate>'{$from}'";
-
+		//$str = " (status=1 or status=2 or status=3) and error='0'  and creatdate>'{$from}'";
+        $before1=date("Y-m-d H:i:s", strtotime("-1 week"));
+      	$endtime1=date ( 'Y-m-d') . " 23:59:59";
+		$str = " creatdate > '{$before1}' and creatdate < '{$endtime1}' and (status=1 or status=2 or status=3) and error='0' ";
 		//资金异常
 		$sql = "select id,buyid from game_buylist where   {$str} and   isprize='is_yes'  ";
 		$query = $db->query ( $sql );
@@ -4310,7 +4351,10 @@ function error_orders() {
 			}
 
 		}
-		$db->query ( "update game_buylist set error='-1' where {$str} and status!='1'" );
+		//$db->query ( "update game_buylist set error='-1' where {$str} and status!='1'" );
+      	$before2=date("Y-m-d H:i:s", strtotime("-1 week"));
+      	$endtime2 = date ( 'Y-m-d') . " 23:59:59";
+      	$db->query ( "update game_buylist set error='-1'  where  1=1  and  creatdate> '$before2'  and  creatdate< '$endtime2'  and  status!='1'  and  error='0'  and  (status=1 or status=2 or status=3)  " );
 	}
 
 }

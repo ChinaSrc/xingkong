@@ -35,6 +35,8 @@ $_GET[$key]=$new_value;
 }
 $db = new chency_mysql;
 $db->connect(DB_HOST,DB_USER,DB_PASS,DB_DATA,DB_CHARSET,DB_PCONNECT,true);
+
+
 $redis = new Redis();
 $redis->connect(REDIS_HOST, REDIS_PORT);
 

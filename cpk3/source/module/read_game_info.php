@@ -7,7 +7,7 @@ $uid=$_GET[uid];
 $flag="yes";
 $game_info	= array();
 $before=date("Y-m-d H:i:s", strtotime("-1 week"));
-$game_info_sql = "select b.*,u.username,g.fullname as playname,g.skey,l.fullname as wanfa,l.cate as wancode,l.help from ".DB_PREFIX."game_buylist as b,".DB_PREFIX."user as u,".DB_PREFIX."game_type as g,".DB_PREFIX."game_ssc_list as l where b.creatdate > '$before' and (b.id='$uid' or b.buyid='$uid') and b.list_id=l.skey and g.ckey=b.playkey and u.userid=b.userid";
+$game_info_sql = "select b.*,u.username,g.fullname as playname,g.skey,l.fullname as wanfa,l.cate as wancode,l.help from ".DB_PREFIX."game_buylist as b,".DB_PREFIX."user as u,".DB_PREFIX."game_type as g,".DB_PREFIX."game_ssc_list as l where 1=1 and (b.id='$uid' or b.buyid='$uid') and b.creatdate > '$before' and u.userid=b.userid and b.list_id=l.skey and g.ckey=b.playkey ";
 
 $game_info	= $db->fetch_first($game_info_sql);
 if($game_info[id]==""){echo "'未找到此投注单!';<script>setTimeout('parentDialog.close();',1000);</script>";exit;}

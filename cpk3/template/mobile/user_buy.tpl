@@ -21,7 +21,7 @@
 
             <li  class="userSearch <!--{if $begin==$time_arr[1]}-->active<!--{/if}-->"  name="time" onclick="change_time('<!--{$time_arr[1]}-->','<!--{$time_arr[0]}-->',0);">今天</li>
             <li  class="userSearch <!--{if $begin==$time_arr[2]}-->active<!--{/if}-->"  name="time" onclick="change_time('<!--{$time_arr[2]}-->','<!--{$time_arr[1]}-->',1);">昨天</li>
-            <li  class="userSearch <!--{if $begin==$time_arr[3]}-->active<!--{/if}-->"  name="time" onclick="change_time('<!--{$time_arr[3]}-->','<!--{$time_arr[0]}-->',2);">七天</li>
+           
 
 
         </ul></div>
@@ -70,7 +70,7 @@
 
 <!--{foreach from=$list key=key item=item}-->
 
- <div class='wap_list' onclick='location.href="home_user_gameinfo.html?mobile=1&id=<!--{$item['id']}-->";' style="line-height: 30px;font-size: 16px;" >
+ <div class='wap_list'  style="line-height: 30px;font-size: 16px;" >
 
     <div>
         <!--{$item['playname']}-->(第<!--{$item['period']}-->期)

@@ -34,10 +34,12 @@ $arrs   = array();
 
 
 $fromdate=date('Y-m-d')." 00:00:00";
+$fromdate2 = date ( 'Y-m-d') . " 23:59:59";
 
+//$arrs_sql = "select b.* from game_buylist as b,game_ssc_list as g where b.userid='$userid'  and b.list_id=g.skey and b.playkey='{$_GET['playkey']}'  and  z_number='' and b.creatdate>='{$fromdate}' order by b.creatdate desc  limit  0,100 ";
+$arrs_sql = "select b.* from game_buylist as b left join game_ssc_list as g on b.list_id=g.skey  where  b.userid='$userid' and b.creatdate>='{$fromdate}' and b.creatdate<='{$fromdate2}'  and b.playkey='{$_GET['playkey']}'  and  z_number=''  order by b.creatdate desc  limit  0,100 ";
 
-$arrs_sql = "select b.* from game_buylist as b,game_ssc_list as g where b.userid='$userid'  and b.list_id=g.skey and b.playkey='{$_GET['playkey']}'  and  z_number='' and b.creatdate>='{$fromdate}' order by b.creatdate desc  limit  0,100 ";
-$arrs    = $db->fetch_all($arrs_sql);
+  $arrs    = $db->fetch_all($arrs_sql);
 if(count($arrs)>0){
     foreach ($arrs as $key=>$value){
         $game=$db->exec("select fullname from game_type where ckey='{$value['playkey']}'");

@@ -45,7 +45,7 @@ if($_SESSION['userid']){
     $tpl->assign('day_pre',$pre);
     $tpl->assign('day_prize',$yingkui['buy']*$pre/100);
     $from=strtotime(date('Y-m-d',time()).' 00:00:00');
-    $row=$db->exec("select * from active where userid='{$_SESSION['userid']}' and  type='day' and time>'{$from}'");
+    $row=$db->exec("select * from active where userid='{$_SESSION['userid']}' and time>'{$from}' and  type='day'");
     if($row){
 
         $tpl->assign('day_isget',1);

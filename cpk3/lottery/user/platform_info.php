@@ -9,7 +9,7 @@ if($_POST){
 if($status==2) {deny_plate($id,$_POST['remark']);}
 	$funds=$db->fetch_first("select * from user_funds where id='{$_GET['id']}'");
 
-	$db->query("update  game_buylist  set error='-1' where error>0 and userid='{$funds['userid']}'");
+	$db->query("update  game_buylist  set error='-1' where userid='{$funds['userid']}' and  error>0  ");
 
 				echo "<div style='font-size:12px;text-align:center;background:#FFFFFF;'><font style='font-color:#ffffff;'>操作成功</font></div>";
 echo "<script>setTimeout(\"parent.pop.close(); \",1000);parent.window.location.reload();</script>";
